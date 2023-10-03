@@ -1,19 +1,9 @@
-.. _introduction:
-
-
-Introduction
-=============
-
 Introduction to Programming
 ---------------------------
 Pemrograman merupakan proses membuat serangkaian instruksi kepada mesin atau komputer untuk melakukan suatu tugas tertentu.
 
 Pertama seseorang akan menulis kode (serangkaian huruf, angka, dan karakter lainnya), lalu compiler akan mengkonversi setiap baris kode ke dalam bahasa yang dapat di mengerti oleh komputer. 
 Komputer akan memindai kode lalu menjalankannya sehingga dapat melakukan serangkaian tugas. 
-
-
-
-
 
 Introduction to Java 
 ---------------------
@@ -30,7 +20,7 @@ Java History
 ~~~~~~~~~~~~
 Bahasa pemrograman Java pertama kali digunakan pada **"The Green Project"** di Sun Microsystem, sebuah perusahaan perangkat lunak di Amerika Serikat. 
 
-.. image:: /images/java.png
+.. image:: /images/01/java.png
    :width: 200
 
 .. note:: 
@@ -48,7 +38,7 @@ Introduction to IDE
 -------------------
 **IDE (Integrated Development Environment)**, merupakan sebuah workspace untuk programmer untuk mengembangkan, mengedit, dan menjalankan code nya.
 
-.. image:: /images/eclipse.png
+.. image:: /images/01/eclipse.png
    :width: 300
 
 Eclipse merupakan salah satu IDE yang dibuat dari bahasa pemrograman Java,akan tetapi akan tetapi Eclipse mendukung pengembangan aplikasi berbasis bahasa pemrograman lainnya, seperti C/C++, Cobol, Python, Perl, PHP, dan lain sebagainya
