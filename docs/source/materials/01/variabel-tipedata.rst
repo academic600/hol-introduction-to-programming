@@ -2,6 +2,27 @@ Variabel & Tipe Data Primitve
 ==============================
 Variabel dalam bahasa pemrograman adalah tempat atau wadah yang 
 di beri nama untuk menyimpan sebuah nilai dengan tipe data tertentu. 
+
+Jenis - jenis tipe data variabel : 
+
+.. image:: /images/01/tipe-data-saja.jpg
+
+
+
+
+
+Cara mendeklarasi variabel : 
+
+.. code:: console
+
+  tipeData namaVariable = value 
+
+Contoh: 
+
+.. code:: console
+
+    int a = 5
+
 Contoh penggunaan variabel: 
 
 .. code-block:: java 

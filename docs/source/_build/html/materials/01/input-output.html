@@ -20,7 +20,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Method Definition" href="method.html" />
+    <link rel="next" title="Compile-Run-Debug" href="compile-run-debug.html" />
     <link rel="prev" title="Download Center" href="../../donwload-center.html" /> 
 </head>
 
@@ -53,13 +53,28 @@
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html#introduction-to-ide">Introduction to IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donwload-center.html">Download Center</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Introduction to Java Programming</span></p>
+<p class="caption" role="heading"><span class="caption-text">Java Programming</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Input-Ouput</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#import">Import</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#special-characters">Special Characters</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="method.html">Method Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compile-run-debug.html">Compile-Run-Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variabel-tipedata.html">Variabel &amp; Tipe Data Primitve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="method-definition.html">Method Definition</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Wrapper, Math, Random</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../02/wrapper.html">Wrapper class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/typecasting.html">Type Casting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/random.html">Math, Random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/string-function.html">String Function</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Operator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../03/operator.html">Operator dan Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/arithmetic-operator.html">Arithmetic Operator</a></li>
 </ul>
 
         </div>
@@ -133,17 +148,28 @@ Hal ini dapat dilakukan dengan secara otomatis dengan menekan tombol <code class
 <p class="admonition-title">Note</p>
 <p class="linemarker linemarker-54">biasanya saat ingin menginput selain string kita wajib menggunakan     <code class="docutils literal notranslate"><span class="pre">nextLine()</span></code> untuk menangkap sisa enter</p>
 </div>
+<section id="import">
+<h2>Import<a class="headerlink" href="#import" title="Permalink to this heading"></a></h2>
+<p class="linemarker linemarker-58">Dalam java, import digunakan untuk memasukkan kelas atau pustaka (library) dari paket atau package lain ke dalam program</p>
+<p class="linemarker linemarker-60">Tujuan : menggunakan kelas atau metode dari paket tersebut tanpa perlu menulis kode dari awal.</p>
+<p class="linemarker linemarker-62">Contoh :</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p class="linemarker linemarker-68">Dalam contoh import diatas kita mau menggunakan fungsi scanner untuk menerima input, yang berasal dari library java.utils</p>
+<p class="linemarker linemarker-70">Import dapat dilakukan dengan mengetik kata kunci yang ingin di import lalu menekan tombol <code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+</span> <span class="pre">Spasi</span></code>, maka akan muncul pilihan di bawah ini</p>
+<img alt="../../_images/scanner.jpg" src="../../_images/scanner.jpg" />
+</section>
 <section id="special-characters">
 <h2>Special Characters<a class="headerlink" href="#special-characters" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-61">Comment <code class="docutils literal notranslate"><span class="pre">//</span></code> : adalah kata-kata / kalimat yang tidak ingin di compile</p></li>
-<li><p class="linemarker linemarker-62">Automatic <code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+</span> <span class="pre">space</span></code> : untuk menampilkan saran otomatis dari IDE</p></li>
-<li><p class="linemarker linemarker-63">Brackects <code class="docutils literal notranslate"><span class="pre">{}</span></code>: untuk memulai dan mengakhiri scope</p></li>
-<li><p class="linemarker linemarker-64">Paranthesis <code class="docutils literal notranslate"><span class="pre">()</span></code>: digunakan pada methods</p></li>
-<li><p class="linemarker linemarker-65"><code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>: untuk string</p></li>
-<li></li>
+<li><p class="linemarker linemarker-79">Comment <code class="docutils literal notranslate"><span class="pre">//</span></code>  adalah kata-kata / kalimat yang tidak ingin di compile</p></li>
+<li><p class="linemarker linemarker-80">Automatic <code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+</span> <span class="pre">space</span></code> : untuk menampilkan saran otomatis dari IDE</p></li>
+<li><p class="linemarker linemarker-81">Kurung Kurawal <code class="docutils literal notranslate"><span class="pre">{}</span></code>: untuk memulai dan mengakhiri scope</p></li>
+<li><p class="linemarker linemarker-82">Kurung buka-tutup <code class="docutils literal notranslate"><span class="pre">()</span></code>: digunakan pada methods</p></li>
+<li><p class="linemarker linemarker-83">Petik dua <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>: digunakan untuk string (huruf/kata/kalimat)</p></li>
 </ul>
 </div>
 </section>
@@ -154,7 +180,7 @@ Hal ini dapat dilakukan dengan secara otomatis dengan menekan tombol <code class
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../../donwload-center.html" class="btn btn-neutral float-left" title="Download Center" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="method.html" class="btn btn-neutral float-right" title="Method Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="compile-run-debug.html" class="btn btn-neutral float-right" title="Compile-Run-Debug" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

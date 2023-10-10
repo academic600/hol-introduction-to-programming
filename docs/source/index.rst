@@ -42,12 +42,33 @@ Introduction to Java Programming
 ================================
 .. toctree:: 
    :maxdepth: 2
-   :caption: Introduction to Java Programming
+   :caption: Java Programming
    
    materials/01/input-output
    materials/01/compile-run-debug
    materials/01/variabel-tipedata
    materials/01/method-definition
+
+Wrapper, Math, Random
+======================
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Wrapper, Math, Random
+
+   materials/02/wrapper
+   materials/02/typecasting
+   materials/02/random
+   materials/02/string-function
+
+Operator
+=========
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Operator
+
+   materials/03/operator
+   materials/03/arithmetic-operator
+
 
   
    

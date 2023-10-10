@@ -53,7 +53,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html#introduction-to-ide">Introduction to IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donwload-center.html">Download Center</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Introduction to Java Programming</span></p>
+<p class="caption" role="heading"><span class="caption-text">Java Programming</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="input-output.html">Input-Ouput</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compile-run-debug.html">Compile-Run-Debug</a></li>
@@ -62,6 +62,18 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="method-definition.html">Method Definition</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Wrapper, Math, Random</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../02/wrapper.html">Wrapper class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/typecasting.html">Type Casting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/random.html">Math, Random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/string-function.html">String Function</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Operator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../03/operator.html">Operator dan Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/arithmetic-operator.html">Arithmetic Operator</a></li>
 </ul>
 
         </div>
@@ -91,8 +103,18 @@
   <section id="variabel-tipe-data-primitve">
 <h1>Variabel &amp; Tipe Data Primitve<a class="headerlink" href="#variabel-tipe-data-primitve" title="Permalink to this heading"></a></h1>
 <p class="linemarker linemarker-3">Variabel dalam bahasa pemrograman adalah tempat atau wadah yang
-di beri nama untuk menyimpan sebuah nilai dengan tipe data tertentu.
-Contoh penggunaan variabel:</p>
+di beri nama untuk menyimpan sebuah nilai dengan tipe data tertentu.</p>
+<p class="linemarker linemarker-6">Jenis - jenis tipe data variabel :</p>
+<img alt="../../_images/tipe-data-saja.jpg" src="../../_images/tipe-data-saja.jpg" />
+<p class="linemarker linemarker-14">Cara mendeklarasi variabel :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">tipeData namaVariable = value</span>
+</pre></div>
+</div>
+<p class="linemarker linemarker-20">Contoh:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">int a = 5</span>
+</pre></div>
+</div>
+<p class="linemarker linemarker-26">Contoh penggunaan variabel:</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">      </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">          </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
@@ -107,7 +129,7 @@ Contoh penggunaan variabel:</p>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-22">Output:</p>
+<p class="linemarker linemarker-43">Output:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">5</span>
 <span class="go">3.4</span>
 <span class="go">false</span>
@@ -115,9 +137,9 @@ Contoh penggunaan variabel:</p>
 </div>
 <section id="tipe-data-primitive">
 <h2>Tipe Data Primitive<a class="headerlink" href="#tipe-data-primitive" title="Permalink to this heading"></a></h2>
-<p class="linemarker linemarker-32">Berikut beberapa contoh tipe-tipe data di dalam java:</p>
+<p class="linemarker linemarker-53">Berikut beberapa contoh tipe-tipe data di dalam java:</p>
 <img alt="../../_images/type-data.jpg" src="../../_images/type-data.jpg" />
-<p class="linemarker linemarker-36">Tipe data di dalam java dibagi menjadi dua yaitu primitive dan non-primitive</p>
+<p class="linemarker linemarker-57">Tipe data di dalam java dibagi menjadi dua yaitu primitive dan non-primitive</p>
 <a class="reference internal image-reference" href="../../_images/tipe-data.jpg"><img alt="../../_images/tipe-data.jpg" src="../../_images/tipe-data.jpg" style="width: 500px;" /></a>
 <table class="docutils align-default" id="id1">
 <caption><span class="caption-text">Perbedaan Primitive dan Non-primitive</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
@@ -127,23 +149,23 @@ Contoh penggunaan variabel:</p>
 <col style="width: 45%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p class="linemarker linemarker-46">Perbedaan</p></th>
-<th class="head"><p class="linemarker linemarker-47">Primitive</p></th>
-<th class="head"><p class="linemarker linemarker-48">Non-primitive</p></th>
+<tr class="row-odd"><th class="head"><p class="linemarker linemarker-67">Perbedaan</p></th>
+<th class="head"><p class="linemarker linemarker-68">Primitive</p></th>
+<th class="head"><p class="linemarker linemarker-69">Non-primitive</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p class="linemarker linemarker-49">Passing Data</p></td>
-<td><p class="linemarker linemarker-50">Menyimpan nilai yang sebenarnya (pass by value) dalam sebuah method</p></td>
-<td><p class="linemarker linemarker-51">Menyimpan Alamat ke alokasi memori (pass by reference) dalam sebuah method</p></td>
+<tr class="row-even"><td><p class="linemarker linemarker-70">Passing Data</p></td>
+<td><p class="linemarker linemarker-71">Menyimpan nilai yang sebenarnya (pass by value) dalam sebuah method</p></td>
+<td><p class="linemarker linemarker-72">Menyimpan Alamat ke alokasi memori (pass by reference) dalam sebuah method</p></td>
 </tr>
-<tr class="row-odd"><td><p class="linemarker linemarker-52">Nilai Default</p></td>
-<td><p class="linemarker linemarker-53">memiliki nilai default apabila tidak di inisialisasi, cth : int = 0</p></td>
-<td><p class="linemarker linemarker-54">Memiliki nilai default “null”</p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-73">Nilai Default</p></td>
+<td><p class="linemarker linemarker-74">memiliki nilai default apabila tidak di inisialisasi, cth : int = 0</p></td>
+<td><p class="linemarker linemarker-75">Memiliki nilai default “null”</p></td>
 </tr>
-<tr class="row-even"><td><p class="linemarker linemarker-55">Penulisan</p></td>
-<td><p class="linemarker linemarker-56">Di awali dengan huruf kecil</p></td>
-<td><p class="linemarker linemarker-57">Di awali dengan huruf besar</p></td>
+<tr class="row-even"><td><p class="linemarker linemarker-76">Penulisan</p></td>
+<td><p class="linemarker linemarker-77">Di awali dengan huruf kecil</p></td>
+<td><p class="linemarker linemarker-78">Di awali dengan huruf besar</p></td>
 </tr>
 </tbody>
 </table>
