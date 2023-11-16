@@ -1,5 +1,5 @@
 Do-While Loop 
-===============
+--------------
 Do-while loop akan mengeksekusi blok pernyataan minimal satu kali tanpa memeriksa kondisi terlebih dahulu. 
 Berbeda dengan while loop, dimana akan melakukan pengecekan terlebih dahulu benar atau tidak kondisinya baru dijalankan.
 
