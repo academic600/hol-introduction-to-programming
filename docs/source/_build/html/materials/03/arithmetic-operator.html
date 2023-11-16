@@ -20,6 +20,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Assignment Operator" href="assignment-operator.html" />
     <link rel="prev" title="Operator dan Operand" href="operator.html" /> 
 </head>
 
@@ -69,7 +70,21 @@
 <p class="caption" role="heading"><span class="caption-text">Operator</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="operator.html">Operator dan Operand</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Arithmetic Operator</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Arithmetic Operator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inrement-decrement">Inrement &amp; Decrement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="assignment-operator.html">Assignment Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relational-operator.html">Relational Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical-operator.html">Logical Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bitwise-operator.html">Bitwise Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="precendence-associative-operator.html">Precendence &amp; Associative Operator</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Selection statementS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../04/if-else.html">If-Else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/nested-if.html">Nested IF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/switch-case.html">Switch Case</a></li>
 </ul>
 
         </div>
@@ -155,6 +170,65 @@
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
+<section id="inrement-decrement">
+<h2>Inrement &amp; Decrement<a class="headerlink" href="#inrement-decrement" title="Permalink to this heading"></a></h2>
+<p class="linemarker linemarker-52">Increment pada java di lambangkan dengan symbol <code class="docutils literal notranslate"><span class="pre">++</span></code></p>
+<p class="linemarker linemarker-54">Decrement di lambangkan dengan symbol <code class="docutils literal notranslate"><span class="pre">--</span></code></p>
+<dl class="simple">
+<dt>Terdapat 2 macam jenis increment</dt><dd><ul class="simple">
+<li><p class="linemarker linemarker-57">Pre Increment : merupakan cara menambahkan 1 terlebih dahulu baru digunakan</p></li>
+<li><p class="linemarker linemarker-58">Post Increment: menggunakan angka tersebut, lalu ditambahkan 1 di akhir</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="o">++</span><span class="n">a</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">b</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hasil dari pre increment a: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="n">a</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hasil dari post increment b: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="n">b</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p class="linemarker linemarker-74">Output :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Hasil dari pre increment a: 11</span>
+<span class="go">Hasil dari post increment b: 11</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Terdapat 2 jenis juga decrement :</dt><dd><ul class="simple">
+<li><p class="linemarker linemarker-82">Pre decrement : merupakan cara mengurangkan 1 terlebih dahulu baru digunakan</p></li>
+<li><p class="linemarker linemarker-83">Post decrement: menggunakan angka tersebut, lalu mengurangkan 1 di akhir</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="o">--</span><span class="n">a</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">b</span><span class="o">--</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hasil dari pre decrement a: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="n">a</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hasil dari post decrement b: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="n">b</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p class="linemarker linemarker-99">Output :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Hasil dari pre decrement a: 9</span>
+<span class="go">Hasil dari post decrement b: 9</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="linemarker linemarker-109">Pada intinya post maupun pre memiliki tujuan yang sama yaitu increment atau decrement sebanyak 1.</p>
+</div>
+</section>
 </section>
 
 
@@ -162,6 +236,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="operator.html" class="btn btn-neutral float-left" title="Operator dan Operand" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="assignment-operator.html" class="btn btn-neutral float-right" title="Assignment Operator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

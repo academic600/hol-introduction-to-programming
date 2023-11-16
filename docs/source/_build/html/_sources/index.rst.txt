@@ -68,7 +68,32 @@ Operator
 
    materials/03/operator
    materials/03/arithmetic-operator
+   materials/03/assignment-operator
+   materials/03/relational-operator
+   materials/03/logical-operator
+   materials/03/bitwise-operator
+   materials/03/precendence-associative-operator
 
+Selection statement
+====================
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Selection statements
+
+   materials/04/if-else
+   materials/04/nested-if
+   materials/04/switch-case
+
+Iteration statement
+=====================
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Iteration statement
+
+   materials/05/for
+   materials/05/while
+   materials/05/do-while
+   materials/05/validation
 
   
    
