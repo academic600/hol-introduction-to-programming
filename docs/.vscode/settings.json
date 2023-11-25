@@ -1,7 +1,0 @@
-{
-    "iis.configDir": "",
-    "esbonio.sphinx.confDir": "${workspaceFolder}\\source",
-    // "restructuredtext.pythonRecommendation.disabled": true,
-    // "esbonio.server.pythonPath": "",
-    // "terminal.integrated.defaultProfile.windows": "Command Prompt"
-}

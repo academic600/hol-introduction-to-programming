@@ -1,48 +1,28 @@
-Welcome!
-==========================
-Hallo selamat datang di pembelajaran *Introduction to Programming* Hands-On Lab (IntroProg HOL).
+*Hands-on Lab Introduction to Programming*
+================================================
 
-DISCLAIMER
-----------
-Hands-on Lab ini bertujuan hanya untuk **edukasi**
+Halo semuanya, selamat datang di *Hands-on Lab* materi pembelajaran praktikum *Introduction to Programming*. Dalam *Hands-on Lab* ini akan dibahas dasar-dasar dari bahasa pemrograman *Java*.
 
-Pendapat atau sudut pandang yang terdapat dalam Panduan Praktikum ini mewakili pandangan dari penulis, dan tidak selalu mewakili posisi resmi atau kebijakan dari Universitas Bina Nusantara atau Yayasan Bina Nusantara.
-
-Tidak ada bagian dalam Panduan Praktikum ini yang merupakan nasihat hukum. Panduan Praktikum ini tidak dimaksudkan sebagai pengganti nasihat profesional dalam bidang teknologi, pengujian, atau panduan.
-
-Selalu cari nasihat dari penyedia layanan profesional atau yang berkompeten lainnya untuk pertanyaan apa pun yang mungkin Anda miliki mengenai isu teknologi.
-
-Jangan mengabaikan nasihat profesional atau menundanya karena sesuatu yang telah Anda baca atau lihat dalam Panduan Praktikum ini.
-
-Eksperimen, tindakan, potongan kode, organisasi, individu, atau entitas lain apa pun yang muncul dalam Panduan Praktikum ini, jika ada, digambarkan hanya untuk tujuan ilustratif dan dianggap tidak bersalah sampai terbukti bersalah dalam persidangan hukum.
-
-Penulis, Pusat Laboratorium Perangkat Lunak, Sekolah Ilmu Komputer Universitas Bina Nusantara, Universitas Bina Nusantara, Yayasan Bina Nusantara, dan setiap entitas lain yang terkait dengan pembuatan Panduan Praktikum ini dengan ini menolak segala bentuk dan jenis tanggung jawab terhadap pihak mana pun atas kerusakan langsung, tidak langsung, tersirat, hukuman, khusus, insidental, atau kerugian lainnya yang timbul secara langsung atau tidak langsung dari penggunaan Konten Panduan Praktikum ini, yang disediakan sebagaimana adanya, dan tanpa jaminan apapun.
-
-
+Tujuan dibuatnya *Hands-on Lab* ini adalah sebagai edukasi sekaligus pendukung materi pembelajaran praktikum untuk mata kuliah yang mempelajari bahasa pemrograman *Java*.
 
 .. note::
 
-   This project is under active development. test 
+   *Hands-on Lab* ini masih dalam tahap pengembangan.
 
-Contents
---------
+Daftar Isi
+==========
 
-introduction
-============
 .. toctree::
-   :maxdepth: 2
-   :caption: Introduction
+   :maxdepth: 1
+   :caption: Pendahuluan (Opsional)
 
-   introduction
-   donwload-center
+   materials/00/java
+   materials/00/ide
+   materials/00/instalasi
 
-   
-
-Introduction to Java Programming
-================================
 .. toctree:: 
    :maxdepth: 2
-   :caption: Java Programming
+   :caption: Session 01 -  Introduction to Java Programming
    
    materials/01/input-output
    materials/01/compile-run-debug
