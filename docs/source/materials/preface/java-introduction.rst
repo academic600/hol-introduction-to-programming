@@ -3,7 +3,7 @@ Pengenalan Dasar *Java*
 
 Pemrograman merupakan sebuah proses dalam membuat serangkaian instruksi kepada komputer yang bertujuan untuk melakukan suatu tugas dengan menggunakan bahasa pemrograman tertentu. Salah satu bahasa pemrograman tersebut adalah *Java*.
 
-.. image:: /images/00/java-logo.png
+.. image:: /images/preface/java-logo.png
     :width: 200
     :align: center
 .. centered:: Logo Bahasa Pemrograman *Java*

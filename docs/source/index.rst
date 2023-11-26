@@ -16,14 +16,15 @@ Daftar Isi
    :maxdepth: 1
    :caption: Pendahuluan (Opsional)
 
-   materials/00/java
-   materials/00/ide
-   materials/00/instalasi
+   materials/preface/java-introduction
+   materials/preface/ide-introduction
+   materials/preface/instalation-guide
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Session 01 -  Introduction to Java Programming
    
+   materials/01/creating-project
    materials/01/input-output
    materials/01/compile-run-debug
    materials/01/variabel-tipedata
