@@ -28,3 +28,5 @@ Setelah di Run program pada java jika terdapat error maka akan muncul sebuah pop
 
 .. note:: 
     Error di java biasanya akan muncul di console, kita bisa membaca error yang ada pada console dan memulai debugging
+
+.. TODO: Tambahkan jenis-jenis error yang sering terjadi [halaman 42-44].

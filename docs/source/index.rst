@@ -24,11 +24,10 @@ Daftar Isi
    :maxdepth: 1
    :caption: Session 01 -  Introduction to Java Programming
    
-   materials/01/creating-project
-   materials/01/input-output
-   materials/01/compile-run-debug
-   materials/01/variabel-tipedata
-   materials/01/method-definition
+   materials/session-01/creating-project
+   materials/session-01/input-output
+   materials/session-01/variabel-tipedata
+   materials/session-01/compile-run-debug
 
 Wrapper, Math, Random
 ======================
@@ -85,7 +84,3 @@ Jump Operation
 
    materials/06/exception-handling
    materials/06/jump-operation
- 
-  
-   
-   

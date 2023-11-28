@@ -17,10 +17,10 @@ Bahasa pemrograman *Java* awalnya dikembangkan sebagai bagian dari proyek "*Gree
 
 Setelah proyek tersebut selesai dibuat, bahasa pemrograman tersebut diberi nama *Oak* yang terinspirasi dari pohon ek yang ada di depan kantor mereka. Namun, dikarenakan sudah ada merek dagang lain dengan nama yang serupa, bahasa pemrograman tersebut diubah menjadi *Java* yang terinspirasi dari jenis kopi yang tumbuh di pulau Jawa.
 
-Proses Kerja
-------------
+*Java Environment*
+------------------
 
-.. TODO: Tambahkan proses kerja bahasa pemrograman Java (.java -> .class)
-.. TODO: Tambahkan penjelasan JDK, JRE, dan JVM.
+.. TODO: Tambahkan proses kerja bahasa pemrograman Java [halaman 38].
+.. TODO: Tambahkan penjelasan JDK, JRE, dan JVM [halaman 34, 38].
 
 Pertama seseorang akan menulis kode (serangkaian huruf, angka, dan karakter lainnya), lalu compiler akan mengkonversi setiap baris kode ke dalam bahasa yang dapat di mengerti oleh komputer. Komputer akan memindai kode lalu menjalankannya sehingga dapat melakukan serangkaian tugas. 
