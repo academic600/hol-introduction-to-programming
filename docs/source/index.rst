@@ -26,8 +26,8 @@ Daftar Isi
    
    materials/session-01/creating-project
    materials/session-01/input-output
-   materials/session-01/variabel-tipedata
-   materials/session-01/compile-run-debug
+   materials/session-01/variable-datatype
+   materials/session-01/debugging
 
 Wrapper, Math, Random
 ======================

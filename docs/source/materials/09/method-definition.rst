@@ -8,7 +8,7 @@ Method dapat mengembalikan nilai tertentu (memiliki return value), dan ada juga 
 Struktur Method
 ---------------
 
-.. image:: /images/01/method.webp
+.. image:: /images/09/method.webp
 
 
 Penjelasan mengenai gambar diatas:
@@ -16,7 +16,7 @@ Penjelasan mengenai gambar diatas:
     
       * Access Modifier: menentukan darimana method dapat di akses. terdapat beberapa jenis access Modifiers
      
-         .. image:: /images/01/accessmodifier.webp
+         .. image:: /images/09/accessmodifier.webp
 
       *  Non-access Modifier: tidak berpengaruh pada sifat method, tapi memberikan sifat khusus pada method tersebut.Contohnya adalah static, final, dan abstract.
     

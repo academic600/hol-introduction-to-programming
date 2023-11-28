@@ -52,7 +52,7 @@ System.out.printf()
 
 ``System.out.printf()`` dapat digunakan untuk mencetak teks dalam format tertentu. Beberapa format yang dapat digunakan adalah sebagai berikut.
 
-.. TODO: Tambahkan note mengenai beberapa formatting yang sering digunakan.
+.. TODO: Tambahkan penjelasan mengenai beberapa formatting yang sering digunakan.
 
 .. list-table::
    :header-rows: 1
@@ -79,7 +79,7 @@ System.out.printf()
 
     *Escape sequence* adalah karakter khusus yang dimulai dengan karakter *escape* atau *backslash* (\\). Beberapa *escape sequence* yang dapat digunakan dalam melakukan output adalah sebagai berikut.
 
-    .. TODO: Tambahkan note mengenai escape sequence yang sering digunakan.
+    .. TODO: Tambahkan penjelasan mengenai escape sequence yang sering digunakan.
 
     .. list-table::
        :header-rows: 1
@@ -133,11 +133,11 @@ Pertama, membuat *object* ``Scanner`` dengan kode di bawah ini.
     
     Scanner scan = new Scanner(System.in);
 
-.. TODO: Tambahkan penjelasan untuk masing-masing keyword yang digunakan.
+.. TODO: Tambahkan penjelasan untuk masing-masing keyword yang digunakan [halaman 59].
 
 Kedua, mendapatkan hasil ketikan pengguna dengan *method* di bawah ini.
 
-.. TODO: Tambahkan pejelasan method scan yang dapat digunakan (nextLine(), nextInt(), dsb).
+.. TODO: Tambahkan pejelasan mengenai method scan yang dapat digunakan (nextLine(), nextInt(), dsb) [halaman 68].
 
 .. list-table::
    :header-rows: 1
@@ -147,7 +147,7 @@ Kedua, mendapatkan hasil ketikan pengguna dengan *method* di bawah ini.
    * - temp
      - temp
 
-Berikut adalah contoh program untuk mendapatkan *input* dalam bentuk angka dan menampilkan kembali *input* tersebut.
+Berikut adalah contoh program untuk mendapatkan *input* dalam bentuk bilangan bulat dan menampilkan kembali *input* tersebut.
 
 .. code-block:: java
 
@@ -158,26 +158,26 @@ Berikut adalah contoh program untuk mendapatkan *input* dalam bentuk angka dan m
             // Membuat objek 'Scanner'
             Scanner scan = new Scanner(System.in);
 
-            // Membuat variabel angka (integer) dengan nama 'myInput'
+            // Membuat variabel bilangan bulat (integer) dengan nama 'myInput'
             int myInput;
 
-            // Meminta pengguna aplikasi untuk memasukan sebuah angka 
-            System.out.print("Masukan angka: ");
+            // Meminta pengguna program untuk memasukan sebuah bilangan bulat 
+            System.out.print("Masukan sebuah bilangan bulat: ");
 
-            // Mengambil input (dalam bentuk angka) dari pengguna aplikasi 
+            // Mengambil input (dalam bentuk bilangan bulat) dari pengguna program 
             myInput = scan.nextInt();
             scan.nextLine();
 
-            // Menampilkan input yang di input oleh pengguna aplikasi
-            System.out.printf("Angka yang di masukan adalah %d", myInput);
+            // Menampilkan input yang dimasukan oleh pengguna program
+            System.out.printf("Bilangan bulat yang di masukan adalah %d", myInput);
         }
 
     }
 
 .. code-block:: console
 
-    Masukan angka: 5
-    Angka yang di masukan adalah 5
+    Masukan sebuah bilangan bulat: 5
+    Bilangan bulat yang di masukan adalah 5
 
 .. note:: 
 
@@ -188,7 +188,7 @@ Import
 
 Dari kode diatas, dapat dilihat bahwa saat ingin menggunakan ``Scanner`` perlu untuk melakukan *import* (dengan *syntax* ``import``) dari ``java.util.scanner`` terlebih dahulu.
 
-*Import* digunakan untuk memasukkan *class* dari suatu *package* yang ada di luar ke dalam program. Tujuannya adalah agar pembuat aplikasi tidak perlu menulis kode dari awal untuk kode yang sudah disediakan dari luar.
+*Import* digunakan untuk memasukkan *class* dari suatu *package* yang ada di luar ke dalam program. Tujuannya adalah agar pembuat program tidak perlu menulis kode dari awal untuk kode yang sudah disediakan dari luar.
 
 .. code:: java
 

@@ -8,7 +8,7 @@ Pemrograman merupakan sebuah proses dalam membuat serangkaian instruksi kepada k
     :align: center
 .. centered:: Logo Bahasa Pemrograman *Java*
 
-*Java* merupakan salah satu bahasa pemrograman yang cukup populer dan biasanya dikenal dengan istilah *write once run anywhere*. Hal ini berarti program yang sudah ditulis dapat dijalankan di mana saja walaupun berbeda sistem operasi, tanpa perlu disesuaikan. Oleh karena itu, *Java* dapat digunakan untuk membuat berbagai macam jenis aplikasi, seperti: *console*, *desktop*, *website*, atau *Android*.
+*Java* merupakan salah satu bahasa pemrograman yang cukup populer dan biasanya dikenal dengan istilah *write once run anywhere*. Hal ini berarti program yang sudah ditulis dapat dijalankan di mana saja walaupun berbeda sistem operasi, tanpa perlu disesuaikan. Oleh karena itu, *Java* dapat digunakan untuk membuat berbagai macam jenis program, seperti: *console*, *desktop*, *website*, atau *Android*.
 
 Sejarah Singkat
 ---------------
@@ -24,3 +24,6 @@ Setelah proyek tersebut selesai dibuat, bahasa pemrograman tersebut diberi nama 
 .. TODO: Tambahkan penjelasan JDK, JRE, dan JVM [halaman 34, 38].
 
 Pertama seseorang akan menulis kode (serangkaian huruf, angka, dan karakter lainnya), lalu compiler akan mengkonversi setiap baris kode ke dalam bahasa yang dapat di mengerti oleh komputer. Komputer akan memindai kode lalu menjalankannya sehingga dapat melakukan serangkaian tugas. 
+
+Kompilasi atau Compilling adalah Kompilasi adalah proses mengubah kode sumber dari satu bahasa pemrograman ke dalam bentuk yang dapat dieksekusi oleh komputer.
+Proses kompilasi program dengan Java adalah langkah yang diperlukan untuk mengubah kode sumber Java (yang ditulis dalam bahasa pemrograman Java) menjadi bahasa mesin yang dapat dieksekusi oleh Java Virtual Machine (JVM).
