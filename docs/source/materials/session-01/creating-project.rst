@@ -9,7 +9,7 @@ Run pada java berfungsi untuk mengeksekusi code kita dan menampilakan suatu outp
 Biasanya pada java kita menjalankan dengan menekan tombol run 
 untuk short cut pada keyboard kita bisa menggunakan ``F11``
 
-.. image:: /images/01/Run.jpg
+.. image:: /images/session-01/run.jpg
   
 .. TODO: Tambahkan penjelasan menu atau tab yang sering digunakan pada Eclipse.
 .. TODO: Tambahkan penjelasan mengenai public static void main() [halaman 35].

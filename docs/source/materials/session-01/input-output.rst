@@ -200,10 +200,10 @@ Pada kode di atas, program akan melakukan *import* untuk *class* ``Scanner`` dar
 
     Untuk mempermudah dan mempercepat pembuatan program, Anda dapat menggunakan ``ctrl + space`` untuk menampilkan saran atau *autocomplete* yang dibuat oleh IDE *Eclipse*.
 
-    .. image:: /images/01/autocomplete-print.png
+    .. image:: /images/session-01/autocomplete-print.png
         :align: center
 
     Dengan menggunakan ``ctrl + space`` tersebut juga, apabila terdapat sebuah *class* yang berasal dari *package* yang ada di luar, secara otomatis IDE *Eclipse* akan melakukan *import* pada kelas tersebut, sehingga Anda tidak perlu mengetik *syntax* ``import`` secara manual.
 
-    .. image:: /images/01/autocomplete-scanner.png
+    .. image:: /images/session-01/autocomplete-scanner.png
         :align: center

@@ -12,7 +12,7 @@ Terdapat beberapa jenis *error* yang dapat terjadi ketika membuat program.
 
 Setelah di Run program pada java jika terdapat error maka akan muncul sebuah pop up seperti gambar dibawah ini: 
 
-.. image::  /images/01/error.png
+.. image::  /images/session-01/error.png
     :align: center
 
 *Runtime Error*
