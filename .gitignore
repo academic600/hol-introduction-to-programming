@@ -1,2 +1,5 @@
 # remove build files 
 /docs/source/_build/*
+
+# remove virtual environment
+/.venv/*
