@@ -20,8 +20,17 @@ Setelah proyek tersebut selesai dibuat, bahasa pemrograman tersebut diberi nama 
 *Java Environment*
 ------------------
 
-.. TODO: Tambahkan proses kerja bahasa pemrograman Java [halaman 38].
-.. TODO: Tambahkan penjelasan JDK, JRE, dan JVM [halaman 34, 38].
+.. image:: /images/01/process-compile.jpg
+
+**Java Development Toolkit (JDK)**
+JDK terdiri dari serangkaian program terpisah, masing-masing dipanggil dari baris perintah, untuk mengompilasi, menjalankan, dan menguji program Java.
+
+**Java Run Time Environment (JRE)**
+program yang digunakan untuk menjalankan program-program java. 
+
+**Intefrated Development Environment (IDE)**
+Kita dapat menggunakan IDE untuk untuk mengembangkan program-program Java dengan cepat. 
+Pengeditan, kompilasi, pembangunan, dan debugging. 
 
 Pertama seseorang akan menulis kode (serangkaian huruf, angka, dan karakter lainnya), lalu compiler akan mengkonversi setiap baris kode ke dalam bahasa yang dapat di mengerti oleh komputer. Komputer akan memindai kode lalu menjalankannya sehingga dapat melakukan serangkaian tugas. 
 

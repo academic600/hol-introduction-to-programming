@@ -1,5 +1,5 @@
 Wrapper class
-==============
+===============
 
 Merupakan kelas pembungkus yang mengelilingi tipe data primitive, agar dapat digunakan sebagai objek.
 
@@ -42,12 +42,12 @@ Tipe Data Primitive
 -------------------
 Berikut beberapa contoh tipe-tipe data di dalam java: 
 
-.. image:: /images/01/type-data.jpg
+image:: /images/01/type-data.jpg
 
 Tipe data di dalam java dibagi menjadi dua yaitu primitive dan non-primitive 
 
-.. image:: /images/01/tipe-data.jpg
-    :width: 500
+.. .. image:: /images/01/tipe-data.jpg
+..     :width: 500
 
 .. list-table:: Perbedaan Primitive dan Non-primitive
    :widths: 10 45 45
