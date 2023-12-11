@@ -4,8 +4,6 @@ Random adalah cara untuk mengahasilkan suatu angka yang acak.
 Untuk membuat angka random kita bisa menggunakan library ``Math.Random`` yang di miliki Java 
 kita dapat melakuakn import dari ``java.util.Random``
 
-Berikut contoh nya : 
-
 .. code-block:: java
 
     import java.util.Random;
@@ -21,7 +19,6 @@ Berikut contoh nya :
 
     }
 
-Output : 
 
 .. code-block:: console
 
@@ -29,6 +26,7 @@ Output :
 
 jika kita ingin menghasilkan kombinasi dari huruf dan angka random : 
 Contoh misal 
+
 
 
 

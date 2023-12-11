@@ -1,12 +1,32 @@
 Assignment Operator
 ========================
-Assignment operator merupkan operator yang digunakan untuk memberikan nilai ke variabel. 
-
+*Assignment operator* merupkan operator yang digunakan untuk memberikan nilai ke variabel. 
 Juga digunakan untuk menggabungkan operasi aritmatika dengan operasi pemberian nilai. 
 
 Berikut contoh assignment operator : 
 
-.. image:: /images/03/assignment-operator.png
+
+.. list-table:: Asignment Operator
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Operator
+     - Deskripsi
+   * - ``=``
+     - mendefinisikan value 
+   * - ``+=`` 
+     - Penjumlahan
+   * - ``-=`` 
+     - Pengurangan 
+   * - ``*=`` 
+     - Perkalian
+   * - ``\=`` 
+     - Pembagian
+   * - ``%=`` 
+     - Modulo
+   * - ``^=`` 
+     - Pangkat
+
 
 Contoh assignment operator dalam code 
 
@@ -22,17 +42,17 @@ Contoh assignment operator dalam code
             a = 5;
             b = 10;
 
-            // penambahan
+            // Penambahan
             b += a;
             // sekarang b = 15
             System.out.println("Penambahan : " + b);
 
-            // pengurangan
+            // Pengurangan
             b -= a;
             // sekarang b = 10 (karena 15-5)
             System.out.println("Pengurangan : " + b);
 
-            // perkalian
+            // Perkalian
             b *= a;
             // sekarang b = 50 (karena 10*5)
             System.out.println("Perkalian : " + b);
@@ -46,11 +66,15 @@ Contoh assignment operator dalam code
             b %= a;
             // sekarang b=0
             System.out.println("Sisa Bagi: " + b);
+
+            // Pangkat
+            b ^= a;
+            // sekarang b=0
+            System.out.println("Sisa Bagi: " + b);
         }
 
     }
 
-Output : 
 
 .. code-block:: console
 
@@ -59,4 +83,5 @@ Output :
     Perkalian : 50
     Pembagian : 10
     Sisa Bagi: 0
+    Pangkat : 5
 
