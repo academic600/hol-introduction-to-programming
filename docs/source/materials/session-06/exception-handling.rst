@@ -18,9 +18,7 @@ Biasanya kita bisa menggunakan key-word ``try and catch``
         //kode yang digunakan jika kode yang di test error
     }
 
-**Contoh Code**
-
-.. code:: console
+.. code:: java
 
     public class Main {
         public static void main(String[ ] args) {
@@ -33,7 +31,6 @@ Biasanya kita bisa menggunakan key-word ``try and catch``
         }   
     }
 
-**Output**
 
 .. code:: console
 

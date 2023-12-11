@@ -11,7 +11,6 @@ Contoh Validasi
 ~~~~~~~~~~~~~~~
 Validasi panjang kata 
 
-**Code**
 
 .. code:: java
 
@@ -30,7 +29,6 @@ Validasi panjang kata
     }
 
 
-**Input/Output**
 
 .. code:: console
 

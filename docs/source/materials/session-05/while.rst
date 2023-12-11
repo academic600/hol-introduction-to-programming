@@ -11,9 +11,7 @@ Syntax While Loop
     // Statement(s) yang akan dieksekusi selama kondisi terpenuhi (true)
     // Pernyataan ini akan diulang selama kondisi masih benar
     }
-
-**Code**
-
+    
 .. code:: java
 
     public class Main {
@@ -27,8 +25,6 @@ Syntax While Loop
         }
     }
 
-
-**Output**
 
 .. code:: console
 

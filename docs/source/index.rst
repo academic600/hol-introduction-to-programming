@@ -39,6 +39,7 @@ Wrapper, Math, Random
    materials/session-02/typecasting
    materials/session-02/random
    materials/session-02/string-function
+   materials/session-06/return
 
 Operator
 =========
@@ -46,13 +47,13 @@ Operator
    :maxdepth: 2
    :caption: Operator
 
-   materials/03/operator
-   materials/03/arithmetic-operator
-   materials/03/assignment-operator
-   materials/03/relational-operator
-   materials/03/logical-operator
-   materials/03/bitwise-operator
-   materials/03/precendence-associative-operator
+   materials/session-03/operator
+   materials/session-03/arithmetic-operator
+   materials/session-03/assignment-operator
+   materials/session-03/relational-operator
+   materials/session-03/logical-operator
+   materials/session-03/bitwise-operator
+   materials/session-03/precendence-associative-operator
 
 Selection statement
 ====================
@@ -60,9 +61,9 @@ Selection statement
    :maxdepth: 2
    :caption: Selection statements
 
-   materials/04/if-else
-   materials/04/nested-if
-   materials/04/switch-case
+   materials/session-04/if-else
+   materials/session-04/nested-if
+   materials/session-04/switch-case
 
 Iteration statement
 =====================
@@ -70,11 +71,11 @@ Iteration statement
    :maxdepth: 2
    :caption: Iteration statement
 
-   materials/05/for
-   materials/05/while
-   materials/05/do-while
-   materials/05/validation
-   materials/05/break-continue
+   materials/session-05/for
+   materials/session-05/while
+   materials/session-05/do-while
+   materials/session-05/validation
+  
 
 Jump Operation
 =====================
@@ -82,8 +83,11 @@ Jump Operation
    :maxdepth: 2
    :caption: Jump Operation
 
-   materials/06/exception-handling
-   materials/06/jump-operation
+   materials/session-06/exception-handling
+   materials/session-06/break
+   materials/session-06/continue
+   materials/session-06/return
+   materials/session-06/label
 
 Method Operation
 =====================

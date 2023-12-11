@@ -12,7 +12,6 @@ Digunakan untuk memberikan sebuah kondisi benar atau salah  beserta statement ya
         statement2
     }
 
-**Code Example**
 
 .. code:: java
 
@@ -31,7 +30,6 @@ Digunakan untuk memberikan sebuah kondisi benar atau salah  beserta statement ya
 
     }
 
-**Output:** 
 
 .. code:: console
     
@@ -56,7 +54,7 @@ Syntax **If-elseif**
         statment4
     }
 
-**Code Example**
+
 
 .. code:: java
 
@@ -76,7 +74,6 @@ Syntax **If-elseif**
 
     }
 
-**Output :** 
 
 .. code:: console
 

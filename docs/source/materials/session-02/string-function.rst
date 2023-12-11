@@ -1,12 +1,35 @@
-String Function
+*String Function*
 --------------------
 *String* dalam java adalah suatu tipe data untuk memuat suatu kalimat. 
 penggunaan string biasanya di sertai dengan tanda petik dua ``""``.
 
 Terdapat beberapa method-method dalam java untuk memanipulasi sebuah string. 
 
-*CharAt* 
-~~~~~~~~~~
+Simpel String
+~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * - Mehtod
+     - Penjelasan
+   * - length()
+     - Mengembalikan banyak karakter dalam suatu *string*
+   * - charAt(index)
+     - Mengembalikan karakter sesuai index dari suatu *string*
+   * - concat(s1)
+     - Mengembalikan sebuah string baru yang menggabungkan string ini dengan string s1.
+   * - toUpperCase()
+     - Mengembalikan karakter dengan huruf kapital
+   * - toLowerCase()
+     - Mengembalikan karakter dengan huruf kecil 
+   * - trim()
+     - Mengembalikan sebuah string baru dengan karakter spasi di kedua sisinya.
+
+
+**CharAt** 
+~~~~~~~~~~~
+
 Char at digunakan untuk mengambil karakter dari sebuah string pada posisi tertentu (berdasarkan indeks karakter)
 
 .. code:: java
@@ -25,6 +48,74 @@ Char at digunakan untuk mengambil karakter dari sebuah string pada posisi terten
 .. code:: 
 
     Karakter pertama: H
+
+
+*toUpperCase*
+~~~~~~~~~~~~~~
+Digunakan untuk mengubah *string* menjadi huruf kapital. 
+
+.. code:: java
+
+    public class Main {
+        public static void main(String[] args) {
+           String textToLowerCase = "HURUF KECIL";
+           System.out.println("Uppercase: " + textToUpperCase.toUpperCase());
+        }
+
+   }
+
+.. code:: console
+
+    Uppercase: HURUF BESAR
+
+
+*toLowerCase*
+~~~~~~~~~~~~~~~
+Digunakan untuk mengubah *string* menjadi huruf kecil.
+
+.. code:: java
+
+    public class Main {
+        public static void main(String[] args) {
+            // Contoh penggunaan toUpperCase dan toLowerCase
+            String textToUpperCase = "huruf besar";     
+            System.out.println("Lowercase: " + textToLowerCase.toLowerCase());
+        }
+
+   }
+
+.. code:: console
+
+   Lowercase: huruf kecil
+
+
+
+
+Comparing String
+~~~~~~~~~~~~~~~~~
+.. list-table::
+   :header-rows: 1
+
+   * - Mehtod
+     - Penjelasan
+   * - equals(s1)
+     - Mengembalikan banyak karakter dalam suatu *string*
+   * - equalIgnoreCase(s1)
+     - Mengembalikan karakter sesuai index dari suatu *string*
+   * - compareTo(s1)
+     - Mengembalikan sebuah string baru yang menggabungkan string ini dengan string s1.
+   * - compareToIgnoreCase(s1)
+     - Mengembalikan karakter dengan huruf kapital
+   * - startsWith(prefix)
+     - Mengembalikan karakter dengan huruf kecil 
+   * - endsWith(suffix)
+     - Mengembalikan true jika akhir dari *string* sesuai dengan sufix yang di spesifikasi
+   * - contains(s1)
+     - Mengembalikan true jika akhir dari *string* sesuai dengan sufix yang di spesifikasi
+
+
+
+
 
 *Contains* 
 ~~~~~~~~~~~~~
@@ -114,7 +205,6 @@ mengechek kesamaan string.
 
     String str1 sama dengan str2: false
 
-
 *isEmpty* 
 ~~~~~~~~~~~
 Digunakan untuk mengechek suatu string apakah *string* tersebut memiliki isi atau kosong. jika kosong maka akan mereturn true, jika tidak maka akan mereturn false.
@@ -135,45 +225,6 @@ Digunakan untuk mengechek suatu string apakah *string* tersebut memiliki isi ata
 
    String kosong: true
 
-
-
-*toUpperCase*
-~~~~~~~~~~~~~~
-Digunakan untuk mengubah *string* menjadi huruf kapital. 
-
-.. code:: java
-
-    public class Main {
-        public static void main(String[] args) {
-           String textToLowerCase = "HURUF KECIL";
-           System.out.println("Uppercase: " + textToUpperCase.toUpperCase());
-        }
-
-   }
-
-.. code:: console
-
-    Uppercase: HURUF BESAR
-
-
-*toLowerCase*
-~~~~~~~~~~~~~~~
-Digunakan untuk mengubah *string* menjadi huruf kecil.
-
-.. code:: java
-
-    public class Main {
-        public static void main(String[] args) {
-            // Contoh penggunaan toUpperCase dan toLowerCase
-            String textToUpperCase = "huruf besar";     
-            System.out.println("Lowercase: " + textToLowerCase.toLowerCase());
-        }
-
-   }
-
-.. code:: console
-
-   Lowercase: huruf kecil
 
 
 
