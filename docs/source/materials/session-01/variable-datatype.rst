@@ -66,4 +66,8 @@ Berikut adalah contoh program yang mengimplementasikan beberapa jenis tipe data.
 
     .. TODO: Tambahkan penjelasan mengenai identifier [halaman 62].
 
-    - temp
+    - Pakai lowercase untuk setiap kata pertama dalam variabel, jika terdapat dua kata pakai camel case, contoh: ``jumlahMahasiswa``
+    - Harus dimulai dengan huruf kecil, garis bawah (_), atau tanda dolar ($), tidak bisa dimulai dengan angka.
+    - variabel tidak boleh menggunakan kata kunci pada pemorgraman, Contoh nama variabel yang tidak boleh: ``int int`` , ``int void``
+    - Variable tidak boleh ``true``, ``false``, atau ``null``
+    - Variabel bisa terdiri dari beberapa kata

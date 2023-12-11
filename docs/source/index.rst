@@ -35,10 +35,10 @@ Wrapper, Math, Random
    :maxdepth: 2
    :caption: Wrapper, Math, Random
 
-   materials/02/wrapper
-   materials/02/typecasting
-   materials/02/random
-   materials/02/string-function
+   materials/session-02/wrapper
+   materials/session-02/typecasting
+   materials/session-02/random
+   materials/session-02/string-function
 
 Operator
 =========
@@ -84,3 +84,12 @@ Jump Operation
 
    materials/06/exception-handling
    materials/06/jump-operation
+
+Method Operation
+=====================
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Method Operation
+
+   materials/09/method-definition
+ 

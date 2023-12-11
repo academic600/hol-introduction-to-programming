@@ -1,0 +1,8 @@
+JAVA
+======
+Merupakan salah satu 
+---------------------
+
+   *Test ini coba java *
+   .. _External link name : https://socs1.binus.ac.id/messier/Home.aspx#P=Payment
+   .. [1] A foot node 

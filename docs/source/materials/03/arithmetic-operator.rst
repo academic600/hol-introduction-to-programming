@@ -2,8 +2,6 @@ Arithmetic Operator
 =====================
 Merupakan salah satu jenis operator untuk melakukan pemrosesan dua buah operand yang akan menghasilkan suatu nilai tertentu.
 
-Contoh Arithmetic Operator: 
-
 .. list-table:: Arithmetic operator
    :widths: 50 50
    :header-rows: 1
@@ -54,8 +52,8 @@ Increment pada java di lambangkan dengan symbol ``++``
 Decrement di lambangkan dengan symbol ``--``
 
 Terdapat 2 macam jenis increment  
-  - Pre Increment : merupakan cara menambahkan 1 terlebih dahulu baru digunakan
-  - Post Increment: menggunakan angka tersebut, lalu ditambahkan 1 di akhir
+  - *Pre Increment* : merupakan cara menambahkan 1 terlebih dahulu baru digunakan
+  - *Post Increment*: menggunakan angka tersebut, lalu ditambahkan 1 di akhir
 
 .. code:: java
 
@@ -71,16 +69,14 @@ Terdapat 2 macam jenis increment
       } 
     }
 
-Output : 
-
 .. code:: console
 
   Hasil dari pre increment a: 11
   Hasil dari post increment b: 11
 
 Terdapat 2 jenis juga decrement : 
-   - Pre decrement : merupakan cara mengurangkan 1 terlebih dahulu baru digunakan
-   - Post decrement: menggunakan angka tersebut, lalu mengurangkan 1 di akhir
+   - *Pre decrement* : merupakan cara mengurangkan 1 terlebih dahulu baru digunakan
+   - *Post decrement*: menggunakan angka tersebut, lalu mengurangkan 1 di akhir
 
 .. code:: java
 
@@ -96,8 +92,6 @@ Terdapat 2 jenis juga decrement :
       } 
     }
 
-Output : 
-
 .. code:: console
 
   Hasil dari pre decrement a: 9
@@ -106,4 +100,4 @@ Output :
 
 .. note:: 
 
-    Pada intinya post maupun pre memiliki tujuan yang sama yaitu increment atau decrement sebanyak 1.
+    Pada intinya, baik *post* maupun *pre* memiliki tujuan yang sama yaitu increment atau decrement sebanyak 1.

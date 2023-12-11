@@ -1,5 +1,5 @@
 Method Definition
-==================
+=====================
 Method adalah sebuah module blok code yang akan dijalankan ketika di panggil.
 Fungsi dari method : agar bisa memecahkan program menjadi bagian-bagian yang lebih kecil dan kompleks agar bisa dipakai kembali. 
 

@@ -54,13 +54,23 @@ System.out.printf()
 
 .. TODO: Tambahkan penjelasan mengenai beberapa formatting yang sering digunakan.
 
+
 .. list-table::
    :header-rows: 1
 
    * - Format
      - Penjelasan
-   * - temp
-     - temp
+   * - %d
+     - Digunakan untuk angka bulat *integer*
+   * - %f
+     - Digunakan untuk angka desimal
+   * - %s
+     - Digunakan untuk kalimat/kata (*string*)
+   * - %c
+     - Digunakan untuk karakter
+   * - %b
+     - Digunakan untuk *boolean*
+    
 
 .. code-block:: java
 
@@ -86,8 +96,25 @@ System.out.printf()
 
        * - *Escape Sequence*
          - Penjelasan
-       * - temp
-         - temp
+       * - \\n
+         - membuat sebuah baris baru *new line*
+       * - \\t
+         - membuat tab harozontal
+       * - \\b
+         - menghapus satu karakter sebelumnya dari posisi saat ini dalam string.
+       * - \\r
+         - menggerakkan kursor ke awal baris (tanpa melompat ke baris baru).
+       * - \\t
+         - membuat tab harozontal
+       * - /\ /\
+         - menampilkan ``\`` dalam suatu *string*
+       * - \\r
+         - menggerakkan kursor ke awal baris (tanpa melompat ke baris baru).
+       * - ''
+         - mengutip sebuah karakter
+       * - ""
+         - mengutip kalimat,kata (*string*)
+    
 
 Komentar
 --------
@@ -133,6 +160,8 @@ Pertama, membuat *object* ``Scanner`` dengan kode di bawah ini.
     
     Scanner scan = new Scanner(System.in);
 
+Sintaks new ``Scanner(System.in)`` membuat objek dari jenis ``Scanner``.
+
 .. TODO: Tambahkan penjelasan untuk masing-masing keyword yang digunakan [halaman 59].
 
 Kedua, mendapatkan hasil ketikan pengguna dengan *method* di bawah ini.
@@ -144,8 +173,20 @@ Kedua, mendapatkan hasil ketikan pengguna dengan *method* di bawah ini.
 
    * - *Method*
      - Penjelasan
-   * - temp
-     - temp
+   * - nextLine()
+     - Digunakan untuk membaca input dalam bentuk baris, `string` 
+   * - nextByte()
+     - Digunakan untuk membaca input angka dengan tipe bit
+   * - nextShort()
+     - Digunakan untuk membaca input angka dengan tipe data `short`
+   * - nextInt()
+     - Digunakan untuk membaca input angka dengan tipe data integer (bilangan bulat)
+   * - nextLong()
+     - Digunakan untuk membaca input angka dengan tipe data `long`
+   * - nextFloat()
+     - Digunakan untuk membaca input angka dengan tipe data `float` (desimal)
+   * - nextDouble()
+     - Digunakan untuk membaca input angka dengan tipe data `Double`   
 
 Berikut adalah contoh program untuk mendapatkan *input* dalam bentuk bilangan bulat dan menampilkan kembali *input* tersebut.
 
