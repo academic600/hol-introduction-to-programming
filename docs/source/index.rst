@@ -84,3 +84,12 @@ Jump Operation
 
    materials/06/exception-handling
    materials/06/jump-operation
+
+Method Operation
+=====================
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Method Operation
+
+   materials/09/method-definition
+ 
