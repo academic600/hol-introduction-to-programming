@@ -20,19 +20,21 @@ Setelah proyek tersebut selesai dibuat, bahasa pemrograman tersebut diberi nama 
 *Java Environment*
 ------------------
 
-.. image:: /images/01/process-compile.jpg
+.. image:: /images/preface/java_development_process.png
+    :width: 1000
+    :align: center
+.. centered:: Proses Kompilasi dan Eksekusi Bahasa Pemrograman *Java*
 
-**Java Development Toolkit (JDK)**
-JDK terdiri dari serangkaian program terpisah, masing-masing dipanggil dari baris perintah, untuk mengompilasi, menjalankan, dan menguji program Java.
+Berikut adalah proses kompilasi dan eksekusi bahasa pemrograman *Java*. Pertama, pembuat aplikasi akan menuliskan kode yang mereka inginkan dalam bentuk file *Java* dengan ekstensi *.java*. Setelah selesai, kode tersebut akan di *compile* oleh *Java Compiler* menjadi bahasa yang dapat dimengerti oleh komputer dalam bentuk file *Java Class* dengan ekstensi *.class*. Proses ini disebut dengan proses *compiling*. Setelah itu, hasil *compile* tersebut akan dieksekusi oleh *Java Virtual Machine* (JVM).
 
-**Java Run Time Environment (JRE)**
-program yang digunakan untuk menjalankan program-program java. 
 
-**Intefrated Development Environment (IDE)**
-Kita dapat menggunakan IDE untuk untuk mengembangkan program-program Java dengan cepat. 
-Pengeditan, kompilasi, pembangunan, dan debugging. 
+.. image:: /images/preface/important_keyword.png
+    :width: 250
+    :align: center
+.. centered:: Hubungan antara JDK, JRE, JVM, dan JIT
 
-Pertama seseorang akan menulis kode (serangkaian huruf, angka, dan karakter lainnya), lalu compiler akan mengkonversi setiap baris kode ke dalam bahasa yang dapat di mengerti oleh komputer. Komputer akan memindai kode lalu menjalankannya sehingga dapat melakukan serangkaian tugas. 
+JDK memiliki kepanjangan *Java Development Kit*, yang berfungsi untuk membuat dan mengembangkan program *Java*. Di dalamnya terdapat JRE, *compiler*, *debugger*, dan *library* yang diperlukan untuk membuat program *Java*.
 
-Kompilasi atau Compilling adalah Kompilasi adalah proses mengubah kode sumber dari satu bahasa pemrograman ke dalam bentuk yang dapat dieksekusi oleh komputer.
-Proses kompilasi program dengan Java adalah langkah yang diperlukan untuk mengubah kode sumber Java (yang ditulis dalam bahasa pemrograman Java) menjadi bahasa mesin yang dapat dieksekusi oleh Java Virtual Machine (JVM).
+JRE memiliki kepanjangan *Java Runtime Environment*, yang berfungsi sebagai lingkungan dimana program *Java* dapat dijalankan. Di dalamnya terdapat JVM dan *library* yang dibutuhkan untuk menjalankan program *Java*.
+
+JVM memiliki kepanjangan *Java Virtual Machine*, yang berfungsi untuk mengubah *byte-code* menjadi *machine readable code*, sehingga program *Java* dapat dijalankan pada perangkat apapun. Di dalamnya terdapat *Just In Time Compiler* (JIT) yang berfungsi untuk mempercepat eksekusi program dengan menerjemahkan kode pada saat program berjalan. 

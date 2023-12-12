@@ -18,6 +18,8 @@ tahu kita di mana letak kesalahan tersebut.
 
 .. code:: java
 
+.. image::  /images/session-01/error.png
+    :align: center
     public class Main {
         public static void main(String[] args) {
             //syntax Error
