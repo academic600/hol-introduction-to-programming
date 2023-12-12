@@ -1,16 +1,12 @@
 Pembuatan *Java Project*
 ========================
 
-
-.. TODO: Tambahkan cara membuat project Java di Eclipse.
-
 Cara Membuat Project Java
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-**STEP 1** 
+-------------------------
 
-Pilih direktori yang menyimpan project kalian
+**Langkah 1**. Buka aplikasi Eclipse. Apabila belum terpasang pada perangkat, silahkan ikuti panduan :ref:`sebagai berikut<Panduan Instalasi>`. Pilih  direktori yang menyimpan project kalian
 
-.. image:: /images/01/directory.jpg
+.. image:: /images/session-01/directory.jpg
 
 **STEP 2**
 
@@ -18,16 +14,16 @@ Buatlah projek java baru dengan cara:
 
 ``Klik file``, lalu pilih ``new``, dan pilih ``java project``
 
-.. image:: /images/01/homepage.jpg
+.. image:: /images/session-01/homepage.jpg
 
-.. image:: /images/01/create-java-project.jpg
+.. image:: /images/session-01/create-java-project.jpg
 
 
 **STEP 3**
 
 Berikan nama pada project lalu klik finish.
 
-.. image:: /images/01/create0project.jpg
+.. image:: /images/session-01/create0project.jpg
 
 Cara membuat Class 
 ~~~~~~~~~~~~~~~~~~~
@@ -36,7 +32,7 @@ Cara membuat Class
 ``Klik kanan`` pada project java yang telah terbuat, pilih ``new`` lalu pilih ``class``
 atau bisa menggunakan short cut ``alt + shift + n`` lalu pilih ``c``
 
-.. image:: /images/01/create-class.jpg
+.. image:: /images/session-01/create-class.jpg
 
 **STEP 2**
 
@@ -62,27 +58,27 @@ Menu atau Tab yangs Sering Digunakan Pada Eclipse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1. **Package Explorer**: Menampilkan struktur proyek Anda dan berbagai file yang terkait. Anda dapat mengorganisir, membuat, dan mengelola file di sini.
    
-   .. image:: /images/01/package-explorer.jpg
+   .. image:: /images/session-01/package-explorer.jpg
 
 2. **Editor Tab**: Setiap kali Anda membuka file untuk diedit, tab ini menampilkan konten dari file tersebut. Ini adalah tempat di mana Anda menulis dan mengedit kode.
    
-   .. image:: /images/01/editor-tab.jpg
+   .. image:: /images/session-01/editor-tab.jpg
 
 3. **Outline**: Memberikan pandangan keseluruhan dari struktur kode di file yang sedang diedit, menampilkan fungsi, variabel, dan bagian penting lainnya dalam file tersebut.
    
-   .. image:: /images/01/outline.jpg
+   .. image:: /images/session-01/outline.jpg
 
 4. **Console**: Menampilkan output dari program yang dijalankan dan pesan kesalahan (error) jika ada.
    
-   .. image:: /images/01/console.jpg
+   .. image:: /images/session-01/console.jpg
 
 5. **Toolbar**: Berisi ikon-ikon yang memberikan akses cepat ke fungsi-fungsi umum seperti menjalankan program, mengompilasi, debug, dan lainnya.
    
-   .. image:: /images/01/toolbar.jpg
+   .. image:: /images/session-01/toolbar.jpg
 
 6. **Menu Bar**: Berisi menu-menu utama seperti File, Edit, View, Project, Run, Window, dan lainnya. Di sini Anda dapat menemukan akses ke banyak fungsi dan pengaturan penting dalam Eclipse.
    
-   .. image:: /images/01/menu-bar.jpg
+   .. image:: /images/session-01/menu-bar.jpg
 
 
 
@@ -90,9 +86,9 @@ Method Utama (*Public Static Void Main*)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. TODO: Tambahkan penjelasan mengenai public static void main() [halaman 35].
 
-.. image:: /images/01/main-method.jpg
+.. image:: /images/session-01/main-method.jpg
 
-.. image:: /images/01/hello-wolrd.jpg
+.. image:: /images/session-01/hello-wolrd.jpg
 
 Program dieksekusi dari ``main mehtod``. Sebuah kelas dapat berisi beberapa metode. ``main method`` merupakan method utama
 yang menjadi titik masuk di mana program memulai eksekusinya.
@@ -106,7 +102,7 @@ Sebuah pasangan tanda kurung kurawal dalam sebuah program membentuk blok yang me
 
 Contoh Scope atau Blok : 
 
-.. image:: /images/01/scope.jpg
+.. image:: /images/session-01/scope.jpg
 
 
 

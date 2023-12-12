@@ -1,4 +1,4 @@
 {
     "iis.configDir": "",
-    "esbonio.sphinx.confDir": "${workspaceFolder}\\docs\\source"
+    "esbonio.sphinx.confDir": "${workspaceFolder}/docs/source"
 }

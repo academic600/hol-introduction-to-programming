@@ -20,15 +20,15 @@ Setelah proyek tersebut selesai dibuat, bahasa pemrograman tersebut diberi nama 
 *Java Environment*
 ------------------
 
-.. image:: /images/preface/java_development_process.png
+.. image:: /images/preface/java-development-process.png
     :width: 1000
     :align: center
 .. centered:: Proses Kompilasi dan Eksekusi Bahasa Pemrograman *Java*
 
-Berikut adalah proses kompilasi dan eksekusi bahasa pemrograman *Java*. Pertama, pembuat aplikasi akan menuliskan kode yang mereka inginkan dalam bentuk file *Java* dengan ekstensi *.java*. Setelah selesai, kode tersebut akan di *compile* oleh *Java Compiler* menjadi bahasa yang dapat dimengerti oleh komputer dalam bentuk file *Java Class* dengan ekstensi *.class*. Proses ini disebut dengan proses *compiling*. Setelah itu, hasil *compile* tersebut akan dieksekusi oleh *Java Virtual Machine* (JVM).
+Berikut adalah proses kompilasi dan eksekusi bahasa pemrograman *Java*. Pertama, pembuat program akan menuliskan kode yang mereka inginkan dalam bentuk file *Java* dengan ekstensi *.java*. Setelah selesai, kode tersebut akan di *compile* oleh *Java Compiler* menjadi bahasa yang dapat dimengerti oleh komputer dalam bentuk file *Java Class* dengan ekstensi *.class*. Proses ini disebut dengan proses *compiling*. Setelah itu, hasil *compile* tersebut akan dieksekusi oleh *Java Virtual Machine* (JVM).
 
 
-.. image:: /images/preface/important_keyword.png
+.. image:: /images/preface/important-keyword.png
     :width: 250
     :align: center
 .. centered:: Hubungan antara JDK, JRE, JVM, dan JIT
