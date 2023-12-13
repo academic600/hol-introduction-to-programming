@@ -5,153 +5,125 @@ Apabila program yang dibuat tidak berjalan dengan seharusnya, pembuat program da
 
 Terdapat beberapa jenis *error* yang dapat terjadi ketika membuat program.
 
-.. image::  /images/01/error.png
-    :align: center
-
-
-.. TODO: Tambahkan jenis-jenis error yang sering terjadi [halaman 42-44].
-
 *Syntax Error*
 --------------
-Kesalahan sintaks disebabkan oleh kesalahan dalam konstruksi kode, seperti salah mengetik kata kunci, menghilangkan beberapa tanda baca yang diperlukan, atau menggunakan kurung kurawal pembuka tanpa kurung kurawal penutup yang sesuai. Kesalahan ini biasanya mudah dideteksi karena kompilator memberi 
-tahu kita di mana letak kesalahan tersebut.
+
+*Syntax error* dapat disebabkan oleh kesalahan dalam pembuatan kode seperti salah mengetikan kata kunci, menghilangkan beberapa tanda yang diperlukan, menggunakan kurung kurawal pembuka (``{``) tanpa kurung kurawal penutup (``}``), dan sebagainya. Kesalahan ini biasanya mudah dideteksi karena *compiler* akan memberi 
+tahu letak kesalahan tersebut.
 
 .. code:: java
 
-.. image::  /images/session-01/error.png
-    :align: center
     public class Main {
         public static void main(String[] args) {
-            //syntax Error
-            System.out.println("Halo nama ku adalah Budi")
-
+            //Syntax Error (kurang tanda ;)
+            System.out.println("Hello World")
         }
-
     }
-
 
 .. code:: console
 
     Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
-	Syntax error, insert ";" to complete BlockStatements
+        Syntax error, insert ";" to complete BlockStatements
 
-	at main.Main.main(Main.java:5)
+        at Main.main(Main.java:4)
 
-Pada contoh kode di atas kekurangan syntax semicolon ``;`` setelah tanda tutup kurung, sehingga menyebabkan syntax error.
-	
+Kode di atas merupakan contoh dari *syntax error*. Berdasarkan informasi *error* yang tampil pada *console*, terlihat bahwa kode tersebut kurang tanda titik koma (``;``) pada file *Main.java* baris ke-4.
 
 *Runtime Error*
 ---------------
-Kesalahan runtime adalah kesalahan yang menyebabkan sebuah program berhenti secara tiba-tiba. 
-Mereka terjadi saat program sedang berjalan jika lingkungan mendeteksi operasi yang tidak dapat dilakukan. 
-Kesalahan pada `input` biasanya menjadi penyebab kesalahan `runtime`. 
-Kesalahan masukan terjadi ketika program menunggu pengguna untuk memasukkan nilai, 
-tetapi pengguna memasukkan nilai yang tidak dapat ditangani oleh program. 
 
-**Contoh**: 
-    - jika program mengharapkan untuk membaca angka, tetapi pengguna justru memasukkan string, ini menyebabkan kesalahan tipe data terjadi dalam program.
-    - pembagian dengan angka nol, yang akan menyebabkan error
+*Runtime error* merupakan kesalahan yang terjadi saat program berjalan sehingga program harus berhenti secara tiba-tiba. Biasanya hal ini terjadi saat *input* yang dimasukan tidak sesuai atau format data yang diproses kurang sesuai.
 
 .. code:: java
 
     public class Main {
         public static void main(String[] args) {
-            //pembagian angka bulat dengan 0
+            //Runtime Error (pembagian dengan angka 0)
             System.out.println(1/0);
-
         }
-
     }
 
 .. code:: console
 
     Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at main.Main.main(Main.java:5)
+        at Main.main(Main.java:4)
 
-	
-
+Kode di atas merupakan contoh dari *runtime error*. Berdasarkan informasi error yang tampil pada *console*, terlihat bahwa terjadi *ArithmeticException* yaitu angka yang dibagi dengan 0 pada file *Main.java* baris ke-4. Contoh *runtime error* lainnya adalah ketika program meminta *input* sebuah angka, namun pengguna program memasukan *input* sebuah *string*, sehingga terjadi ketidaksesuaian tipe data.
 
 *Logic Error*
 -------------
-Kesalahan logika terjadi ketika sebuah program tidak berjalan sesuai dengan yang diinginkan. Kesalahan semacam ini terjadi karena banyak alasan yang berbeda. 
+
+*Logic error* terjadi ketika sebuah program tidak berjalan sesuai dengan yang diinginkan. Program akan tetap berjalan tanpa *error*, sehingga pembuat program harus mengecek secara manual informasi yang dihasilkan dari program tersebut.
 
 .. code:: java
 
     public class Main {
         public static void main(String[] args) {
-            System.out.print("Hasil dari 35 celcius ke farenheit: ");
-            System.out.println((9 / 5) * 35 + 32);
+            double celsius = 35;
 
+            //Logic Error (kesalahan hasil pembagian)
+            double fahrenheit = 9 / 5 * 35 + 32;
+
+            System.out.printf("%.1f Celsius = %.1f Fahrenheit", celsius, fahrenheit);
         }
-
     }
 
 .. code:: console
 
-    Hasil dari 35 celcius ke farenheit: 67
+    35.0 Celsius = 67.0 Fahrenheit
 
-Output di atas menghasilkan 67, hal ini adalah salah jawaban yang seharusnya adalah 95.0, terdapat kesalahan logical error diatas yaitu seharusnya ``(9.0/5)`` yang akan menghasilkan ``1.8``.
-
-
-
-
+Kode di atas merupakan contoh dari *logic error*. Hasil perhitungan menunjukan bahwa 35 derajat celsius sama seperti 67 derajat fahrenheit. Jawaban perhitungan tersebut salah, seharusnya adalah 95 derajat fahrenheit. Kesalahan tersebut terjadi karena salah tipe data dalam perhitungan pembagian. Pembagian antara 9 dengan 5 menghasilkan angka 1, karena pembagian dilakukan dengan tipe data *integer* (tidak menyimpan nilai desimal). Oleh karena itu, rumus tersebut harus diubah menjadi 9.0 / 5, sehingga pembagian dilakukan dengan tipe data *double*, menghasilkan 1.8.
 
 *Common Error*
 --------------
-Kesalahan umum bagi pemrogram pemula adalah kurangnya tanda kurung penutup, kurangnya titik koma, kurangnya tanda kutip untuk string, dan pengejaan yang salah untuk nama-nama.
+
+*Common error* dapat terjadi apabila pembuat program kurang teliti. Berikut adalah beberapa *common error* yang sering terjadi.
 
 *Common Error 1 : Missing Brace*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Kurung kurawal digunakan untuk menandai sebuah blok dalam program. Setiap tanda kurung buka harus diikuti oleh tanda kurung tutup. Kesalahan umum adalah kelupaan dalam menuliskan tanda kurung tutup. Untuk menghindari kesalahan ini, ketik tanda kurung tutup setiap kali mengetik tanda kurung buka
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kurung kurawal (``{}``) digunakan untuk menandai sebuah *scope* dalam program. Setiap tanda kurung pembuka (``{``) harus diikuti oleh tanda kurung penutup (``}``). Hal ini sering menjadi kesalahan umum karena kurangnya pasangan kurung kurawal. Untuk menghindari kesalahan tersebut, pembuat program dapat melengkapi pasangan kurung kurawal yang kurang. Apabila menggunakan aplikasi *Eclipse*, secara otomatis akan langsung dibuat pasangan tanda tersebut.
 
 .. code:: java
 
     public class Main {
-
-    } //-> langsung membuat tutup kurung
-
-akan tetapi jika memakai IDE seperti NETBEANS, Eclipse akan terbuat tutup kurung secara otomatis.
+    } // <- pastikan memiliki pasangan kurung kurawal
 
 *Common Error 2 : Missing Semicolon*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Kurangnya tanda titik koma pada setiap akhir baris code. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Setiap perintah yang dibuat harus diakhiri oleh tanda titik koma (``;``). Hal ini sering menjadi kesalahan umum karena kurangnya tanda titik koma pada akhir perintah. Untuk menghindari kesalahan tersebut, pembuat program dapat melengkapi akhir perintah dengan tanda titik koma.
 
 .. code:: java
 
     public class Main {
         public static void main(String[] args) {
-            System.out.println("Programming sangat menyenangkan");
-            System.out.println("Aku suka sekali programming") //hilangnya tanda `;`
+            System.out.println("Hello World"); // <- pastikan memiliki tanda ;
         }
-
     }
 
 *Common Error 3 : Missing Quotation Marks*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Kurangnya tanda petik yang digunakan pada kata (*string*) yang menyebabkan error.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Setiap kalimat harus diapit dengan tanda kutip dua (``""``). Hal ini sering menjadi kesalahan umum karena kurangnya pasangan kutip dua. Untuk menghindari kesalahan tersebut, pembuat program dapat melengkapi pasangan kutip dua yang kurang.
 
 .. code:: java
 
     public class Main {
         public static void main(String[] args) {
-            //kurangnya tanda  " pada akhir kalimat
-            System.out.println("Programming sangat menyenangkan); 
-           
+            System.out.println("Hello World"); // <- pastikan memiliki pasangan kutip dua 
         }
-
     }
 
-*Common Error 3 : Misspelling Names*
+*Common Error 4 : Misspelling Names*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Java bersifat case sensitive. Salah pengejaan pada nama-nama merupakan kesalahan umum bagi pemrogram pemula. Sebagai contoh, kata *"main"* dieja dengan kesalahan sebagai *"Main"* dan *"String"* dieja dengan kesalahan sebagai *"string"* dalam contoh berikut:  
+Bahasa pemrograman Java bersifat *case sensitive*, artinya huruf kapital dianggap berbeda dengan huruf kecil. Hal ini sering menjadi kesalahan umum karena perbedaan nama *variabel*, *method*, atau *keyword*. Untuk menghindari kesalahan tersebut, pembuat program harus memperhatikan penamaan tersebut.
 
 .. code:: java
 
     public class Main {
         public static void main(String[] args) {
-            //terjadi kesalahan pengejaan, yang seharusnya "String" menjadi "string"
-            string nama = "Toni";
-            
+            String variabel = "Hello World";
+            System.out.println(variabel); // <- pastikan penamaan variabel dan keyword sudah sesuai
         }
-
     }

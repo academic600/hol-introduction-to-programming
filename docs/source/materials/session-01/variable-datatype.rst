@@ -64,10 +64,6 @@ Berikut adalah contoh program yang mengimplementasikan beberapa jenis tipe data.
 
     Terdapat aturan yang harus dipenuhi dalam menentukan nama variabel. Berikut adalah aturan-aturan tersebut.
 
-    .. TODO: Tambahkan penjelasan mengenai identifier [halaman 62].
-
-    - Pakai lowercase untuk setiap kata pertama dalam variabel, jika terdapat dua kata pakai camel case, contoh: ``jumlahMahasiswa``
-    - Harus dimulai dengan huruf kecil, garis bawah (_), atau tanda dolar ($), tidak bisa dimulai dengan angka.
-    - variabel tidak boleh menggunakan kata kunci pada pemorgraman, Contoh nama variabel yang tidak boleh: ``int int`` , ``int void``
-    - Variable tidak boleh ``true``, ``false``, atau ``null``
-    - Variabel bisa terdiri dari beberapa kata
+    - Penamaan menggunakan format *lowercase* (huruf kecil). Apabila lebih dari satu kata, maka penamaan menggunakan format *camelcase* (huruf besar untuk setiap awal kata). Contohnya: ``jumlah``, ``jumlahMahasiswa``.
+    - Penamaan dapat menggunakan rangkaian karakter termasuk huruf, angka, tanda garis bawah (``_``), dan tanda dolar (``$``). Namun, penamaan tidak dapat dimulai dengan angka. Contohnya: ``data1``, ``_temp``.
+    - Penamaan tidak boleh menggunakan kata kunci pada pemrograman. Contohnya: ``int``, ``void``, ``true``.

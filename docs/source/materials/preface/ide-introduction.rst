@@ -1,7 +1,7 @@
 Pengenalan Dasar IDE
 ====================
 
-IDE memiliki kepanjangan dari *Integrated Development Environment*, yaitu sebuah perangkat lunak (*software*) yang menyediakan berbagai macam fitur sehingga *developer* dapat menulis, menjalankan, dan mengembangkan program yang akan dibuat. Salah satu IDE  tersebut adalah *Eclipse*.
+IDE memiliki kepanjangan dari *Integrated Development Environment*, yaitu sebuah perangkat lunak (*software*) yang menyediakan berbagai macam fitur sehingga *developer* dapat menulis, menjalankan, dan mengembangkan program yang akan dibuat. Salah satu IDE tersebut adalah *Eclipse*.
 
 .. image:: /images/preface/eclipse-logo.png
     :width: 300

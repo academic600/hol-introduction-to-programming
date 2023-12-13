@@ -1,7 +1,7 @@
 Panduan Instalasi
 =================
 
-Silahkan membuka dan mengikuti panduan instalasi perangkat lunak (*software*) di bawah ini terlebih dahulu sebelum masuk ke dalam materi pembelajaran praktikum.
+Silakan membuka dan mengikuti panduan instalasi perangkat lunak (*software*) di bawah ini terlebih dahulu sebelum masuk ke dalam materi pembelajaran praktikum.
 
 *Java 11.0.18*
 --------------
