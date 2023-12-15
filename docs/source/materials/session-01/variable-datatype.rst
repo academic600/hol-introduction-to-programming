@@ -9,9 +9,9 @@ Variabel dalam bahasa pemrograman adalah sebuah tempat (atau lokasi memori yang 
 Tipe Data Primitif
 ------------------
 
-Pada bahasa pemrograman *Java*, setiap variabel wajib memiliki tipe data untuk menentukan jenis nilai yang dapat disimpan di dalam variabel. Secara garis besar, terdapat dua jenis variabel yang biasanya digunakan, yaitu tipe data primitif dan tipe data non-primitif. Bagian ini hanya akan membahas mengenai tipe data primitif saja.
+Pada bahasa pemrograman *Java*, setiap variabel wajib memiliki tipe data untuk menentukan jenis nilai yang dapat disimpan di dalam variabel. Secara garis besar, terdapat dua jenis variabel yang biasanya digunakan, yaitu tipe data primitif dan tipe data non-primitif.
 
-Berikut adalah beberapa contoh tipe data primitif yang biasanya digunakan.
+Tipe data primitif adalah tipe data dasar yang sudah disediakan oleh bahasa pemrograman dan hanya dapat menyimpan nilai yang diberikan saja. Tipe data ini menyimpan nilai tersebut langsung pada memori. Berikut adalah beberapa contoh tipe data primitif yang biasanya digunakan.
 
 .. list-table::
    :widths: 20 50 30
@@ -33,31 +33,36 @@ Berikut adalah beberapa contoh tipe data primitif yang biasanya digunakan.
      - Untuk menyimpan nilai kebenaran.
      - ``true``, ``false``
 
+Sedangkan, tipe data non-primitif adalah tipe data yang menyimpan nilai pada referensi *object* dari sebuah *class*. Berikut adalah beberapa contoh tipe data non-primitif yang biasanya digunakan.
+
+- *String*, merupakan tipe data untuk menyimpan kalimat (kumpulan kata). Contohnya adalah ``String myString = "Hello World";``.
+- *Array*, merupakan tipe data yang dapat menyimpan beberapa nilai dengan tipe data yang sama. Contohnya adalah ``int[] myNumbers = {1, 2, 3, 4, 5};``.
+- *User-defined Class*, merupakan tipe data dimana pembuat program dapat membuat *class* sendiri.
 
 Deklarasi Variabel
 ------------------
 
-Untuk dapat mendeklarasikan sebuah variabel dapat menggunakan *syntax* di bawah ini. Pertama, tentukan tipe data yang akan digunakan. Kedua, tentukan nama variabel yang dibuat. Pastikan nama variabel tersebut unik atau tidak pernah dibuat sebelumnya. Ketiga, gunakan simbol sama dengan (=) untuk memberikan nilai terhadap variabel tersebut. Keempat, tentukan nilai dari variabel tersebut sesuai dengan tipe data yang digunakan.
+Untuk dapat mendeklarasikan sebuah variabel dapat menggunakan *syntax* di bawah ini. Pertama, tentukan tipe data yang akan digunakan. Kedua, tentukan nama variabel yang dibuat. Pastikan nama variabel tersebut unik atau tidak pernah dibuat sebelumnya. Ketiga, gunakan simbol sama dengan (``=``) untuk memberikan nilai terhadap variabel tersebut. Keempat, tentukan nilai dari variabel tersebut sesuai dengan tipe data yang digunakan.
 
 .. code:: console
 
-  tipe_data nama_variabel = nilai_variabel
+    tipe_data nama_variabel = nilai_variabel
 
 Berikut adalah contoh program yang mengimplementasikan beberapa jenis tipe data.
 
 .. code-block:: java 
     
   public class Main {
-        public static void main(String[] args) {
-            // Mendeklarasikan variable bilangan bulat (integer) dengan nama 'myAge' bernilai 20
-            int myAge = 20;
+      public static void main(String[] args) {
+          // Mendeklarasikan variable bilangan bulat (integer) dengan nama 'myAge' bernilai 20
+          int myAge = 20;
 
-            // Mendeklarasikan variable bilangan desimal (double) dengan nama 'phi' bernilai 3.14
-            double phi =  3.14;
+          // Mendeklarasikan variable bilangan desimal (double) dengan nama 'phi' bernilai 3.14
+          double phi =  3.14;
 
-            // Mendeklarasikan variable nilai kebenaran (boolean) dengan nama 'isStudent' bernilai true
-            boolean isStudent = true;
-        }
+          // Mendeklarasikan variable nilai kebenaran (boolean) dengan nama 'isStudent' bernilai true
+          boolean isStudent = true;
+      }
     }
 
 .. note:: 

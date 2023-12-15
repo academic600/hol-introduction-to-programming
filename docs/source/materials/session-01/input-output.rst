@@ -11,7 +11,7 @@ System.out.print()
 
 ``System.out.print()`` dapat digunakan untuk mencetak teks tanpa karakter *newline* (baris baru) di akhir.
 
-.. code-block:: java
+.. code:: java
 
     public class Main {
         public static void main(String[] args) {
@@ -21,7 +21,7 @@ System.out.print()
         }
     }
 
-.. code-block:: console
+.. code:: console
 
     HelloWorld!
 
@@ -30,7 +30,7 @@ System.out.println()
 
 ``System.out.println()`` dapat digunakan untuk mencetak teks dengan menambahkan karakter *newline* (baris baru) di akhir.
 
-.. code-block:: java
+.. code:: java
 
     public class Main {
         public static void main(String[] args) {
@@ -40,7 +40,7 @@ System.out.println()
         }
     }
 
-.. code-block:: console
+.. code:: console
 
     Hello
     World
@@ -68,7 +68,7 @@ System.out.printf()
    * - %b
      - Digunakan untuk format nilai kebenaran (*boolean*).
 
-.. code-block:: java
+.. code:: java
 
     public class Main {
         public static void main(String[] args) {
@@ -76,7 +76,7 @@ System.out.printf()
         }
     }
 
-.. code-block:: console
+.. code:: console
 
     Session 1
     (blank)
@@ -110,7 +110,7 @@ Komentar Baris (*Line Comment*)
 
 Komentar baris diawali dengan dua garis miring (//).
 
-.. code-block:: java
+.. code:: java
 
     public class Main {
         public static void main(String[] args) {
@@ -123,7 +123,7 @@ Komentar Blok (*Block Comment*)
 
 Komentar blok diawali dengan garis miring & bintang (/\*) dan diakhiri dengan bintang & garis miring (\*/). Informasi atau kode yang diapit oleh kedua simbol tersebut tidak akan muncul pada *console* pengguna.
 
-.. code-block:: java
+.. code:: java
 
     public class Main {
         public static void main(String[] args) {
@@ -140,7 +140,7 @@ Input
 
 Pertama, membuat *object* ``Scanner`` dengan kode di bawah ini. ``Scanner`` merupakan sebuah *class* yang sudah disediakan oleh *Java* untuk membaca *input* dari berbagai sumber. ``scan`` merupakan nama *variable* yang dibuat sebagai *object*. ``System.in`` merupakan bagian yang menunjukan bahwa *input* akan diambil dari ketikan pengguna program. ``new`` merupakan *syntax* yang digunakan untuk membuat sebuah *object* dari *class*.
 
-.. code-block:: java
+.. code:: java
     
     Scanner scan = new Scanner(System.in);
 
@@ -186,10 +186,9 @@ Berikut adalah contoh program untuk mendapatkan *input* dalam bentuk bilangan bu
             // Menampilkan input yang dimasukan oleh pengguna program
             System.out.printf("Bilangan bulat yang di masukan adalah %d", myInput);
         }
-
     }
 
-.. code-block:: console
+.. code:: console
 
     Masukan sebuah bilangan bulat: 5
     Bilangan bulat yang di masukan adalah 5
