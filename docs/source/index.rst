@@ -29,17 +29,15 @@ Daftar Isi
    materials/session-01/variable-datatype
    materials/session-01/debugging
 
-Wrapper, Math, Random
-======================
-.. toctree:: 
-   :maxdepth: 2
-   :caption: Wrapper, Math, Random
+.. toctree::
+   :maxdepth: 1
+   :caption: Session 02 - Wrapper Class, Math, Random
 
    materials/session-02/wrapper
    materials/session-02/typecasting
+   materials/session-02/string
+   materials/session-02/math
    materials/session-02/random
-   materials/session-02/string-function
-   materials/session-06/return
 
 Operator
 =========

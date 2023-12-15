@@ -1,24 +1,33 @@
-Type Casting
------------------
-Type casting merupakan cara mengubah tipe data ke tipe data lain.
+*Type Casting*
+==============
 
-Terdapat 2 macam type casting : 
+Dalam membuat sebuah program, terkadang dibutuhkan untuk mengubah sebuah tipe data ke tipe data yang lainnya. Proses ini disebut juga sebagai *type casting*. 
 
-*Widening casting (automatically)* 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-mengubah tipe data yang lebih kecil menjadi tipe data yang besar 
+Terdapat dua macam tipe *type casting*, yaitu *implicit casting* dan *explicit casting*.
 
-``byte`` -> ``short`` -> ``char``-> ``int`` -> ``long`` -> ``float`` -> ``double``
+*Implicit Casting* 
+------------------
+
+*Implicit casting* yang biasanya disebut juga sebagai *widening casting*, merupakan *type casting* yang dilakukan secara otomatis oleh *compiler*. Hal ini dilakukan untuk mengubah tipe data yang ukurannya lebih kecil ke lebih besar, tanpa kehilangan informasi. 
+    
+.. image:: /images/session-02/implicit-casting.png
+    :width: 500
+    :align: center
+.. centered:: *Implicit Casting*
+
+Gambar diatas merupakan *type casting* yang dapat dilakukan secara otomatis. Contohnya adalah tipe data ``byte`` hanya dapat diubah menjadi ``short``, ``int``, ``long``, ``float``, ``double``, dan ``boolean``. Contoh lainnya adalah tipe data ``long`` hanya dapat diubah menjadi ``float``, ``double``, dan ``boolean``.
+
+Berikut adalah contoh penggunaan *implict casting*.
 
 .. code:: java
 
     public class Main {
         public static void main(String[] args) {
-            int bulat = 9;
-            double desimal = bulat; // Automatic casting: int ke double
+            int bilangan_bulat = 9;
+            double bilangan_desimal = bilangan_bulat; // implicit casting dari int ke double
 
-            System.out.println(bulat);     
-            System.out.println(desimal);   
+            System.out.println(bilangan_bulat);     
+            System.out.println(bilangan_desimal);   
         }
     }
 
@@ -27,23 +36,26 @@ mengubah tipe data yang lebih kecil menjadi tipe data yang besar
     9
     9.0
 
+*Explicit Casting*
+------------------
 
-*Narrowing casting (manually)*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-mengubah tipe data yang besar menjadi tipe data yang lebih kecil 
+*Explicit casting* yang biasanya disebut juga sebagai *narrowing casting*, merupakan *type casting* yang dilakukan secara manual oleh pembuat program. Hal ini dilakukan untuk mengubah tipe data yang ukurannya lebih besar ke lebih kecil, sehingga berpotensi kehilangan informasi. 
 
-``double`` -> ``float`` -> ``long`` -> ``int`` -> ``char`` -> ``short`` -> ``byte``
-  
+Untuk dapat melakukan explicit casting dapat menggunakan format sebagai berikut.
+
+.. code:: console
+
+    <tipedata_setelah> <nama_variabel> = (<tipedata_setelah>) <nama_variabel_sebelum>
 
 .. code:: java
 
     public class Main {
         public static void main(String[] args) {
-            double desimal = 9.78d;
-            int bulat = (int) desimal; // Manual casting: double ke int
+            double bilangan_desimal = 9.78;
+            int bilangan_bulat = (int) bilangan_desimal; // explicit casting dari double ke int
 
-            System.out.println(desimal);   // Outputs 9.78
-            System.out.println(bulat);      // Outputs 9
+            System.out.println(bilangan_desimal);
+            System.out.println(bilangan_bulat);
         }
     }
 
@@ -53,4 +65,4 @@ mengubah tipe data yang besar menjadi tipe data yang lebih kecil
     9.78
     9
 
-
+Pada kode di atas, nilai yang disimpan pada variabel ``bilangan_desimal`` adalah 9.78. Namun, setelah dilakukan *explicit casting* nilai pada variabel ``bilangan_bulat`` hanya 9 saja. Dari hasil tersebut, terlihat bahwa terdapat informasi yang hilang, yaitu digit desimal. Oleh karena itu, pembuat program perlu memperhatikan hal tersebut agar tidak ada informasi penting hilang saat dilakukan *type casting*.  
