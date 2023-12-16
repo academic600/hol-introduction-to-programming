@@ -1,66 +1,116 @@
-Bitwise Operator
-====================
+Operator Bit (*Bitwise*)
+========================
 
-Bitwise Operator adalah operator yang bekerja pada level bit (bit-level) dari data. Mereka memungkinkan Anda untuk melakukan operasi matematika pada representasi biner dari angka, yaitu pada tingkat bit individu.
+Operator bit adalah operator yang digunakan untuk mengubah nilai dari sebuah bit. Berikut adalah contoh operator bit yang dapat digunakan.
 
-.. image:: /images/03/bitwise.png
+.. list-table::
+   :widths: 20 30 50
+   :header-rows: 1
 
-Shift Operator 
------------------
-Operator shift digunakan untuk menggeser bit-bit suatu bilangan ke kiri atau ke kanan dengan cara mengalikan atau membagi bilangan tersebut.
+   * - Operator
+     - Nama
+     - Penjelasan
+   * - ``&``
+     - *AND* (*bitwise*)
+     - Apabila kedua bit bernilai 1 akan menghasilkan 0. Apabila salah satu saja atau tidak ada yang bernilai 1 akan menghasilkan 0.
+   * - ``|`` 
+     - *OR* (*bitwise*)
+     - Apabila kedua atau salah satu bit bernilai 1 akan menghasilkan 1. Apabila tidak ada yang bernilai 1 akan menghasilkan 0.
+   * - ``^`` 
+     - *XOR* (*bitwise*)
+     - Apabila kedua bit bernilai berbeda akan menghasilkan 1. Apabila kedua bit bernilai sama akan menghasilkan 0.
+   * - ``~`` 
+     - *NOT* (*bitwise*)
+     - Untuk membalikan nilai kebeneran (*boolean*). Apabila bit bernilai 1 diubah menjadi 0, dan sebaliknya.
+   * - ``<<`` 
+     - *Shift* Kiri
+     - Untuk menggeser bit ke kiri sebanyak yang ditentukan.
+   * - ``>>`` 
+     - *Shift* Kanan
+     - Untuk menggeser bit ke kanan sebanyak yang ditentukan.
 
-Left shift ``<<`` :  Operator ini menggeser bit operan pertama ke kiri,  operan kedua menentukan jumlah tempat yang akan digeser.
+Untuk mempermudah penjelasan di atas, berikut adalah tabel kebenaran (*truth table*) yang menunjukan semua kemungkinan *input* dan *output* pada operator bit.
 
-Contoh : Misalnya, jika kita memiliki bilangan biner ``x`` dan kita melakukan operasi ``x << y``, maka akan menggeser bit dari ``x`` sejauh ``y`` posisi ke kiri.
+.. list-table::
+   :widths: 20 20 20 20 20
+   :header-rows: 1
+
+   * - *Input* 1
+     - *Input* 2
+     - *Output* & (*AND*)
+     - *Output* | (*OR*)
+     - *Output* ^ (*XOR*)
+   * - 1
+     - 1
+     - 1
+     - 1
+     - 0
+   * - 1
+     - 0
+     - 0
+     - 1
+     - 1
+   * - 0
+     - 1
+     - 0
+     - 1
+     - 1
+   * - 0
+     - 0
+     - 0
+     - 0
+     - 0
+
+Berikut adalah contoh penerapan dari operator bit.
+
+.. code:: java 
+
+    public class Main {
+
+        public static void main(String[] args) {
+            int a = 5;  // Binary: 00000101
+            int b = 3;  // Binary: 00000011
+            
+            // 00000101
+            // 00000011
+            // -------- &
+            // 00000001  (bernilai 1)
+            System.out.println("a & b = " + (a & b));
+            
+            // 00000101
+            // 00000011
+            // -------- |
+            // 00000111  (bernilai 7)
+            System.out.println("a | b = " + (a | b));
+            
+            // 00000101
+            // 00000011
+            // -------- |
+            // 00000110  (bernilai 6)
+            System.out.println("a ^ b = " + (a ^ b));
+            
+            // 00000101
+            // -------- ~
+            // 11111010  (bernilai -6)
+            System.out.println("~a = " + (~a));
+            
+            // 00000101
+            // -------- << 2
+            // 00010100  (bernilai 20)
+            System.out.println("a << 2 = " + (a << 2));
+            
+            // 00000101
+            // -------- >> 1
+            // 00000010  (bernilai 2)
+            System.out.println("a >> 1 = " + (a >> 1));
+        }
+    }
 
 .. code:: console
 
-    int x = 5;  // Representasi biner: 0000 0101
-    int y = 2;  // Geser dua posisi ke kiri
-    int result = x << y;  // Hasilnya adalah 20 (0001 0100)
-
-
-Right shift ``>>``` : Operator ini menggeser bit operan pertama ke kanan, operan kedua menentukan jumlah tempat yang akan digeser.
-
-.. code:: console
-
-    int x = 20;  // Representasi biner: 0001 0100
-    int y = 2;   // Geser dua posisi ke kanan
-    int result = x >> y;  // Hasilnya adalah 5 (0000 0101)
-
-Bitwise Implementation 
-------------------------
-1. **Bitwise AND** ``&``: Operator ini menghasilkan bit 1 pada posisi tertentu hanya jika kedua bit pada posisi tersebut adalah 1.
-   
-   .. code:: console
-
-    int a = 5;  // Representasi biner: 0101
-    int b = 3;  // Representasi biner: 0011
-    int result = a & b;  // Hasilnya adalah 1 (0001)
-
-2. **Bitwise OR** ``|``: Operator ini menghasilkan bit 1 pada posisi tertentu jika salah satu atau kedua bit pada posisi tersebut adalah 1.
-   
-   .. code:: console
-
-    int a = 5;  // Representasi biner: 0101
-    int b = 3;  // Representasi biner: 0011
-    int result = a | b;  // Hasilnya adalah 7 (0111)
-
-4. **Bitwise XOR** ``^``: Operator ini menghasilkan bit 1 pada posisi tertentu hanya jika salah satu dari dua bit pada posisi tersebut adalah 1 (bukan keduanya).
-    
-   .. code:: console
-
-    int a = 5;  // Representasi biner: 0101
-    int b = 3;  // Representasi biner: 0011
-    int result = a ^ b;  // Hasilnya adalah 6 (0110)
-
-5. **Bitwise NOT** ``~``: Operator ini mengubah setiap bit 0 menjadi 1 dan sebaliknya. Hasilnya adalah komplement dari nilai asli.
-   
-   .. code:: console
-
-    int a = 5;  // Representasi biner: 0000 0000 0000 0000 0000 0000 0000 0101
-    int result = ~a;  // Hasilnya adalah -6 (1111 1111 1111 1111 1111 1111 1111 1010)
-
-   
-
-
+    a & b = 1
+    a | b = 7
+    a ^ b = 6
+    ~a = -6
+    a << 2 = 20
+    a >> 1 = 2

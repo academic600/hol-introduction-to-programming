@@ -39,13 +39,11 @@ Daftar Isi
    materials/session-02/math
    materials/session-02/random
 
-Operator
-=========
 .. toctree:: 
-   :maxdepth: 2
-   :caption: Operator
+   :maxdepth: 1
+   :caption: Session 03 - Operator
 
-   materials/session-03/operator
+   materials/session-03/operator-operand
    materials/session-03/arithmetic-operator
    materials/session-03/assignment-operator
    materials/session-03/relational-operator

@@ -1,103 +1,94 @@
-Arithmetic Operator
-=====================
-Merupakan salah satu jenis operator untuk melakukan pemrosesan dua buah operand yang akan menghasilkan suatu nilai tertentu.
+Operator Aritmatika (*Arithmetic*)
+==================================
 
-.. list-table:: Arithmetic operator
-   :widths: 50 50
+Operator aritmatika merupakan operator yang digunakan untuk melakukan operasi dasar matematika pada operand bilangan bulat ataupun desimal. Berikut adalah contoh operator aritmatika yang dapat digunakan.
+
+.. list-table::
+   :widths: 20 30 50
    :header-rows: 1
 
    * - Operator
-     - Result
+     - Nama
+     - Penjelasan
    * - ``+``
-     - Addition
+     - Penjumlahan
+     - Untuk menjumlahkan dua buah operand.
    * - ``-`` 
-     - Subtraction
+     - Pengurangan
+     - Untuk mengurangkan operand pertama dengan operand kedua.
    * - ``*`` 
-     - Multiplication 
+     - Perkalian
+     - Untuk mengalikan dua buah operand. 
    * - ``/`` 
-     - Division
+     - Pembagian
+     - Untuk membagi operand pertama dengan operand kedua.
    * - ``%`` 
-     - Modulus
-   * - ``++`` 
-     - Increment
-   * - ``--`` 
-     - Decrement
+     - Modulo
+     - Untuk mencari sisa pembagian operand pertama dengan operand kedua.
   
-Berikut contoh penerapan Arithmetic operator
+Berikut adalah contoh penerapan dari operator aritmatika.
 
 .. code:: java 
 
     public class Main {
-        
         public static void main(String[] args) {
-
-            int a = 10;
-            int b = 5;
+            int a = 15;
+            int b = 3;
             
-            System.out.printf("Hasil Penjumlahan a + b = %d \n",a+b );
-            System.out.printf("Hasil Pengurangan a - b = %d \n",a-b );
-            System.out.printf("Hasil Perkalian a * b = %d \n",a*b );
-            System.out.printf("Hasil Pembagian a / b = %d \n",a/b );
-            System.out.printf("Hasil Modulo a % b = %d \n",a%b );
-            
+            System.out.println("Hasil penjumlahan (a + b) = " + (a + b));
+            System.out.println("Hasil pengurangan (a - b) = " + (a - b));
+            System.out.println("Hasil perkalian (a * b) = " + (a * b));
+            System.out.println("Hasil pembagian (a / b) = " + (a / b));
+            System.out.println("Hasil modulo (a % b) = " + (a % b));
         }
-
-
     }
 
-Inrement & Decrement
----------------------
-Increment pada java di lambangkan dengan symbol ``++``
+.. code:: console
 
-Decrement di lambangkan dengan symbol ``--``
+    Hasil penjumlahan (a + b) = 18
+    Hasil pengurangan (a - b) = 12
+    Hasil perkalian (a * b) = 45
+    Hasil pembagian (a / b) = 5
+    Hasil modulo (a % b) = 0
 
-Terdapat 2 macam jenis increment  
-  - *Pre Increment* : merupakan cara menambahkan 1 terlebih dahulu baru digunakan
-  - *Post Increment*: menggunakan angka tersebut, lalu ditambahkan 1 di akhir
+Selain itu, pada bahasa pemrograman Java, terdapat cara mudah untuk menambahkan atau mengurangi nilai variabel sebanyak satu. Untuk menambahkan nilai (*increment*) dapat menggunakan tanda ``++``. Sedangkan, untuk mengurangi nilai (*decrement*) dapat menggunakan tanda ``--``.
+
+Terdapat dua jenis penggunaan operator ini, yaitu *prefix* dan *postfix*. Perbedaannya terletak pada kapan dilakukannya penjumlahan atau pengurangan tersebut, hasil akhir keduanya akan tetap sama.
+
+- *Prefix* atau *pre-increment*/*pre-decrement*, artinya penambahan atau pengurangan nilai dilakukan terlebih dahulu sebelum melakukan suatu operasi.
+- *Postfix* atau *post-increment*/*post-decrement*, artinya penambahan atau pengurangan nilai dilakukan setelah melakukan suatu operasi.
 
 .. code:: java
 
     public class Main {
-    
       public static void main(String[] args) {
         int a = 10;
+        System.out.println("Pre-increment (++a) = " + (++a));
+        System.out.println("Hasil a = " + a);
+
         int b = 10;
-        ++a;
-        b++;
-        System.out.println("Hasil dari pre increment a: " +  a );
-        System.out.println("Hasil dari post increment b: " +  b );
+        System.out.println("Post-increment (b++) = " + (b++));
+        System.out.println("Hasil b = " + b);
+        
+        int c = 10;
+        System.out.println("Pre-decrement (--c) = " + (--c));
+        System.out.println("Hasil c = " + c);
+
+        int d = 10;
+        System.out.println("Post-decrement (d--) = " + (d--));
+        System.out.println("Hasil d = " + d);
       } 
     }
 
 .. code:: console
 
-  Hasil dari pre increment a: 11
-  Hasil dari post increment b: 11
+    Pre-increment (++a) = 11
+    Hasil a = 11
+    Post-increment (b++) = 10
+    Hasil b = 11
+    Pre-decrement (--c) = 9
+    Hasil c = 9
+    Post-decrement (d--) = 10
+    Hasil d = 9
 
-Terdapat 2 jenis juga decrement : 
-   - *Pre decrement* : merupakan cara mengurangkan 1 terlebih dahulu baru digunakan
-   - *Post decrement*: menggunakan angka tersebut, lalu mengurangkan 1 di akhir
-
-.. code:: java
-
-    public class Main {
-    
-      public static void main(String[] args) {
-        int a = 10;
-        int b = 10;
-        --a;
-        b--;
-        System.out.println("Hasil dari pre decrement a: " +  a );
-        System.out.println("Hasil dari post decrement b: " +  b );
-      } 
-    }
-
-.. code:: console
-
-  Hasil dari pre decrement a: 9
-  Hasil dari post decrement b: 9
-
-
-.. note:: 
-
-    Pada intinya, baik *post* maupun *pre* memiliki tujuan yang sama yaitu increment atau decrement sebanyak 1.
+Berdasarkan contoh di atas, operasi yang dilakukan adalah *output*. Pada kode baris ke-4, dilakukan operasi *pre-increment*, yang artinya variabel ``a`` akan ditambahkan satu terlebih dahulu sebelum dilakukan *output*, sehingga menghasilkan nilai 11 (*console* baris ke-1). Pada kode baris ke-9, dilakukan operasi *post-increment*, yang artinya variabel ``b`` akan ditambahkan satu setelah dilakukan *output*, sehingga masih bernilai 10 (*console* baris ke-3), namun hasilnya tetap menjadi 11 (*console* baris ke-4). Hal yang sama ini berlaku untuk *pre-decrement* dan *post-decrement*, hanya saja bersifat mengurangi nilai.
