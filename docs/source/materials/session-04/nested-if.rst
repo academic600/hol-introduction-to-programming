@@ -1,53 +1,34 @@
-*Nested If*
--------------
-Nested if adalah dimana terdapat if-else di dalam if-else. jadi bisa disebyt juga if bersarang.
+Seleksi *If* Bersarang (*Nested*)
+=================================
 
-**Tujuan** :
-untuk memeriksa beberapa kondisi berjenjang atau bersarang, untuk melakukan pengujian tambahan atau tindakan berdasarkan hasil dari pengujian pertama.
+Ketika membuat sebuah program yang kompleks, terkadang dibutuhkan penggunaan *if* yang bersarang (*nested if*), artinya seleksi *if* di dalam seleksi *if*. Tidak ada batasan dalam menggunakan *nested if*.
 
-**Syntax nested-if**
-
-.. code:: console
-
-    if (kondisi1) {
-        // Kode yang dijalankan jika kondisi_1 benar
-        if (kondisi2) {
-            // Kode yang dijalankan jika kondisi_2 juga benar
-        } else {
-            // Kode yang dijalankan jika kondisi_2 salah
-        }
-    } else {
-        // Kode yang dijalankan jika kondisi_1 salah
-    }
-
-
+Berikut adalah contoh implementasi seleksi *if* yang bersarang (*nested if*).
 
 .. code:: java
 
     public class Main {
-        
         public static void main(String[] args) {
             int usia = 18;
-            boolean memilikiKartu = true;
-
-            //mengecek jika usia lebih besar atau sama dengan 18 maka memiliki kartu anggota
+            boolean memilikiKTP = true;
 
             if (usia >= 18) {
-                if (memilikiKartu) {
-                    System.out.println("Selamat, Anda memenuhi syarat dan memiliki kartu anggota!");
+                if (memilikiKTP) {
+                    System.out.println("Anda memenuhi syarat usia dan sudah memiliki KTP.");
                 } else {
-                    System.out.println("Maaf, Anda memenuhi syarat namun tidak memiliki kartu anggota.");
+                    System.out.println("Anda memenuhi syarat usia, namun belum memiliki KTP.");
                 }
             } else {
-                System.out.println("Maaf, Anda belum mencapai usia minimum.");
+                System.out.println("Anda belum mencapai usia minimum.");
             }
-
         }
-
     }
 
 
 .. code:: console
 
-    Selamat, Anda memenuhi syarat dan memiliki kartu anggota!
+    Anda memenuhi syarat usia dan sudah memiliki KTP.
 
+Pada seleksi *if* yang bersarang (*nested if*) di atas, pertama akan dilakukan pengecekan pada seleksi *if* yang berada di luar, yaitu apakah variabel usia lebih besar atau sama dengan 18. Karena variabel usia bernilai 18, maka pengecek tersebut menghasilkan benar (*true*), sehingga akan dijalankan perintah-perintah (*statements*) yang ada pada *scope* tersebut (baris 6 sampai 12).
+
+Setelah itu, akan dilakukan pengecekan pada seleksi *if* yang berada di dalam, yaitu apakah variabel memilikiKTP bernilai benar (*true*). Karena kondisi tersebut terpenuhi, maka akan dijalankan perintah *output*, seperti yang terlihat pada *console*.

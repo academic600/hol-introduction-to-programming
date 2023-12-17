@@ -51,11 +51,9 @@ Daftar Isi
    materials/session-03/bitwise-operator
    materials/session-03/precendence-associative-operator
 
-Selection statement
-====================
 .. toctree:: 
    :maxdepth: 2
-   :caption: Selection statements
+   :caption: Session 04 - Selection
 
    materials/session-04/if-else
    materials/session-04/nested-if
