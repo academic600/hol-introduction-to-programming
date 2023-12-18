@@ -88,7 +88,7 @@ Pada aplikasi *Eclipse* cara menjalankan *Java project* sudah dipermudah, yaitu 
     :align: center
 .. centered:: Tampilan Menu *Run*
 
-Apabila yang program yang dibuat adalah *console*, maka aplikasi *Eclipse* secara otomatis akan membukakan *tab Console* sebagai berikut.
+Apabila program yang dibuat adalah *console*, maka aplikasi *Eclipse* secara otomatis akan membukakan *tab Console* sebagai berikut.
 
 .. image:: /images/session-01/run-result.png
     :width: 500
