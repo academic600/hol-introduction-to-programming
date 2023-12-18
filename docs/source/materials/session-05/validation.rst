@@ -1,46 +1,33 @@
 Validation
-------------
-Validasi adalah proses memeriksa apakah data atau input memenuhi syarat atau kriteria tertentu yang ditetapkan sebelumnya.
+==========
 
-**Tujuan :**
-untuk memastikan bahwa data atau input tersebut sesuai dengan format yang diharapkan atau memenuhi kondisi yang diperlukan untuk penggunaan selanjutnya dalam sistem atau aplikasi.
+Dengan mempelajari seleksi dan repetisi, pembuat program akan melakukan sebuah validasi. Validasi merupakan proses memeriksa apakah suatu data atau *input* memenuhi suatu kriteria tertentu. Hal ini bertujuan agar data atau *input* yang diberikan sesuai dengan kriteria sehingga dapat digunakan pada proses selanjutnya. Biasanya validasi *input* dibuat dengan menggunakan repetisi *do-while*, agar program dimulai dengan meminta *input* terlebih dahulu yang kemudian di validasikan.
 
-Validasi di java bisa kita lakukan dengan do-while loop, if-else, dan while loop. 
-
-Contoh Validasi
-~~~~~~~~~~~~~~~
-Validasi panjang kata 
-
+Berikut adalah contoh validasi panjang sebuah kata dari *input* yang dimasukan pengguna program.
 
 .. code:: java
 
-     public static void main(String[] args) {
-    	Scanner scan = new Scanner(System.in);
-    	String name;
-    	
-    	do {
-    		
-    		System.out.print("Input name [5-20 character]: ");
-    		name = scan.nextLine();
-			
-		} while (name.length() < 5 || name.length() > 20 );
-    	
-    	System.out.println("Success input your name " + name);
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String args[]) {
+            Scanner scan = new Scanner(System.in);
+            String name;
+            
+            do {
+                System.out.print("Input your name [5-20 characters]: ");
+                name = scan.nextLine();	
+            } while (name.length() < 5 || name.length() > 20 );
+            
+            System.out.println("Your name is " + name);
+        }
     }
-
-
 
 .. code:: console
 
-    Input name [5-20 character]: er
-    Input name [5-20 character]: erik
-    Input name [5-20 character]: erika
-    Success input your name erika
+    Input your name [5-20 characters]: Hey
+    Input your name [5-20 characters]: HelloHelloHelloHelloHello
+    Input your name [5-20 characters]: Hello
+    Your name is Hello
 
-Pada kode diatas terdapat validasi nama yang dimana hanya di perbolehkan terdapat 5 - 20 huruf saja dalam suatu kata, jika kondisi tersebut tidak terpenuhi
-maka, do-while loop akan meminta input kembali. 
-
-Masih banyak jenis-jenis validasi lainnya yang bisa kita lakukan. Kita hanya perlu menyesuaikan apa kondisi yang dibutuhkan. 
-
-
-
+Pada kode di atas, terdapat sebuah repetisi *do-while* yang bertujuan untuk memastikan sebuah nama yang dimasukan harus memiliki panjang 5 - 20 karakter. Apabila nama yang dimasukan tersebut kurang dari 5 karakter atau lebih dari 20 karakter, maka pengguna program harus memasukan nama kembali, sampai kondisi tersebut terpenuhi.

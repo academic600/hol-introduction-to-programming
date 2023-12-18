@@ -1,67 +1,52 @@
-For Loop
-------------
-For loop merupakan salah satu bentuk code pengulangan yang dapat dipakai dalam java. 
-kenapa kita memakai iterasi? 
-Misal jika kita ingin mengeprint "Hello World" sebanyak 5 kali kita bisa membuat kode seperti ini: 
+Repetisi *For*
+==============
+
+Repetisi (*repetition*) merupakan proses melakukan sebuah perintah secara berulang sesuai dengan kondisi tertentu. Terdapat tiga cara dalam melakukan repetisi, yaitu *for*, *while*, dan *do-while*. Pada bagian ini akan dibahas mengenai seleksi *for*.
+
+Repetisi *for* digunakan untuk mengulang suatu perintah secara terhitung. Disebut terhitung karena biasanya jumlah perulangan sudah diketahui atau dapat dihitung.
+
+.. note:: 
+
+    Dalam implementasinya, repetisi *for* biasanya digunakan untuk memproses sebuah data yang sudah jelas, mengakses elemen dari sebuah array, dan tugas lainnya yang jelas jumlah perulangannya.
+
+Berikut adalah *flowchart* dan *syntax* dari repetisi *for*.
+
+.. image:: /images/session-05/for.png
+    :width: 200
+    :align: center
+.. centered:: Repetisi *For*
 
 .. code:: console
 
-    System.out.println("Hello World");
-    System.out.println("Hello World");
-    System.out.println("Hello World");
-    System.out.println("Hello World");
-    System.out.println("Hello World");
-
-Akan tetapi bagaimana jika kita ingin mengeprint sebanyak 100 kali?
-kita bisa menggunakan iterasi untuk membuatnya.
-
-For loop dapat digunakan untuk iterasi dan mengulang sebanyak variabel yang telah di inisialisasi. 
-
-syntax for loop: 
-
-.. code:: console
-
-    for(inisialisasi ; condition ; increment){
-
-
+    for(<initial-statements>; <repetition-condition>; <action-statements>) {
+        <body-statements>
     }
 
-**Code**
+Berdasarkan *flowchart* dan *syntax* di atas, perintah awal (*initial-statements*) akan dijalankan untuk pertama kali saja. Setelah itu, program akan mengecek kondisi repetisi *for* (*repetition-condition*). Apabila kondisi tersebut sesuai, perintah yang ada di dalam *scope* repetisi *for* (*body-statements*) akan dijalankan, dilanjutkan dengan perintah aksi (*action-statements*). Terakhir, program akan mengecek ulang kembali kondisi repetisi *for* (*repetition-condition*) sampai kondisi tidak sesuai.
+
+Berikut adalah contoh implementasi seleksi *for*.
 
 .. code:: java
 
     public class Main {
-        
         public static void main(String[] args) {
-            for(int i=0; i<10; i++) {
-                System.out.printf("Hello world %d\n", i);
+            for(int i = 0; i < 10; i++) {
+                System.out.printf("Iterasi ke-%d\n", i);
             }
-            
         }
-
     }
-
-**Output**
 
 .. code:: console
 
-    Hello world 0
-    Hello world 1
-    Hello world 2
-    Hello world 3
-    Hello world 4
-    Hello world 5
-    Hello world 6
-    Hello world 7
-    Hello world 8
-    Hello world 9
+    Iterasi ke-0
+    Iterasi ke-1
+    Iterasi ke-2
+    Iterasi ke-3
+    Iterasi ke-4
+    Iterasi ke-5
+    Iterasi ke-6
+    Iterasi ke-7
+    Iterasi ke-8
+    Iterasi ke-9
 
-Pada code diatas, saya ingin mengeprint Hello world sebanyak 10 kali disertai angka iterasinya.
-Iterasi di java selalu di mulai dari 0
-
-    
-
-
-
-
-
+Pada kode di atas, program akan menjalankan perintah awal (*initial-statements*), yaitu menginisialisasikan variabel bernama ``i`` dengan nilai 0. Kemudian, program akan menjalankan pengecekan kondisi repetisi *for* (*repetition-condition*), yaitu mengecek variabel ``i`` apakah kurang dari 10. Karena kondisi tersebut terpenuhi, maka perintah yang ada di dalam *scope* (*body-statements*) akan dijalankan, yaitu *output* ke *console*. Setelah selesai, program akan menjalankan perintah aksi (*action-statements*), menambahkan nilai ``i`` sebanyak 1, sehingga nilai variabel ``i`` berubah menjadi 1. Hal ini terus dilakukan sampai variabel ``i`` bernilai 10, karena sudah tidak masuk ke dalam kondisi.

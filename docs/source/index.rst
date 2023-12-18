@@ -52,24 +52,21 @@ Daftar Isi
    materials/session-03/precendence-associative-operator
 
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Session 04 - Selection
 
    materials/session-04/if-else
    materials/session-04/nested-if
    materials/session-04/switch-case
 
-Iteration statement
-=====================
 .. toctree:: 
-   :maxdepth: 2
-   :caption: Iteration statement
+   :maxdepth: 1
+   :caption: Session 05 - Repetition
 
    materials/session-05/for
    materials/session-05/while
    materials/session-05/do-while
    materials/session-05/validation
-  
 
 Jump Operation
 =====================
