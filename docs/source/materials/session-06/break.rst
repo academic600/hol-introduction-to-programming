@@ -1,41 +1,30 @@
 *Break*
------------
-Kata kunci `break` kita sudah pernah melihat di switch case yang berfungsi untuk berpindah ke case yang lain.
-Kita juga bisa memakai kata *break* dalam suatu loop
-untuk segera menghentikan loop tersebut.
+=======
 
+Pada bahasa pemrograman *Java*, pembuat program dapat menggabungkan repetisi dengan operasi lompat (*jump operation*). Tujuannya adalah untuk mengontrol perulangan dalam sebuah program. Terdapat tiga operasi lompat (*jump operation*) yang dapat digunakan yaitu *break*, *continue*, dan *label*.
 
-`break` juga digunakan untuk memberhentikan suatu loop. 
+Kata kunci ``break`` sudah pernah digunakan pada seleksi *switch-case*. Pada seleksi *switch-case*, kata kunci ini digunakan untuk mengakhiri perintah setiap kasus. Namun, pada repetisi, kata kunci ini digunakan untuk mengakhiri sebuah repetisi, walaupun kondisi repetisi masih terpenuhi.
+
+Berikut adalah contoh implementasi operasi lompat (*jump operation*) untuk ``break``.
 
 .. code:: java
 
     public class Main {
-    
         public static void main(String[] args) {
-            
             for (int i = 0; i < 10; i++) {
                 if (i == 4) {
                     break;
                 }
-                System.out.println(i);
+                System.out.println("Iterasi ke-" + i);
             }
-
         }
-
-
     }
-
-
-
-   
 
 .. code:: console
 
-    0
-    1
-    2
-    3
+    Iterasi ke-0
+    Iterasi ke-1
+    Iterasi ke-2
+    Iterasi ke-3
 
-
-Pada code diatas dapat terlihat suatu for loop ingin melakukan iterasi dari 0 sampai 9,
-lalu di dalam for loop terdapat kondisi, jika ``i==4`` maka akan melakukan `break`. Hal ini apabila melakukan iterasi sebanyak 4 kali maka i akan keluar dari loop dan loop akan berhenti. 
+Pada kode di atas, terdapat sebuah repetisi *for* untuk mengeluarkan *output* dari interasi ke-0 sampai iterasi ke-9, karena memiliki validasi kurang dari 10. Namun, sebelum mengeluarkan *output*, terdapat sebuah validasi dengan seleksi *if*. Apabila variabel ``i`` bernilai 4, maka kata kunci ``break`` dijalankan. Oleh karena itu, repetisi *for* dihentikan yang terbukti dengan *output* pada *console* hanya sampai iterasi ke-3 saja.

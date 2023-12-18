@@ -68,17 +68,14 @@ Daftar Isi
    materials/session-05/do-while
    materials/session-05/validation
 
-Jump Operation
-=====================
 .. toctree:: 
-   :maxdepth: 2
-   :caption: Jump Operation
+   :maxdepth: 1
+   :caption: Session 06 - Jump Operation and Exception Handling
 
-   materials/session-06/exception-handling
    materials/session-06/break
    materials/session-06/continue
-   materials/session-06/return
    materials/session-06/label
+   materials/session-06/exception-handling
 
 Method Operation
 =====================
