@@ -68,6 +68,8 @@ Daftar Isi
    materials/session-05/do-while
    materials/session-05/validation
 
+
+
 .. toctree:: 
    :maxdepth: 1
    :caption: Session 06 - Jump Operation and Exception Handling
@@ -76,6 +78,14 @@ Daftar Isi
    materials/session-06/continue
    materials/session-06/label
    materials/session-06/exception-handling
+   materials/session-06/soal
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Session 07 - Array
+   
+   materials/session-07/array1D
+   materials/session-07/multidimentional-array
 
 Method Operation
 =====================

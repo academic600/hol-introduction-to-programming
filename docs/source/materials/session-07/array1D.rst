@@ -1,5 +1,5 @@
 Array 
-=========
+===========
 *Array* digunakan untuk menyimpan kumpulan data, tetapi seringkali kita menemukan lebih berguna untuk memandang ``array`` sebagai kumpulan variabel dengan tipe yang sama. 
 Kita mendeklarasikan satu variabel array seperti numbers dan menggunakan ``numbers[0], numbers[1], . . . ,`` dan ``numbers[99]`` untuk merepresentasikan variabel-variabel individual tersebut.
 Setiap array memiliki index yang di mulai dari ``0``
@@ -87,9 +87,105 @@ Java memiliki notasi singkat, yang dikenal sebagai ``array initializer``, yang m
 
 Memproses *Array*
 ~~~~~~~~~~~~~~~~~~~~~~
-Memproses ``array`` adalah pengolahan atau manipulasi data dalam ``array``. Ini mencakup berbagai operasi seperti menambahkan, menghapus, mencari nilai tertentu, mengurutkan, atau melakukan perubahan lain pada elemen-elemen dalam ``array``. 
+Memproses ``array`` adalah pengolahan atau manipulasi data dalam ``array``. Ini mencakup berbagai operasi seperti menambahkan, menghapus, mencari nilai tertentu, mengurutkan, atau melakukan perubahan lain pada elemen-elemen dalam ``array``.
+
+**Insialisasi array dengan nilai input :**
+   
+.. code:: java
+
+    import java.util.Scanner;
+
+    public class Main {
+
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            double[] myList = new double[5];
+                System.out.print("Masukkan " + myList.length + " nilai: ");
+                
+                for (int i = 0; i < myList.length; i++) {
+                    myList[i] = input.nextDouble();
+                }
+                
+
+                System.out.println("Nilai yang dimasukkan:");
+                for (int i = 0; i < myList.length; i++) {
+                    System.out.print(myList[i] + " ");
+                }
+                    
+        }
 
 
+
+    }
+
+
+.. code:: console
+
+    Masukkan 5 nilai: 1 2 3 4 5
+    Nilai yang dimasukkan:
+    1.0 2.0 3.0 4.0 5.0 
+
+**Inisialisasi array dengan nilai acak:**
+
+Loop berikut menginisialisasi array myList dengan nilai acak antara 0.0 dan 100.0, tetapi kurang dari 100.0:
+
+.. code:: java
+
+    public class Main {
+
+	  public static void main(String[] args) {
+	        double[] myList = new double[5];
+
+	        for (int i = 0; i < myList.length; i++) {
+	            myList[i] = Math.random() * 100;
+	        }
+
+	        System.out.println("Nilai acak antara 0.0 dan 100.0:");
+	        for (int i = 0; i < myList.length; i++) {
+	            System.out.print(myList[i] + " ");
+	        }
+	    }
+
+
+    }
+
+.. code:: console
+
+    Nilai acak antara 0.0 dan 100.0:
+    17.09124077714349 89.41099356774917 32.70821348268378 16.41171221784835 47.1386890790769 
+
+
+Iterasi foreach Array
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Java mendukung for loop yang praktis, dikenal sebagai foreach loop, yang memungkinkan Anda untuk menelusuri array secara berurutan tanpa menggunakan variabel indeks.
+
+.. code:: console
+
+    for (tipeData variabel : namaArray atau namaKoleksi) {
+        // melakukan sesuatu dengan variabel
+    }
+
+
+.. code:: java
+
+    public class Main {
+        public static void main(String[] args) {
+            String[] words = {"Hello", "World", "Java", "Programming"};
+
+            // Menggunakan foreach loop untuk menampilkan setiap elemen dalam array string
+            System.out.println("Kata dalam array:");
+            for (String word : words) {
+                //menambagkan spasi ke setiap kata yang di print
+                System.out.print(word + " ");
+            }
+        }
+    }
+
+.. code:: console
+
+    Kata dalam array:
+    Hello World Java Programming
 
 
 
