@@ -95,11 +95,10 @@ Daftar Isi
    materials/session-08/array-list
    materials/session-08/vector
 
-Method Operation
-=====================
 .. toctree:: 
-   :maxdepth: 2
-   :caption: Method Operation
+   :maxdepth: 1
+   :caption: Method 
 
-   materials/09/method-definition
+   materials/session-09/method
+   materials/session-09/variable-scope
  
