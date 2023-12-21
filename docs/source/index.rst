@@ -87,6 +87,14 @@ Daftar Isi
    materials/session-07/array1D
    materials/session-07/multidimentional-array
 
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Session 08 - Array List, Vector   
+
+   materials/session-08/static-dynamic-array
+   materials/session-08/array-list
+   materials/session-08/vector
+
 Method Operation
 =====================
 .. toctree:: 
