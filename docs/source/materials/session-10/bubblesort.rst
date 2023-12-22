@@ -8,13 +8,34 @@ Berikut adalah dataset array yang akan kita pakai:
 .. image:: /images/session-10/bubbleSort/inisialisasi-array.png
 
 
-Iterasi pertama : 
+**step  = 0**
+
+Pada tahap  ini kita akan membandingkan setiap elemen yang ada di array, jika elemen lebih besar maka kita akan letakan di belakang. Contoh nya kita bandingkan ``2`` dengan ``9``, sudah ada di urutan yang benar, maka kita lanjut bandingkan ``9`` dengan ``5``, ``5`` lebih kecil dari ``9`` maka kita tukar posisi ``9`` dengan ``5``, lalu berlanjut hingga angka yang paling besar di array terdapat di indeks paling akhir. 
+
 
 .. image:: /images/session-10/bubbleSort/bubbleSort-1.png
 
-Iterasi kedua : 
+**step = 1**
+
+Pada step ini sama, kita akan membandingkan value dari depan, jika elemen tersebut lebih kecil value nya maka akan kita tukar posisinya, hanya saja kita tidak perlu lagi check elemen yang ada di paling akhir karena sudah ada di urutan yang benar. Ulangi ``step 0`` dan ``1`` sampai semua elemen terurutkan
+
 
 .. image:: /images/session-10/bubbleSort/bubbleSort-2.png
+
+**step = 2**
+
+.. image:: /images/session-10/bubbleSort/bubbleSort-3.png
+
+**step = 4**
+
+.. image:: /images/session-10/bubbleSort/bubbleSort-4.png
+
+**step = 5**
+
+Pada step ini elemen-elemen yang ada di dalam array kita sudah terurut sehingga menyelesaikan bubbleSort kita.
+
+.. image:: /images/session-10/bubbleSort/bubbleSort-5.png
+
 
 
 Implementasi *Bubble Sort* 
