@@ -114,8 +114,8 @@ Berikut adalah implementasi kode untuk menetapkan dan mengakses nilai dari sebua
 
 Beradasarkan kode di atas, dilakukan inisialisasi *array* bernama ``numbers`` dengan tipe data ``int`` sebanyak 2 baris dan 3 kolom. Nilai dari array tersebut adalah { ``0``, ``0``, ``0`` } dan { ``0``, ``0``, ``0``}. Kemudian, dilakukan penetapan nilai pada masing-masing *index* dari *array* tersebut. Sehingga, nilai pada *array* berubah menjadi { ``1``, ``2``, ``3`` } dan { ``4``, ``5``, ``6``}. Kemudian, dilakukan akses nilai dari *array* yang akan ditampilakan ke *console*. Hasil yang muncul pada *console* sesuai dengan yang ditetapkan sebelumnya, bahwa *index* baris ke-0 dan kolom ke-0 adalah 1, dan seterusnya.
 
-Contoh Implementasi *Array*
----------------------------
+Contoh Implementasi *Array* Dua Dimensi
+---------------------------------------
 
 Berikut adalah contoh program untuk menjumlahkan angka setiap baris dari *array* dua dimensi.
 
@@ -145,13 +145,6 @@ Berikut adalah contoh program untuk menjumlahkan angka setiap baris dari *array*
 
 Pertama, dilakukan deklarasi *array* dua dimensi bernama ``numbers`` dengan nilai { ``1``, ``2``, ``3`` } dan { ``4``, ``5``, ``6``}. Kemudian, dilakukan iterasi untuk setiap baris (iterasi ``for`` paling luar). Pada awal iterasi tersebut, dibuat sebuah variabel bernama ``sum`` yang berguna untuk menyimpan nilai penjumlahan. Lalu, dilakukan iterasi untuk setiap kolom (iterasi ``for`` paling dalam). Di dalamnya terdapat operasi yang menjumlahkan nilai dari variabel ``sum`` sebelumnya dengan angka pada *array*. Setelah iterasi untuk setiap kolom selesai, dilanjutkan dengan *output* ke *console* untuk jumlah yang sudah dihitung. Pada baris ke-1, terdapat angka 1, 2, dan 3 yang apabila dijumlahkan menghasilkan 6. Sedangkan, pada baris ke-2, tedapat angka 4, 5, dan 6 yang apabila dijumlahkan menghasilkan 15.
 
-
 .. note:: 
 
     *Array* dua dimensi biasanya digunakan dalam permainan untuk merepresentasikan sebuah peta, papan permainan, dan sebagainya. Contohnya pada permainan papan catur yang menggunakan *array* dua dimensi untuk menyimpan posisi bidak pada baris dan kolom tertentu.
-
-
-
-
-
-
