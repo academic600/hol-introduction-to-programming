@@ -3,15 +3,19 @@ Bubble Sort
 *Bubble sort* mengurutkan array dengan menukar elemen-elemen tetangga jika tidak berurutan. Nilai-nilai yang lebih kecil 'membubuh' ``(bubble)`` ke atas sementara yang lebih besar 'terbenam'``
 (singking)`` ke bawah. Proses ini dilakukan dalam beberapa langkah, di mana setiap langkah membandingkan pasangan tetangga untuk ditukar jika perlu. Hasilnya, elemen terakhir menjadi yang terbesar, dan proses ini terus berlanjut hingga seluruh elemen terurut."
 
-.. image:: /images/session-10/bubbleSort1.jpg
+Berikut adalah dataset array yang akan kita pakai: 
 
-Pada gambar diatas tahap ``1st pass``  kita bandingkan elemen dalam pasangan pertama ``(2 dan 9)`` dan tidak perlu dilakukan pertukaran karena mereka sudah dalam urutan yang benar. Bandingkan elemen dalam pasangan kedua ``(9 dan 5)`` dan ``tukar 9 dengan 5`` karena ``9 lebih besar dari 5.`` Bandingkan elemen dalam pasangan ketiga ``(9 dan 4)`` dan ``tukar 9 dengan 4``. Bandingkan elemen dalam pasangan keempat ``(9 dan 8)`` dan tukar ``9 dengan 8``. Bandingkan elemen dalam pasangan kelima ``(9 dan 1)`` dan ``tukar 9 dengan 1``.
-Pasangan yang di highlight adalah pasangan yang sedang di bandingkan, angka yang sudah di ``sort`` di cetak miring. 
+.. image:: /images/session-10/bubbleSort/inisialisasi-array.png
 
 
-**Keterangan :** 
+Iterasi pertama : 
 
-Pada langkah pertama ``(1st pass)``, angka terbesar ``(9)`` ditempatkan sebagai yang terakhir dalam ``array``. Pada langkah kedua ``(2nd pass)``, seperti yang ditunjukkan dalam ``Gambar b``, diatas, kita membandingkan dan mengurutkan pasangan elemen secara berurutan. Tidak perlu mempertimbangkan pasangan terakhir karena elemen terakhir dalam ``array`` sudah merupakan yang terbesar. Pada langkah ketiga ``(3rd pass)``, seperti yang ditunjukkan dalam  ``Gambar c``, diatas, kita membandingkan dan mengurutkan pasangan elemen secara berurutan kecuali dua elemen terakhir karena mereka sudah dalam urutan. Dengan demikian, pada ``langkah ke-k``, kita tidak perlu mempertimbangkan kecuali ``k - 1`` elemen terakhir karena mereka sudah terurut.
+.. image:: /images/session-10/bubbleSort/bubbleSort-1.png
+
+Iterasi kedua : 
+
+.. image:: /images/session-10/bubbleSort/bubbleSort-2.png
+
 
 Implementasi *Bubble Sort* 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
