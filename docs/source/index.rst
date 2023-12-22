@@ -87,19 +87,18 @@ Daftar Isi
 
 .. toctree:: 
    :maxdepth: 1
-   :caption: Session 08 - Array List, Vector   
+   :caption: Session 08 - Dynamic Array
 
-   materials/session-08/static-dynamic-array
-   materials/session-08/array-list
+   materials/session-08/dynamic-array
    materials/session-08/vector
+   materials/session-08/arraylist
 
 .. toctree:: 
    :maxdepth: 1
-   :caption: Method 
+   :caption: Session 09 - Methods
 
    materials/session-09/method
    materials/session-09/variable-scope
- 
 
 .. toctree:: 
    :maxdepth: 1
