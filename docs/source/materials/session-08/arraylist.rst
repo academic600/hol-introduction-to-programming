@@ -1,5 +1,5 @@
 *ArrayList*
-============
+===========
 
 Sama seperti ``ArrayList``, ``ArrayList`` merupakan salah satu class dari ``java.util``.  Method yang terdapat pada ``ArrayList`` juga dimiliki oleh ``ArrayList`` Berikut adalah *syntax* yang dapat digunakan untuk mendeklarasikan sebuah ``ArrayList``.
 

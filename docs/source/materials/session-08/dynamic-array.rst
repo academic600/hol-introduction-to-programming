@@ -1,5 +1,5 @@
-Dynamic Array 
-=============
+*Dynamic Array*
+================
 
 Sebelumnya, telah dibahas mengenai *array* dan *multidimentional array*. Kedua hal tersebut tergolong sebagai *static array*, karena ukurannya tidak dapat berubah-ubah sewaktu program berjalan. Oleh karena itu, bahasa pemrograman *Java* membuat *dynamic array*, yakni *array* yang ukurannya dapat berubah-ubah sesuai dengan kebutuhan saat program berjalan. 
 
