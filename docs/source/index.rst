@@ -102,3 +102,13 @@ Daftar Isi
    materials/session-09/method
    materials/session-09/variable-scope
  
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Sort
+
+   materials/session-10/sorting
+   materials/session-10/bubblesort
+   materials/session-10/selectionSort
+   materials/session-10/insertionSort
+   materials/session-10/mergeSort
