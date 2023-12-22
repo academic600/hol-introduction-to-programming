@@ -64,7 +64,7 @@ Algoritma ini mempertahankan tiga penunjuk, satu untuk masing-masing dari dua ar
 
 Pada gambar diatas karena tidak ada elemen lagi yang tersisa pada array kedua, kita tahu bahwa kedua array telah di urutkan, kita bisa menyalin sisa elemen dari aray yang pertama secara langsung.
 
-Penulisan Kode Merger Sort 
+Penulisan Kode Merge Sort 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Perbedaan yang mencolok antara langkah penggabungan yang kita jelaskan di atas dan yang kita gunakan untuk ``merge sort`` adalah bahwa kita hanya melakukan fungsi penggabungan pada *subarray* yang berurutan.
@@ -85,7 +85,7 @@ Ketika kita kehabisan elemen baik dari ``L`` atau ``M``, ambil elemen-elemen yan
 
 .. code:: java
 
-        // Menggabungkan dua subarray L dan M ke dalam arr
+    // Menggabungkan dua subarray L dan M ke dalam arr
     void merge(int arr[], int p, int q, int r) {
 
         // Buat L ← A[p..q] dan M ← A[q+1..r]
@@ -253,3 +253,90 @@ Merge sort dapat dipakai dalam:
 2. Pengurutan eksternal
 3. Aplikasi e-commerce
 
+Implementasi pada aplikasi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: java
+    
+    public class Main {
+         // Method untuk menggabungkan dua subarray dari arr[]
+        void merge(int arr[], int p, int q, int r) {
+            int n1 = q - p + 1;
+            int n2 = r - q;
+
+            int L[] = new int[n1];
+            int M[] = new int[n2];
+
+            // Salin data ke array sementara L dan M
+            for (int i = 0; i < n1; ++i)
+                L[i] = arr[p + i];
+            for (int j = 0; j < n2; ++j)
+                M[j] = arr[q + 1 + j];
+
+            int i = 0, j = 0;
+            int k = p;
+
+            // Gabungkan elemen-elemen dari L dan M ke dalam arr[]
+            while (i < n1 && j < n2) {
+                if (L[i] <= M[j]) {
+                    arr[k] = L[i];
+                    i++;
+                } else {
+                    arr[k] = M[j];
+                    j++;
+                }
+                k++;
+            }
+
+            // Salin elemen yang tersisa dari L jika ada
+            while (i < n1) {
+                arr[k] = L[i];
+                i++;
+                k++;
+            }
+
+            // Salin elemen yang tersisa dari M jika ada
+            while (j < n2) {
+                arr[k] = M[j];
+                j++;
+                k++;
+            }
+        }
+
+        // Method untuk melakukan merge sort pada arr[]
+        void mergeSort(int arr[], int p, int r) {
+            if (p < r) {
+                int q = (p + r) / 2;
+
+                // Urutkan dua bagian dari array
+                mergeSort(arr, p, q);
+                mergeSort(arr, q + 1, r);
+
+                // Gabungkan hasil pengurutan
+                merge(arr, p, q, r);
+            }
+        }
+        
+        // Konstruktor untuk melakukan merge sort pada array dan mencetak hasilnya
+        public Main() {
+            int arr[] = { 6, 5, 12, 10, 9, 1 };
+
+            mergeSort(arr, 0, arr.length - 1);
+
+            System.out.println("Array yang terurut:");
+            for (int i = 0; i < arr.length; ++i) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+
+        // Main method untuk menjalankan proses pengurutan
+        public static void main(String args[]) {
+        new Main();
+        }
+}
+
+
+.. code:: console
+
+    Array yang terurut:
+    1 5 6 9 10 12 
