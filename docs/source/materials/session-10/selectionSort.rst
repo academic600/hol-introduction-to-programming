@@ -5,30 +5,30 @@ Selection Sort
 
 1. Pilih elemen pertama sebagai ``minimum``
    
-.. image:: /images/session-10/selectionSort/Selection-sort-0-initial-array.png
+.. image:: /images/session-10/selectionSort/SelectionSort-InitialArray.png
 
 2. Bandingkan ``minimum`` kita dengan elemen kedua dalam array , jika elemen kedua dalam array kita lebih kecil dibandingkan dengan ``minimumm``, pilih elemen kedua sebagai nilai ``minimum`` yang baru. Bandingkan ``minimum`` dengan elemen ketiga dalam array, jika elemen ketiga lebih kecil, maka pilih elemen ketiga sebagai nilai ``minimum`` yang baru, jika tidak, kita akan biarkan saja. kita akan melakukan proses ini secara repetitif, hingga elemen indeks terakhir.
    
-.. image:: /images/session-10/selectionSort/Selection-sort-0-comparision.png
+.. image:: /images/session-10/selectionSort/SelectionSort-1.png
 
 3. Seletah setiap iterasi, ``minimum`` diletakan di depan ``list`` yang belum di urutkan , kita bisa mentukar saja value mereka, ``indeks ke-0`` dengan ``indeks ke-4``
    
-.. image:: /images/session-10/selectionSort/Selection-sort-0-swapping.png
+.. image:: /images/session-10/selectionSort/SelectionSort-2.png
 
-4. Untuk setiap iterasi, pengindeksan dimulai dari elemen pertama yang belum diurutkan. Langkah 1 hingga 3 diulang sampai semua elemen ditempatkan pada posisi mereka yang benar. Pada tahao ini kita mencari nilai yang paling ``minimum`` atau nilai yang paling kecil dan mengurutkan nya di urutan yang benar. 
-
-
-
-.. image:: /images/session-10/selectionSort/Selection-sort-0.png
+1. Untuk setiap iterasi, pengindeksan dimulai dari elemen pertama yang belum diurutkan. Langkah 1 hingga 3 diulang sampai semua elemen ditempatkan pada posisi mereka yang benar. Pada tahao ini kita mencari nilai yang paling ``minimum`` atau nilai yang paling kecil dan mengurutkan nya di urutan yang benar. 
 
 
-.. image:: /images/session-10/selectionSort/Selection-sort-1.png
+
+.. image:: /images/session-10/selectionSort/SelectionSort-3.png
 
 
-.. image:: /images/session-10/selectionSort/Selection-sort-2.png
+.. image:: /images/session-10/selectionSort/SelectionSort-4.png
 
 
-.. image:: /images/session-10/selectionSort/Selection-sort-3_1.png
+.. image:: /images/session-10/selectionSort/SelectionSort-5.png
+
+
+.. image:: /images/session-10/selectionSort/SelectionSort-6.png
 
 Pada itersi ke tiga sudah array sudah terdapat di urutan yang benar. 
 
@@ -84,7 +84,7 @@ Time Complexity Selection Sort
 
    **Kompleksitas Kasus Rata-rata:** ``O(n^2)`` Terjadi ketika elemen-elemen dalam array tidak berada dalam urutan yang teratur (tidak naik maupun turun).
 
-1. **Kompleksitas Ruang:**
+2. **Kompleksitas Ruang:**
 
 Kompleksitas ruang adalah ``O(1)`` karena hanya menggunakan satu variabel tambahan, yaitu variabel temp.
 
