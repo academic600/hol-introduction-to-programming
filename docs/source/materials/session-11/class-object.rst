@@ -12,7 +12,7 @@ Contoh : Mobil adalah class, lalu atribut atribut mobil seperti pintu mobil, war
 
 
 Membuat Class
-~~~~~~~~~~~~~~~~~~~~~~~~~~``
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 Untuk membuat class  pada java kita bisa menamai class kita di java dengan diwali huruf besar. 
 Contoh di bawah membuat class Main 
 
