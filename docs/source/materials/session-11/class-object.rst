@@ -8,4 +8,36 @@ Pemrograman berorientasi objek (OOP) melibatkan penggunaan objek. Sebuah objek m
 
 **Objek** adalah sebuah instansi dari sebuah kelas.
 
-Contoh : 
+Contoh : Mobil adalah class, lalu atribut atribut mobil seperti pintu mobil, warna mobil, roda mobil adalah objek. 
+
+
+Membuat Class
+~~~~~~~~~~~~~~~~~~~~~~~~~~``
+Untuk membuat class  pada java kita bisa menamai class kita di java dengan diwali huruf besar. 
+Contoh di bawah membuat class Main 
+
+
+.. code:: java
+
+    public class Main {
+     int x = 5;
+    }
+
+Membuat object
+~~~~~~~~~~~~~~~~~~~~~~~
+Contoh membuat object adalah memanggil nama class tersebut lalu memberi nama pada objek kita. 
+
+.. code:: java
+
+    public class Main {
+        int x = 5;
+
+        public static void main(String[] args) {
+            Main myObj = new Main();
+            System.out.println(myObj.x);
+        }
+    }
+
+.. code:: console
+
+    5
