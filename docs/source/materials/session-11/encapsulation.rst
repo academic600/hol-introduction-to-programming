@@ -63,4 +63,8 @@ Sebuah bidang data private tidak dapat diakses oleh sebuah objek dari luar kelas
 
     Merek: Toyota
     Warna: Merah
+<<<<<<< Updated upstream
     Tahun Produksi: 2020
+=======
+    Tahun Produksi: 2020
+>>>>>>> Stashed changes

@@ -52,4 +52,8 @@ hanya dapat digunakan dalam sebuah kelas abstrak, dan tidak memiliki tubuh (body
 .. code:: console
 
     Drawing a circle
+<<<<<<< Updated upstream
     Drawing a rectangle
+=======
+    Drawing a rectangle
+>>>>>>> Stashed changes
