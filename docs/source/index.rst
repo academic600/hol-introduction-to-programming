@@ -76,7 +76,7 @@ Daftar Isi
    materials/session-06/continue
    materials/session-06/label
    materials/session-06/exception-handling
-   materials/session-06/soal
+  
 
 .. toctree:: 
    :maxdepth: 1
@@ -119,7 +119,10 @@ Daftar Isi
    materials/session-11/encapsulation
    materials/session-11/inheritance
    materials/session-11/polymorphism
-<<<<<<< Updated upstream
    materials/session-11/abstract
-=======
->>>>>>> Stashed changes
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Latihan Soal 
+
+   materials/exercise/latihan-soal
