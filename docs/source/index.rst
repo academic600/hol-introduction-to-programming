@@ -97,7 +97,7 @@ Daftar Isi
    :maxdepth: 1
    :caption: Session 09 - Methods
 
-   materials/session-09/method
+   materials/session-09/method-parameter
    materials/session-09/variable-scope
 
 .. toctree:: 

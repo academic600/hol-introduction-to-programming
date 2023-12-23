@@ -1,132 +1,108 @@
-Variable Scope
-===================
-*Variabel scope* (lingkup variabel) di Java mengacu pada bagian program di mana variabel tertentu dapat diakses atau digunakan. Lingkup variabel ditentukan oleh di mana variabel tersebut dideklarasikan, dan ada beberapa jenis lingkup variabel dalam Java:
+*Scope* Variabel
+================
 
-**Lingkup Blok** 
+Kita juga sudah mempelajari mengenai *scope* pada sebuah kode di materi sebelumnya. Namun, pada materi ini akan dibahas lebih detail mengenai *scope*. Hal ini penting dipelajari untuk mengentahui pada bagian mana variabel atau *method* dapat diakses atau digunakan.
 
-Variabel yang dideklarasikan di dalam sebuah blok kode (misalnya, blok if, for, atau while) hanya dapat diakses di dalam blok tersebut.
+*Block Scope*
+-------------
+
+Variabel yang di deklarasikan pada sebuah *block* hanya dapat digunakan dalam *block* tersebut saja. Contoh block yang dimaksud adalah *block* ``if``, ``for``, ``while``, ``try``, dan sebagainya.
 
 .. code:: java
 
     public class Main {
-        // Metode dengan satu parameter
-
-        public void exampleMethod() {
-            int x = 10; // Variabel x memiliki lingkup di dalam method exampleMethod()
+        public static void main(String[] args) {
+            int x = 10; // Variabel x dapat digunakan dimanapun di dalam method ini
             if (x > 5) {
-                int y = 20; // Variabel y memiliki lingkup di dalam blok if
-                System.out.println(x); // x dapat diakses di sini
-                System.out.println(y); // y dapat diakses di sini
+                int y = 20; // Variabel y hanya dapat digunakan di dalam block if
+                System.out.println(x); // Bukti bahwa variabel x dapat digunakan, karena masih di dalam method ini
+                System.out.println(y); // Bukti bahwa variabel y dapat digunakan, karena masih di dalam scope if
             }
-            System.out.println(x); // x dapat diakses di sini
-            // System.out.println(y); // Ini akan menyebabkan error karena y tidak dapat diakses di luar blok if
+            System.out.println(x); // Bukti bahwa variabel x dapat digunakan, karena masih di dalam method ini
+            // System.out.println(y); // Error, karena variabel y tidak dapat digunakan di luar scope if
+        }
+    }
+
+.. code:: console 
+
+    10
+    20
+    10
+
+.. note:: 
+
+    Apabila ingin membuat variabel dapat diakses dalam seluruh *method*, deklarasikan variabel di dalam *scope method* dan di luar dari *block* apapun, seperti pada variabel ``x``.
+
+*Method Scope*
+--------------
+
+Variabel yang di deklarasikan pada sebuah *method* hanya dapat digunakan dalam *method* tersebut saja.
+
+.. code:: java
+
+    public class Main {
+        public void example1() {
+            int x = 10; // Variabel x dapat digunakan dimanapun di dalam method ini
+            if (true) {
+                System.out.println(x); // Bukti bahwa variabel x dapat digunakan, karena masih di dalam method ini
+            }
+        }
+        
+        public void example2() {
+            int y = 20; // Variabel y dapat digunakan dimanapun di dalam method ini
+            if (true) {
+                System.out.println(y); // Bukti bahwa variabel y dapat digunakan, karena masih di dalam method ini
+                // System.out.println(x); // Error, karena variabel x di deklerasikan pada method yang berbeda
+            }
         }
         
         public Main() {
-            exampleMethod();
+            example1();
+            example2();
         }
         
         public static void main(String[] args) {
             new Main();
-            
         }
     }
 
+.. code:: console
 
-
-.. code:: console 
-
-        10
-        20
-        10
-
-**Lingkup Metode (Method Scope)**
-
-Variabel yang dideklarasikan di dalam sebuah metode dapat diakses di seluruh metode itu.
-
-
-.. code:: java
-
-    public void exampleMethod() {
-        int a = 5; // Variabel a memiliki lingkup di dalam method exampleMethod()
-        System.out.println(a); // a dapat diakses di sini
-    }
-
-
-**Lingkup Kelas (Class Scope)**
-
-Variabel yang dideklarasikan sebagai variabel kelas (di luar metode) dapat diakses oleh semua metode dalam kelas yang sama.
-
-.. code:: 
-
-    public class MyClass {
-        int b = 15; // Variabel b memiliki lingkup di dalam kelas MyClass
-        public void displayB() {
-            System.out.println(b); // b dapat diakses di sini
-        }
-    }
+    10
+    20
 
 Variabel Global
-~~~~~~~~~~~~~~~~~~~~~
-Variabel global adalah variabel yang dideklarasikan di luar dari semua metode, biasanya di dalam sebuah kelas. Mereka dapat diakses oleh semua metode dalam kelas tersebut.
+---------------
 
+Sesuai dengan namanya, variabel global merupakan variabel yang dapat diakses secara global, dari manapun. Variabel global dapat digunakan pada *block* dan *method* manapun, tanpa terkecuali. Deklarasi variabel global ini dilakukan pada *scope class* dan diluar dari *method* apapun.
 
 .. code:: java
 
     public class Main {
-    
-	
-        // Variabel global yang digunakan di dalam kelas
-        static int globalVar = 10;
-
-        public static void main(String[] args) {
-            // Mengakses variabel global pada method main
-            System.out.println("Nilai globalVar pada method main: " + globalVar);
-
-            // Memanggil metode lain yang menggunakan variabel global
-            anotherMethod();
+        int x = 10; // Variabel x merupakan variabel global yang dapat digunakan di manapun
+        
+        public void example1() {
+            System.out.println(x); // Bukti bahwa variabel x dapat digunakan, karena masih di dalam class ini
         }
-
-        public static void anotherMethod() {
-            // Mengakses variabel global dari metode lain
-            System.out.println("Nilai globalVar pada anotherMethod: " + globalVar);
+        
+        public void example2() {
+            System.out.println(x); // Bukti bahwa variabel x dapat digunakan, karena masih di dalam class ini
+        }
+        
+        public Main() {
+            System.out.println(x); // Bukti bahwa variabel x dapat digunakan, karena masih di dalam class ini
+            example1();
+            example2();
+        }
+        
+        public static void main(String[] args) {
+            new Main();
         }
     }
 
 
 .. code:: console
 
-
-    Nilai globalVar pada method main: 10
-    Nilai globalVar pada anotherMethod: 10
-
-Variabel Local
-~~~~~~~~~~~~~~~~~~
-Variabel lokal adalah variabel yang dideklarasikan di dalam suatu blok kode, seperti di dalam metode atau blok if/for/while. Mereka hanya dapat diakses di dalam blok kode di mana mereka dideklarasikan.
-
-.. code:: java
-
-    public class LocalVariableSimple {
-
-        public static void main(String[] args) {
-            // Variabel lokal di dalam method main
-            int number = 5;
-            System.out.println("Nilai number: " + number);
-            
-            // Variabel lokal di dalam blok kode if
-            if (number > 3) {
-                String message = "Angka lebih besar dari 3";
-                System.out.println(message);
-            }
-            
-            // System.out.println(message); // Ini akan menyebabkan error karena message hanya bisa diakses di dalam blok if
-        }
-    }
-
-.. code:: console 
-
-    Nilai number: 5
-    Angka lebih besar dari 3
-
-
-
+    10
+    10
+    10
