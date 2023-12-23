@@ -2,7 +2,7 @@ Merge Sort
 ==================
 *Merge sort* adalah algoritma pengurutan yang menggunakan pendekatan *divide and conquer* (bagi dan taklukkan). Algoritma ini membagi array menjadi bagian-bagian yang lebih kecil, secara rekursif mengurutkan setiap bagian tersebut, dan kemudian menggabungkan bagian-bagian yang sudah diurutkan tersebut untuk mendapatkan array yang utuh terurut.
 
-.. image:: /images/session-10/merge-sort-example_0.png
+.. image:: /images/session-10/MergeSort/MergeSort-1.png
 
 
 Divide and Conquer 
@@ -60,7 +60,7 @@ Algoritma ini mempertahankan tiga penunjuk, satu untuk masing-masing dari dua ar
     Ya:
         Salin semua elemen yang tersisa dari array yang tidak kosong
 
-.. image:: /images/session-10/merge-two-sorted-arrays.png
+.. image:: /images/session-10/MergeSort/MergeSort-2.png
 
 Pada gambar diatas karena tidak ada elemen lagi yang tersisa pada array kedua, kita tahu bahwa kedua array telah di urutkan, kita bisa menyalin sisa elemen dari aray yang pertama secara langsung.
 
@@ -137,7 +137,7 @@ Penjelasan Merge Function
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Berikut penjelasan bagaimana cara fungsi merge() bekerja dengan contoh dataset dibawah ini: 
 
-.. image:: /images/session-10/merge-sort-demo-step-1.png
+.. image:: /images/session-10/MergeSort/MegerSort-3.png
 
 Pada gambar diatas array ``A[0..5]`` berisi dua subarray terurut, yaitu ``A[0..3]`` dan ``A[4..5]``. 
 
@@ -166,7 +166,7 @@ Mari kita lihat bagaimana cara fungsi merge akan menggabungkan dua array.
         M[j] = arr[q + 1 + j];
         // M[0,1] = A[4,5] = [6,9]
 
-.. image:: /images/session-10/merge-sort-demo-step-2.png    
+.. image:: /images/session-10/MergeSort/MergeSort-4.png
 
 Keterangan : 
 
@@ -184,12 +184,12 @@ Keterangan :
     j = 0; 
     k = p; 
 
-.. image:: /images/session-10/merge-sort-demo-step-3.png
+.. image:: /images/session-10/MergeSort/MergeSort-5.png
 
 
 **Langkah 3**: Sampai kita mencapai akhir dari ``L`` atau ``M``, pilih yang lebih besar di antara elemen-elemen ``L`` dan ``M`` dan letakkan mereka pada posisi yang benar di ``A[p..r]``
 
-.. code:: console
+.. code:: console   
 
     while (i < n1 && j < n2) { 
         if (L[i] <= M[j]) { 
@@ -202,7 +202,7 @@ Keterangan :
         k++; 
     }
 
-.. image:: /images/session-10/merge-sort-demo-step-4.png
+.. image:: /images/session-10/MergeSort/MergeSort-6.png
 
 
 **Langkah 4**: Ketika kita kehabisan elemen dari salah satu di antara ``L`` atau ``M``, ambil elemen-elemen yang tersisa dan letakkan di ``A[p..r]``
@@ -216,7 +216,7 @@ Keterangan :
         k++;
     }
 
-.. image:: /images/session-10/merge-sort-demo-step-5.png
+.. image:: /images/session-10/MergeSort/MergerSort-7.png
 
 .. code:: console
 
@@ -227,7 +227,7 @@ Keterangan :
         k++;
     }
 
-.. image:: /images/session-10/merge-sort-demo-step-6.png
+.. image:: /images/session-10/MergeSort/MergeSort-8.png
 
 Langkah ini diperlukan jika ukuran ``M`` lebih besar daripada ``L``.
 
