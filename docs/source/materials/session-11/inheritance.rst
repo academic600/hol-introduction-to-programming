@@ -8,11 +8,9 @@ Untuk mewarisi dari sebuah kelas, gunakan kata kunci extends.
 
 Pada contoh di bawah ini, kelas *Car* (subclass) mewarisi atribut dan metode dari kelas *Vehicle* (superclass):
 
-<<<<<<< Updated upstream
+
 .. image:: /images/session-11/Inheritance.png
-=======
-.. image:: /images/session-11/inheritance.png
->>>>>>> Stashed changes
+
 
 .. code:: java
 
@@ -43,8 +41,5 @@ Pada contoh di bawah ini, kelas *Car* (subclass) mewarisi atribut dan metode dar
 
 
     Tuut, tuut!
-<<<<<<< Updated upstream
     Ford Mustang
-=======
-    Ford Mustang
->>>>>>> Stashed changes
+  
