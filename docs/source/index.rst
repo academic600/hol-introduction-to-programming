@@ -104,10 +104,10 @@ Daftar Isi
    :caption: Session 10 - Sorting
 
    materials/session-10/sorting
-   materials/session-10/bubblesort
-   materials/session-10/selectionSort
-   materials/session-10/insertionSort
-   materials/session-10/mergeSort
+   materials/session-10/bubble-sort
+   materials/session-10/selection-sort
+   materials/session-10/insertion-sort
+   materials/session-10/merge-sort
 
 .. toctree:: 
    :maxdepth: 1
