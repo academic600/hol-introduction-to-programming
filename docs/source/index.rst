@@ -76,7 +76,6 @@ Daftar Isi
    materials/session-06/continue
    materials/session-06/label
    materials/session-06/exception-handling
-  
 
 .. toctree:: 
    :maxdepth: 1
@@ -102,7 +101,7 @@ Daftar Isi
 
 .. toctree:: 
    :maxdepth: 1
-   :caption: Sort
+   :caption: Session 10 - Sorting
 
    materials/session-10/sorting
    materials/session-10/bubblesort
@@ -110,10 +109,9 @@ Daftar Isi
    materials/session-10/insertionSort
    materials/session-10/mergeSort
 
-
 .. toctree:: 
    :maxdepth: 1
-   :caption: Object Oriented Programming
+   :caption: Session 11 - Object Oriented Programming
 
    materials/session-11/class-object
    materials/session-11/encapsulation
