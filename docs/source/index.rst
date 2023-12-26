@@ -117,7 +117,7 @@ Daftar Isi
    materials/session-11/encapsulation
    materials/session-11/inheritance
    materials/session-11/polymorphism
-   materials/session-11/abstract
+   materials/session-11/abstract-class-method
 
 .. toctree:: 
    :maxdepth: 1

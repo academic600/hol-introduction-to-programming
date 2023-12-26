@@ -1,70 +1,88 @@
-Encapsulation
-==================
+*Encapsulation*
+===============
 
-Encapsulation adalah konsep dalam pemrograman yang mengizinkan pembatasan akses langsung ke bagian dalam suatu objek dan mendorong penggunaan metode (method) untuk mengakses atau mengubah data di dalam objek tersebut. Dengan menggunakan encapsulation, variabel-variabel di dalam suatu class disembunyikan atau dilindungi dari akses langsung oleh class lain, dan hanya dapat diakses melalui metode-metode yang telah ditentukan.
+Setelah mempelajari tentang *class* dan *object*, selanjutnya akan dibahas mengenai *Object Oriented Programming* (OOP). Terdapat tiga prinsip dasar yang perlu dipelajari mengenai OOP sehingga program yang dibuat dapat lebih efektif. Ketiga prinsip dasar tersebut adalah *encapsulation* (enkapsulasi), *inheritance* (pewarisan), dan *polymorphism* (polimorfisme). Pada bagian ini akan dibahas mengenai *encapsulation* (enkapsulasi).
 
-Sebuah bidang data private tidak dapat diakses oleh sebuah objek dari luar kelas yang menentukan bidang ``private`` tersebut. Namun, seringkali klien memerlukan untuk mengambil dan memodifikasi bidang data tersebut. Untuk membuat sebuah bidang data ``private`` dapat diakses, sediakan sebuah metode ``getter`` untuk mengembalikan nilainya. Untuk memungkinkan sebuah bidang data ``private`` diperbarui, sediakan sebuah metode ``setter`` untuk menetapkan nilai baru. Metode ``getter`` juga disebut sebagai ``accessor`` dan ``setter`` sebagai ``mutator``.
+Sesuai dengan namanya, *encapsulation* (enkapsulasi) artinya membungkus sebuah *class* dengan tujuan membatasi *class* lain untuk mengakses atribut secara langsung. Caranya adalah dengan menggunakan *access modifier* yang sudah dipelajari pada materi sebelumnya. Umumnya *access modifierlain* yang akan digunakan adalah ``private``. *Access modifier* ini memungkinkan atribut hanya dapat diakses oleh *class* bersangkutan saja. Nantinya, *class* lain dapat mengakses atribut tersebut dengan menggunakan *method getter* atau *accessor*. Sedangkan, untuk mengubah atribut dari *class* lain dapat menggunakan method *setter* atau *mutator*.
+
+.. note:: 
+
+    Pada aplikasi Eclipse, terdapat *shortcut* untuk dapat membuat *method getter* dan *setter* secara otomatis. Tekan tombol ``ALT`` + ``SHIFT`` + ``S`` secara bersamaan, kemudian tekan tombol ``R``.
+
+    .. image:: /images/session-11/setter-getter-shortcut.png
+        :width: 300
+        :align: center
+    .. centered:: Tampilan shortcut *Method Getter* dan *Setter*
+    
+    Pada *window* konfigurasi yang muncul, pilih *method* yang ingin dibuat. Gunakan tombol "*Select All*" yang ada pada bagian kanan untuk memilih semua *method*. Apabila sudah, tekan tombol *Generate*.
+
+    .. image:: /images/session-11/setter-getter-setting.png
+        :width: 350
+        :align: center
+    .. centered:: Tampilan konfigurasi *Method Getter* dan *Setter*
+
+Berikut adalah contoh implementasi *encapsulation* (enkapsulasi) pada sebuah *class*.
 
 .. code:: java
 
-    class Mobil {
-        private String merek; // Variabel dienkapsulasi dengan akses private
-        private String warna;
-        private int tahunProduksi;
-
-        // Metode untuk mengatur nilai merek
-        public void setMerek(String merekBaru) {
-            merek = merekBaru;
-        }
-
-        // Metode untuk mengambil nilai merek
-        public String getMerek() {
-            return merek;
-        }
-
-        // Metode untuk mengatur nilai warna
-        public void setWarna(String warnaBaru) {
-            warna = warnaBaru;
-        }
-
-        // Metode untuk mengambil nilai warna
-        public String getWarna() {
-            return warna;
-        }
-
-        // Metode untuk mengatur nilai tahunProduksi
-        public void setTahunProduksi(int tahunBaru) {
-            tahunProduksi = tahunBaru;
-        }
-
-        // Metode untuk mengambil nilai tahunProduksi
-        public int getTahunProduksi() {
-            return tahunProduksi;
-        }
-    }
-
     public class Main {
-        public static void main(String[] args) {
+        
+        public class Mobil {
+            // Atribut yang dimiliki oleh class Mahasiswa
+            private String jenis;
+            private String warna;
+            private int tahun;
+            
+            // Method getter untuk atribut jenis bernama getJenis()
+            public String getJenis() {
+                return jenis;
+            }
+            // Method setter untuk atribut jenis bernama setJenis()
+            public void setJenis(String jenis) {
+                this.jenis = jenis;
+            }
+			
+            // Method getter untuk atribut warna bernama getWarna()
+            public String getWarna() {
+                return warna;
+            }
+            // Method setter untuk atribut warna bernama setWarna()
+            public void setWarna(String warna) {
+                this.warna = warna;
+            }
+            
+            // Method getter untuk atribut tahun bernama getTahun()
+            public int getTahun() {
+                return tahun;
+            }
+            // Method setter untuk atribut tahun bernama setTahun()
+            public void setTahun(int tahun) {
+                this.tahun = tahun;
+            }
+        }
+        
+        public Main() {
+            // Membuat object dari class Mobil
             Mobil mobil = new Mobil();
 
-            // Menggunakan metode setter untuk mengatur nilai atribut
-            mobil.setMerek("Toyota");
-            mobil.setWarna("Merah");
-            mobil.setTahunProduksi(2020);
+            // Mengubah atribut menggunakan setter
+            mobil.setJenis("SUV");
+            mobil.setWarna("Hitam");
+            mobil.setTahun(2023);
 
-            // Menggunakan metode getter untuk mendapatkan nilai atribut
-            System.out.println("Merek: " + mobil.getMerek());
+            // Mengakses atribut menggunakan getter
+            System.out.println("Jenis: " + mobil.getJenis());
             System.out.println("Warna: " + mobil.getWarna());
-            System.out.println("Tahun Produksi: " + mobil.getTahunProduksi());
+            System.out.println("Tahun: " + mobil.getTahun());
+        }
+        
+        public static void main(String[] args) {
+            new Main();
         }
     }
 
 .. code:: console
 
-    Merek: Toyota
-    Warna: Merah
-<<<<<<< Updated upstream
-    Tahun Produksi: 2020
-=======
-    Tahun Produksi: 2020
->>>>>>> Stashed changes
+    Jenis: SUV
+    Warna: Hitam
+    Tahun: 2023

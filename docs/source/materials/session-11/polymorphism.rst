@@ -1,92 +1,102 @@
-Polymorphism
-======================
-Polymorphism berasal dari bahasa Yunani, yaitu ``poly`` yang berarti banyak, ``morph`` yang berarti bentuk, jadi Polymorphism adalah banyak bentuk dan terjadi ketika kita memiliki banyak kelas yang saling terkait melalui pewarisan.
+*Polymorphism*
+==============
 
-Pewarisan memungkinkan kita mewarisi atribut dan metode dari kelas lain. Polimorfisme menggunakan metode-metode tersebut untuk melakukan tugas-tugas yang berbeda. Ini memungkinkan kita untuk melakukan satu tindakan dengan cara yang berbeda.
+*Polymorphism* berasal dari bahasa Yunani, yaitu *poly*, yang berarti banyak, dan *morph*, yang berarti bentuk. Sehingga, *polymorphism* berarti sebuah *object* dapat memiliki banyak bentuk. Terdapat dua konsep *polymorphism* yang dapat diterapkan, yaitu *overloading* dan *overriding*. 
 
-Sebagai contoh, bayangkan sebuah superclass yang disebut Animal yang memiliki metode bernama ``animalSound()``. Subclass dari Animal bisa menjadi *Pigs*, *Cats*, *Dogs*, *Birds* - Dan mereka juga memiliki implementasi suara hewan mereka sendiri (babi menguik, kucing mengeong, dan sebagainya):
+*Overloading*
+-------------
+
+Konsep ini memungkinkan pembuat program dapat mendeklarasikan *method* dengan nama yang sama di dalam sebuah *class*, namun dengan *parameter* atau *return type* yang berbeda. Berikut adalah contoh implementasi *overloading*.
 
 .. code:: java
 
-    class Animal {
-        public void animalSound() {
-            System.out.println("The animal makes a sound");
-        }
-    }
+    public class Main {
+        class Calculator {
+            // Overloading method add dengan return type int dan dua parameter int
+            public int add(int x, int y) {
+                return x + y;
+            }
 
-    class Pig extends Animal {
-        public void animalSound() {
-            System.out.println("The pig says: wee wee");
-        }
-    }
+            // Overloading method add dengan return type double dan dua parameter double
+            public double add (double x, double y) {
+                return x + y;
+            }
 
-    class Dog extends Animal {
-        public void animalSound() {
-            System.out.println("The dog says: bow wow");
+            // Overloading method add dengan return type int dan tiga parameter int
+            public int add(int x, int y, int z) {
+                return x + y + z;
+            }
         }
-    }
 
-        class Main {
+        public Main() {
+            Calculator calculator = new Calculator();
+
+            // Memanggil method add dengan return type int dan dua parameter int 
+            System.out.println("add(10, 5) = " + calculator.add(10, 5));
+
+            // Memanggil method add dengan return type double dan dua parameter double
+            System.out.println("add(3.5, 2.7) = " + calculator.add(3.5, 2.7));
+
+            // Memanggil method add dengan return type int dan tiga parameter int
+            System.out.println("add(10, 5, 9) = " + calculator.add(10, 5, 9));
+        }
+
         public static void main(String[] args) {
-            Animal myAnimal = new Animal();  // Membuat Animal objek
-            Animal myPig = new Pig();  // Membuat objek pig
-            Animal myDog = new Dog();  // Membuat objek dog
-            myAnimal.animalSound();
-            myPig.animalSound();
-            myDog.animalSound();
+            new Main();
         }
     }
 
 .. code:: console
 
-
-    The animal makes a sound
-    The pig says: wee wee
-    The dog says: bow wow
-
+    add(10, 5) = 15
+    add(3.5, 2.7) = 6.2
+    add(10, 5, 9) = 24
 
 
+*Overriding*
+------------
 
-
-
-Overloading Method 
-=======================
-Overloading terjadi saat ada beberapa metode dengan nama yang sama di sebuah kelas, tetapi dengan parameter yang berbeda. Metode-metode tersebut bisa memiliki jumlah atau tipe parameter yang berbeda. Saat memanggil metode, Java akan menentukan metode mana yang sesuai berdasarkan jumlah atau tipe parameter yang digunakan dalam pemanggilan.
+Konsep ini terjadi ketika *child class* (*sub-class*) memiliki *method* dengan nama yang sama, tipe *parameter* yang sama, dan *return type* yang sama dengan method dari *parent class* (*super-class*). Program hanya akan menjalankan method yang berada pada *child class*. Berikut adalah contoh implementasi *overriding*.
 
 .. code:: java
 
-    class Calculator {
-        // Overloading method add dengan dua parameter int
-        public int add(int x, int y) {
-            return x + y;
+    public class Main {
+        public class Kendaraan {
+            protected void suara() {
+                System.out.println("Tuut, tuut!");
+            }
         }
+        
+        public class Mobil extends Kendaraan {
+            @Override
+            public void suara() {
+                System.out.println("Poom, poom!");
+            }
+        }
+        
+        public class Bus extends Kendaraan {
+            @Override
+            public void suara() {
+                System.out.println("Honk, honk!");
+            }
+        }
+        
+        public Main() {
+            // Membuat object dari class Mobil
+            Kendaraan kendaraan1 = new Mobil();
+            kendaraan1.suara();
 
-        // Overloading method add dengan tiga parameter int
-        public int add(int x, int y, int z) {
-            return x + y + z;
+            // Membuat object dari class Bus
+            Kendaraan kendaraan2 = new Bus();
+            kendaraan2.suara();
+        }
+        
+        public static void main(String[] args) {
+            new Main();
         }
     }
 
+.. code:: console
 
-
-Overriding 
-======================
-Overriding, di sisi lain, terjadi saat sebuah subclass memiliki metode dengan nama dan parameter yang sama seperti metode dalam superclassnya. Subclass dapat mengganti implementasi dari metode yang diwarisi dari superclassnya.
-
-.. code:: java
-
-    class Animal {
-        public void makeSound() {
-            System.out.println("Some sound");
-        }
-    }
-
-
-    class Dog extends Animal {
-        @Override
-        public void makeSound() {
-            System.out.println("Bark!");
-        }
-    }
-
-Dalam contoh ini, method ``makeSound()`` pada kelas *Dog* meng-override metode ``makeSound()`` yang diwarisi dari kelas *Animal*. Ketika memanggil ``makeSound()`` pada objek Dog, versi yang didefinisikan dalam kelas *Dog* akan dieksekusi.
+    Poom, poom!
+    Honk, honk!
