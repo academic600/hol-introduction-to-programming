@@ -121,6 +121,6 @@ Daftar Isi
 
 .. toctree:: 
    :maxdepth: 1
-   :caption: Latihan Soal 
+   :caption: Exercise
 
-   materials/exercise/latihan-soal
+   materials/exercise/exercise
