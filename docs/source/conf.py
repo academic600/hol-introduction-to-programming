@@ -9,6 +9,8 @@ author = 'Elizabeth Erika Felia Oroh ER22-2, Renaldy RX19-2'
 release = '0.1'
 version = '0.1.0'
 
+
+
 # -- General configuration
 
 extensions = [
@@ -35,3 +37,12 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 
 epub_show_urls = 'footnote'
+
+# These folders are copied to the documentation's HTML output
+html_static_path = ['_static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom.css',
+]
