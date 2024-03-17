@@ -217,3 +217,68 @@ equalsIgnoreCase(str)
             System.out.println(isEmpty2); // Output: true
         }
     }
+
+*trim*
+------------
+
+*Method* ``trim()`` digunakan untuk menghapus whitespace yang berada di akhir *String*.
+
+.. code:: java 
+
+    public class Main {
+        public static void main(String[] args) {
+            String name1 = "Gunawan ";
+            System.out.println(name1); // Output: "Gunawan "
+
+            String name2 = "Gunawan";
+            System.out.println(name2); // Output: "Gunawan" 
+        }
+    }
+
+
+*split*
+------------
+
+*Method* ``split()`` digunakan untuk memisahkan *String* menjadi suatu data yang bertipe array. Pada ``split()`` dibutuhkan parameter dalam penggunaannya. 
+Parameter tersebut berfungsi untuk memisahkan string menjadi beberapa bagian dalam bentuk array. 
+
+.. code:: java 
+
+    public class Main {
+        public static void main(String[] args){
+            String text = "Budi Gunawan";
+            String[] arr_text = text.split(" "); // ["Budi", "Gunawan"]
+            System.out.println(arr_text[0]); // Output: "Budi"
+            System.out.println(arr_text[1]); // Output: "Gunawan"
+        }
+    }
+
+
+*substring*
+--------------
+
+*Method* ``substring()`` digunakan untuk menambilkan suatu data *String* berdasarkan index dari *String* tersebut.
+
+.. code:: java 
+    public class Main {
+        public static void main(String[] args) {
+            String text = "Budiman";
+            System.out.println(text.substring(1)); // Output: "udiman"
+        }
+    }
+
+
+*replace*
+---------------
+
+*Method* ``replace()`` digunakan untuk mengganti character dari *String* menjadi sebuah character yang baru.
+
+.. code:: java 
+    public class Main {
+        public static void main(String[] args) {
+            String text = "Budiman";
+            System.out.println(text.replace("Bu", "Lu")); // Output: "Ludiman"
+        }
+    }
+
+

@@ -37,3 +37,10 @@ Berikut adalah contoh penggunaan *wrapper class* untuk *Double*.
     5
 
 Pada baris ke-3 kode diatas, dilakukan deklarasi variabel bernama ``myDouble`` dengan tipe data *Double* yang memiliki nilai desimal 5.99. Pada baris ke-4 kode diatas, dilakukan *output* untuk variabel ``myDouble`` dengan *method* ``intValue``, artinya nilai yang ada pada variabel akan diubah menjadi nilai integer, sehingga hasil yang tampil pada *console* adalah 5 (pembulatan ke bawah).
+
+
+Setiap wrapper class memiliki method-method nya tersendiri. Beberapa dari method wrapper class ada yang memiliki 
+methode yang sama dengan methode lainnya. 
+
+           
+
