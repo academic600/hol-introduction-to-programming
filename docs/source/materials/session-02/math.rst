@@ -59,3 +59,33 @@ random()
             System.out.println(randomInt); // Output: random integer value between minimum_value (inclusive) until maximum_value (exclusive).
         }
     }
+
+ceil(double a)
+-----------------
+
+*Method* ``ceil()`` digunakan untuk membulatkan bilangan Double ke bilangan yang lebih besar. 
+
+.. code:: java 
+
+    public class Main {
+        public static void main(String[] args) {
+            double a = 3.1;
+            System.out.println(Math.ceil(a)) // 4.0
+        }
+    }
+
+
+floor(double a)
+------------
+
+*Method* ``floor()`` digunakan untuk membulatkan bilangan ke angka yang lebih kecil terdekat.
+
+.. code:: java 
+    public class Main {
+        public static void main(String[] args) {
+            double a = 4.7; 
+            System.out.println(Math.floor(a)); // 4.0
+        }
+    }
+
+
