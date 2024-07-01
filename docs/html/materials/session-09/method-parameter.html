@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Method dan Parameter &mdash; HOL Introduction to Programming 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=e031e9a9"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Scope Variabel" href="variable-scope.html" />
+    <link rel="prev" title="ArrayList" href="../session-08/arraylist.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Introduction to Programming
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Pendahuluan (Opsional)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/java-introduction.html">Pengenalan Dasar <em>Java</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/ide-introduction.html">Pengenalan Dasar IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/instalation-guide.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01 -  Introduction to Java Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/creating-project.html">Pembuatan <em>Java Project</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/input-output.html">Output dan Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/variable-datatype.html">Variabel &amp; Tipe Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/debugging.html">Debugging</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02 - Wrapper Class, Math, Random</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/wrapper.html"><em>Wrapper Class</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/typecasting.html"><em>Type Casting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/string.html"><em>String Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/math.html">Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/random.html">Random</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03 - Operator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/operator-operand.html">Operator dan Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/arithmetic-operator.html">Operator Aritmatika (<em>Arithmetic</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/assignment-operator.html">Operator Penugasan (<em>Assignment</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/relational-operator.html">Operator Perbandingan (<em>Relational</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/logical-operator.html">Operator Logika (<em>Logical</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/bitwise-operator.html">Operator Bit (<em>Bitwise</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/precendence-associative-operator.html">Operator <em>Precendence</em> &amp; <em>Associative</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04 - Selection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/if-else.html">Seleksi <em>If</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/nested-if.html">Seleksi <em>If</em> Bersarang (<em>Nested</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/switch-case.html">Seleksi <em>Switch-Case</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 05 - Repetition</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/for.html">Repetisi <em>For</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/while.html">Repetisi <em>While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/do-while.html">Repetisi <em>Do-While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/validation.html">Validation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06 - Jump Operation and Exception Handling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/break.html"><em>Break</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/continue.html"><em>Continue</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/label.html"><em>Label</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/exception-handling.html"><em>Exception Handling</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07 - Static Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/multidimentional-array.html"><em>Multidimensional Array</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08 - Dynamic Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/dynamic-array.html"><em>Dynamic Array</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/vector.html"><em>Vector</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/arraylist.html"><em>ArrayList</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09 - Methods</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>Method</em> dan <em>Parameter</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#access-modifier"><em>Access Modifier</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#return-type"><em>Return Type</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parameter"><em>Parameter</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#return-dan-parameter-array"><em>Return</em> dan <em>Parameter Array</em></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="variable-scope.html"><em>Scope</em> Variabel</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10 - Sorting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/sorting.html"><em>Sorting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/bubble-sort.html"><em>Bubble Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/selection-sort.html"><em>Selection Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/insertion-sort.html"><em>Insertion Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/merge-sort.html"><em>Merge Sort</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 11 - Object Oriented Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/class-object.html"><em>Class</em> dan <em>Object</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/encapsulation.html"><em>Encapsulation</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/inheritance.html"><em>Inheritance</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/polymorphism.html"><em>Polymorphism</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/abstract-class-method.html"><em>Abstract Class</em> dan <em>Method</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Exercise</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../exercise/exercise.html">Latihan Soal</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Introduction to Programming</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><em>Method</em> dan <em>Parameter</em></li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="method-dan-parameter">
+<h1><em>Method</em> dan <em>Parameter</em><a class="headerlink" href="#method-dan-parameter" title="Permalink to this heading"></a></h1>
+<p>Sebenarnya pada materi sebelumnya, kita sudah membuat dan menggunakan <em>method</em>, yaitu <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">static</span> <span class="pre">void</span> <span class="pre">main(String[]</span> <span class="pre">args)</span></code>. Semua perintah yang ingin dilakukan, semuanya dimasukan ke dalam <em>mehtod</em> tersebut. Apabila sebuah program semakin besar dan kompleks, maka kode yang ada di dalam <em>method</em> tersebut juga akan semakin banyak. Selain itu, terdapat juga kemungkinan adanya kode yang duplikat dalam menjalankan tugas tertentu.</p>
+<p>Oleh karena masalah tersebut, bahasa pemrograman <em>Java</em> memungkinkan pembuat program dapat membuat dan menggunakan <em>method</em> buatan sendiri. Secara singkat, <em>method</em> merupakan kumpulan perintah yang digunakan untuk menjalankan suatu tugas tertentu. Sebuah <em>method</em> dapat mengembalikan atau tidak mengembalikan sebuah nilai dari tugas tersebut. Tujuan dibuatnya sebuah <em>method</em> adalah untuk memecahkan sebuah kode menjadi bagian-bagian yang lebih kecil. Selain itu, <em>method</em> juga dapat digunakan untuk menghilangkan bagian kode yang duplikat.</p>
+<p>Berikut adalah syntax dalam membuat dan memanggil sebuah <em>method</em>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">access_modifier return_type method_name(parameter1, ...) {</span>
+<span class="go">    // statements</span>
+<span class="go">    return data; // opsional, apabila mengembalikan sebuah nilai</span>
+<span class="go">}</span>
+
+<span class="go">mehtod_name(parameter1, ...);</span>
+</pre></div>
+</div>
+<section id="access-modifier">
+<h2><em>Access Modifier</em><a class="headerlink" href="#access-modifier" title="Permalink to this heading"></a></h2>
+<p><em>Access modifier</em> merupakan kata kunci yang digunakan untuk sifat dari sebuah variabel, <em>class</em>, atau <em>method</em>. Sifat yang dimaksud adalah visibilitas dari elemen tersebut. Berikut adalah <em>access modifier</em> yang dimiliki oleh bahasa pemrograman <em>Java</em>.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nama</p></th>
+<th class="head"><p>Penjelasan</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">public</span></code></p></td>
+<td><p>Dapat diakses secara publik dari mana saja, baik di dalam <em>class</em> yang sama, <em>package</em> yang berbeda, atau melalui pewarisan.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">private</span></code></p></td>
+<td><p>Hanya dapat diakses dari dalam <em>class</em> yang sama. Tidak dapat diakses dari <em>class</em> lain atau melalui pewarisan.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">protected</span></code></p></td>
+<td><p>Hanya dapat diakses dari dalam <em>class</em> yang sama, <em>sub-class</em> (melalui pewarisan), dan <em>package</em> yang sama. Tidak dapat diakses dari <em>package</em> yang berbeda, kecuali melalui pewarisan.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">default</span></code></p></td>
+<td><p>Hanya dapat diakses dari dalam <em>package</em> yang sama. Tidak dapat diakses dari <em>package</em> yang berbeda, atau melalui pewarisan.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pada bagian ini akan digunakan <em>access modifier</em> <code class="docutils literal notranslate"><span class="pre">public</span></code> saja untuk mempermudah penjelasan materi. <em>Access modifier</em> lain akan digunakan lebih banyak dan bervariasi ketika masuk ke dalam materi <em>Object Oriented Programming</em> (OOP).</p>
+</div>
+</section>
+<section id="return-type">
+<h2><em>Return Type</em><a class="headerlink" href="#return-type" title="Permalink to this heading"></a></h2>
+<p><em>Return type</em> dapat diartikan sebagai nilai yang dikembali ketika <em>method</em> tersebut dipanggil. Namun, tipe data nilai yang dikembalikan harus ditentukan terlebih dahulu.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Apabila tidak ada nilai yang dikembalikan, maka tipe data yang digunakan adalah <code class="docutils literal notranslate"><span class="pre">void</span></code>.</p>
+</div>
+<p>Berikut adalah beberapa contoh deklarasi method dengan tipe data yang berbeda-beda.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Deklarasi method getValidation dengan return type boolean</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">getValidation</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Deklarasi method getMessage dengan return type String</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getMessage</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Hello World!&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Deklarasi method displayMessage dengan return type void (tidak mengembalikan nilai)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">displayMessage</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Java Programming&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Memanggil method getValidation</span>
+<span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getValidation</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hasil dari method getValidation adalah &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Memanggil method getMessage</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hasil dari method getMessage adalah &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">getMessage</span><span class="p">());</span>
+
+<span class="w">        </span><span class="c1">// Memanggil method displayMessage</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Hasil dari method displayMessage adalah &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">displayMessage</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Main</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Hasil dari method getValidation adalah true</span>
+<span class="go">Hasil dari method getMessage adalah Hello World!</span>
+<span class="go">Hasil dari method displayMessage adalah Java Programming</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sebelumnya semua kode dituliskan ke dalam <em>method</em> <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">static</span> <span class="pre">void</span> <span class="pre">main(String[]</span> <span class="pre">args)</span></code>. <em>Method</em> tersebut memiliki kata kunci <code class="docutils literal notranslate"><span class="pre">static</span></code>, artinya terikat pada <em>class</em>, bukan <em>object</em> dari <em>class</em> tersebut. Apabila semua kode yang ada pada <em>scope constructor</em> <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Main()</span></code> dipindahkan ke <em>method</em> <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">static</span> <span class="pre">void</span> <span class="pre">main(String[]</span> <span class="pre">args)</span></code>, akan muncul error sebagai berikut.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Main.java:20: error: non-static method getValidation() cannot be referenced from a static context</span>
+<span class="go">    boolean result = getValidation();</span>
+<span class="go">                     ^</span>
+<span class="go">Main.java:24: error: non-static method getMessage() cannot be referenced from a static context</span>
+<span class="go">    System.out.println(&quot;Hasil dari method getMessage adalah &quot; + getMessage());</span>
+<span class="go">                                                                ^</span>
+<span class="go">Main.java:28: error: non-static method displayMessage() cannot be referenced from a static context</span>
+<span class="go">    displayMessage();</span>
+<span class="go">    ^</span>
+<span class="go">3 errors</span>
+</pre></div>
+</div>
+<p>Terdapat dua cara untuk mengatasi hal ini. Pertama, <em>method</em> yang dipanggil juga harus ditambahkan kata kunci <code class="docutils literal notranslate"><span class="pre">static</span></code>. Contohnya adalah <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">static</span> <span class="pre">boolean</span> <span class="pre">getValidation()</span></code>. Kedua, kode tersebut dipidahkan ke dalam <em>constructor</em> <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Main()</span></code>, seperti pada kode di atas. Penjelasan mengenai <em>constructor</em> akan dibahas pada materi <em>Object Oriented Programming</em> (OOP).</p>
+</div>
+</section>
+<section id="parameter">
+<h2><em>Parameter</em><a class="headerlink" href="#parameter" title="Permalink to this heading"></a></h2>
+<p>Pada bahasa pemrograman <em>Java</em>, <em>parameter</em> adalah nilai yang diberikan ketika sebuah <em>method</em> dipanggil. Dengan kata lain, <em>parameter</em> digunakan untuk mengirimkan data ke dalam method untuk digunakan di dalamnya. <em>Parameter</em> tersebut dideklarasikan di dalam sepasang tanda kurung (<code class="docutils literal notranslate"><span class="pre">()</span></code>). Apabila terdapat lebih dari satu <em>parameter</em>, data tersebut dipisahkan dengan tanda koma (<code class="docutils literal notranslate"><span class="pre">,</span></code>).</p>
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Deklarasi method greeting dengan satu parameter</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">username</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">username</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Deklarasi method greeting dengan dua parameter</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Memanggil method greeting</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="n">greeting</span><span class="p">(</span><span class="n">username</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Memanggil method add</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">add</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hasil penjumlahannya &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Main</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Hello, Alice!</span>
+<span class="go">Hasil penjumlahannya 30</span>
+</pre></div>
+</div>
+</section>
+<section id="return-dan-parameter-array">
+<h2><em>Return</em> dan <em>Parameter Array</em><a class="headerlink" href="#return-dan-parameter-array" title="Permalink to this heading"></a></h2>
+<p>Berikut adalah contoh implementasi <em>array</em> pada sebuah <em>method</em>.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="nf">addTwo</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">array</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">};</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">newArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">addTwo</span><span class="p">(</span><span class="n">array</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">newArray</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Main</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">5 3 4 8 6 4</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../session-08/arraylist.html" class="btn btn-neutral float-left" title="ArrayList" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="variable-scope.html" class="btn btn-neutral float-right" title="Scope Variabel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Software Laboratory Center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

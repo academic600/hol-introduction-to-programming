@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pembuatan Java Project &mdash; HOL Introduction to Programming 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=e031e9a9"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Output dan Input" href="input-output.html" />
+    <link rel="prev" title="Panduan Instalasi" href="../preface/instalation-guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Introduction to Programming
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Pendahuluan (Opsional)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/java-introduction.html">Pengenalan Dasar <em>Java</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/ide-introduction.html">Pengenalan Dasar IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/instalation-guide.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01 -  Introduction to Java Programming</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pembuatan <em>Java Project</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cara-membuat-java-project">Cara Membuat <em>Java Project</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cara-membuat-java-class">Cara Membuat <em>Java Class</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cara-menjalankan-java-project">Cara Menjalankan <em>Java Project</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tab-tab-umum-pada-aplikasi-eclipse">Tab-Tab Umum Pada Aplikasi <em>Eclipse</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#entry-point-pada-java"><em>Entry Point</em> pada <em>Java</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scope-pada-java"><em>Scope</em> pada <em>Java</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#special-character-pada-java"><em>Special Character</em> pada Java</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="input-output.html">Output dan Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable-datatype.html">Variabel &amp; Tipe Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02 - Wrapper Class, Math, Random</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/wrapper.html"><em>Wrapper Class</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/typecasting.html"><em>Type Casting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/string.html"><em>String Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/math.html">Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/random.html">Random</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03 - Operator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/operator-operand.html">Operator dan Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/arithmetic-operator.html">Operator Aritmatika (<em>Arithmetic</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/assignment-operator.html">Operator Penugasan (<em>Assignment</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/relational-operator.html">Operator Perbandingan (<em>Relational</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/logical-operator.html">Operator Logika (<em>Logical</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/bitwise-operator.html">Operator Bit (<em>Bitwise</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/precendence-associative-operator.html">Operator <em>Precendence</em> &amp; <em>Associative</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04 - Selection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/if-else.html">Seleksi <em>If</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/nested-if.html">Seleksi <em>If</em> Bersarang (<em>Nested</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/switch-case.html">Seleksi <em>Switch-Case</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 05 - Repetition</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/for.html">Repetisi <em>For</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/while.html">Repetisi <em>While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/do-while.html">Repetisi <em>Do-While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/validation.html">Validation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06 - Jump Operation and Exception Handling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/break.html"><em>Break</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/continue.html"><em>Continue</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/label.html"><em>Label</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/exception-handling.html"><em>Exception Handling</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07 - Static Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/multidimentional-array.html"><em>Multidimensional Array</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08 - Dynamic Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/dynamic-array.html"><em>Dynamic Array</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/vector.html"><em>Vector</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/arraylist.html"><em>ArrayList</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09 - Methods</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/method-parameter.html"><em>Method</em> dan <em>Parameter</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/variable-scope.html"><em>Scope</em> Variabel</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10 - Sorting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/sorting.html"><em>Sorting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/bubble-sort.html"><em>Bubble Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/selection-sort.html"><em>Selection Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/insertion-sort.html"><em>Insertion Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/merge-sort.html"><em>Merge Sort</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 11 - Object Oriented Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/class-object.html"><em>Class</em> dan <em>Object</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/encapsulation.html"><em>Encapsulation</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/inheritance.html"><em>Inheritance</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/polymorphism.html"><em>Polymorphism</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/abstract-class-method.html"><em>Abstract Class</em> dan <em>Method</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Exercise</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../exercise/exercise.html">Latihan Soal</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Introduction to Programming</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Pembuatan <em>Java Project</em></li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pembuatan-java-project">
+<h1>Pembuatan <em>Java Project</em><a class="headerlink" href="#pembuatan-java-project" title="Permalink to this heading"></a></h1>
+<section id="cara-membuat-java-project">
+<h2>Cara Membuat <em>Java Project</em><a class="headerlink" href="#cara-membuat-java-project" title="Permalink to this heading"></a></h2>
+<p><strong>Langkah 1</strong>. Buka aplikasi <em>Eclipse</em>. Apabila aplikasi <em>Eclipse</em> belum terpasang pada perangkat, silakan ikuti panduan <a class="reference internal" href="../preface/instalation-guide.html#panduan-instalasi"><span class="std std-ref">sebagai berikut</span></a>.</p>
+<a class="reference internal image-reference" href="../../_images/project-1-loading.png"><img alt="../../_images/project-1-loading.png" class="align-center" src="../../_images/project-1-loading.png" style="width: 300px;" /></a>
+<p class="centered">
+<strong>Tampilan <em>Loading</em> pada Aplikasi <em>Eclipse</em></strong></p><p><strong>Langkah 2</strong>. Pilih <em>workspace</em> yang ingin digunakan untuk menyimpan <em>Java project</em>. Secara default, <em>workspace</em> akan terletak pada <code class="docutils literal notranslate"><span class="pre">C:\Users\user\eclipse-workspace</span></code>. Kemudian, pilih tombol <code class="docutils literal notranslate"><span class="pre">Launch</span></code>.</p>
+<a class="reference internal image-reference" href="../../_images/project-2-workspace.png"><img alt="../../_images/project-2-workspace.png" class="align-center" src="../../_images/project-2-workspace.png" style="width: 400px;" /></a>
+<p class="centered">
+<strong>Tampilan Pemilihan <em>Workspace</em> pada Aplikasi <em>Eclipse</em></strong></p><p><strong>Langkah 3</strong>. Silakan tunggu hingga aplikasi <em>Eclipse</em> terbuka. Secara <em>default</em>, tampilan aplikasi akan tampak seperti berikut.</p>
+<a class="reference internal image-reference" href="../../_images/project-3-layout.png"><img alt="../../_images/project-3-layout.png" class="align-center" src="../../_images/project-3-layout.png" style="width: 800px;" /></a>
+<p class="centered">
+<strong>Tampilan Utama Aplikasi <em>Eclipse</em></strong></p><p><strong>Langkah 4</strong>. Buat <em>Java project</em> dengan cara memilih tombol <code class="docutils literal notranslate"><span class="pre">File</span></code> pada bagian <em>menu bar</em> (nomor 1). Kemudian, pilih tombol <code class="docutils literal notranslate"><span class="pre">New</span></code> (nomor 2) dan <code class="docutils literal notranslate"><span class="pre">Java</span> <span class="pre">Project</span></code> (nomor 3).</p>
+<a class="reference internal image-reference" href="../../_images/project-4-create.png"><img alt="../../_images/project-4-create.png" class="align-center" src="../../_images/project-4-create.png" style="width: 300px;" /></a>
+<p class="centered">
+<strong>Tampilan Menu Pembuatan <em>Java Project</em></strong></p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Terdapat cara lain untuk membuat <em>Java project</em>, yaitu dengan menggunakan <em>shortcut</em> <code class="docutils literal notranslate"><span class="pre">ALT</span> <span class="pre">+</span> <span class="pre">SHIFT</span> <span class="pre">+</span> <span class="pre">N</span></code> dan tekan huruf <code class="docutils literal notranslate"><span class="pre">J</span></code>. Kemudian, tekan <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p>
+</div>
+<p><strong>Langkah 5</strong>. Masukan nama <em>Java project</em> yang diinginkan (nomor 1). Pastikan versi JRE yang digunakan sudah sesuai (nomor 2). Kemudian, pilih tombol <code class="docutils literal notranslate"><span class="pre">Finish</span></code> (nomor 3).</p>
+<a class="reference internal image-reference" href="../../_images/project-5-config.png"><img alt="../../_images/project-5-config.png" class="align-center" src="../../_images/project-5-config.png" style="width: 450px;" /></a>
+<p class="centered">
+<strong>Tampilan Konfigurasi <em>Java Project</em></strong></p><p><strong>Langkah 6</strong>. <em>Java project</em> sudah berhasil dibuat.</p>
+<a class="reference internal image-reference" href="../../_images/project-6-success.png"><img alt="../../_images/project-6-success.png" class="align-center" src="../../_images/project-6-success.png" style="width: 400px;" /></a>
+<p class="centered">
+<strong>Tampilan <em>Java Project</em></strong></p></section>
+<section id="cara-membuat-java-class">
+<h2>Cara Membuat <em>Java Class</em><a class="headerlink" href="#cara-membuat-java-class" title="Permalink to this heading"></a></h2>
+<p><strong>Langkah 1</strong>. Klik kanan pada nama project yang sudah dibuat (nomor 1). Pilih tombol <code class="docutils literal notranslate"><span class="pre">New</span></code> (nomor 2) dan <code class="docutils literal notranslate"><span class="pre">Class</span></code> (nomor 3).</p>
+<a class="reference internal image-reference" href="../../_images/class-1-create.png"><img alt="../../_images/class-1-create.png" class="align-center" src="../../_images/class-1-create.png" style="width: 400px;" /></a>
+<p class="centered">
+<strong>Tampilan Menu Pembuatan <em>Java Class</em></strong></p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Terdapat cara lain untuk membuat <em>Java class</em>, yaitu dengan menggunakan <em>shortcut</em> <code class="docutils literal notranslate"><span class="pre">ALT</span> <span class="pre">+</span> <span class="pre">SHIFT</span> <span class="pre">+</span> <span class="pre">N</span></code> dan tekan huruf <code class="docutils literal notranslate"><span class="pre">C</span></code>.</p>
+</div>
+<p><strong>Langkah 2</strong>. Masukan nama <em>Java class</em> yang diinginkan (nomor 1). Pastikan checkbox dengan nama <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">static</span> <span class="pre">void</span> <span class="pre">main</span> <span class="pre">(String[]</span> <span class="pre">args)</span></code> (nomor 2) dan <code class="docutils literal notranslate"><span class="pre">Constructors</span> <span class="pre">from</span> <span class="pre">superclass</span></code> sudah terpilih (nomor 3). Kemudian, pilih tombol <code class="docutils literal notranslate"><span class="pre">Finish</span></code> (nomor 4).</p>
+<a class="reference internal image-reference" href="../../_images/class-2-config.png"><img alt="../../_images/class-2-config.png" class="align-center" src="../../_images/class-2-config.png" style="width: 350px;" /></a>
+<p class="centered">
+<strong>Tampilan Konfigurasi <em>Java Class</em></strong></p><p><strong>Langkah 3</strong>. <em>Java class</em> sudah berhasil dibuat.</p>
+<a class="reference internal image-reference" href="../../_images/class-3-success.png"><img alt="../../_images/class-3-success.png" class="align-center" src="../../_images/class-3-success.png" style="width: 500px;" /></a>
+<p class="centered">
+<strong>Tampilan <em>Java Class</em></strong></p></section>
+<section id="cara-menjalankan-java-project">
+<h2>Cara Menjalankan <em>Java Project</em><a class="headerlink" href="#cara-menjalankan-java-project" title="Permalink to this heading"></a></h2>
+<p>Pada aplikasi <em>Eclipse</em> cara menjalankan <em>Java project</em> sudah dipermudah, yaitu hanya dengan memilih tombol <code class="docutils literal notranslate"><span class="pre">Run</span></code> atau dapat menggunakan shortcut <code class="docutils literal notranslate"><span class="pre">F11</span></code>.</p>
+<a class="reference internal image-reference" href="../../_images/run-project.png"><img alt="../../_images/run-project.png" class="align-center" src="../../_images/run-project.png" style="width: 300px;" /></a>
+<p class="centered">
+<strong>Tampilan Menu <em>Run</em></strong></p><p>Apabila program yang dibuat adalah <em>console</em>, maka aplikasi <em>Eclipse</em> secara otomatis akan membukakan <em>tab Console</em> sebagai berikut.</p>
+<a class="reference internal image-reference" href="../../_images/run-result.png"><img alt="../../_images/run-result.png" class="align-center" src="../../_images/run-result.png" style="width: 500px;" /></a>
+<p class="centered">
+<strong>Hasil Program Sederhana</strong></p></section>
+<section id="tab-tab-umum-pada-aplikasi-eclipse">
+<h2>Tab-Tab Umum Pada Aplikasi <em>Eclipse</em><a class="headerlink" href="#tab-tab-umum-pada-aplikasi-eclipse" title="Permalink to this heading"></a></h2>
+<p><em>Menu Bar</em> berisikan pengaturan utama seperti <em>File</em>, <em>Run</em>, <em>Window</em>, dan sebagainya. Di dalam setiap pengaturan tersebut, terdapat beberapa peraturan yang dapat dipilih.</p>
+<a class="reference internal image-reference" href="../../_images/tab-menubar.png"><img alt="../../_images/tab-menubar.png" class="align-center" src="../../_images/tab-menubar.png" style="width: 600px;" /></a>
+<p class="centered">
+<strong>Tampilan <em>Menu Bar</em> pada Aplikasi <em>Eclipse</em></strong></p><p><em>Toolbar</em> berisikan pengaturan umum yang sering sering digunakan untuk mempercepat pencarian seperti membuat sesuatu, menjalankan program, <em>debugging</em> program, dan sebagainya.</p>
+<a class="reference internal image-reference" href="../../_images/tab-toolbar.png"><img alt="../../_images/tab-toolbar.png" class="align-center" src="../../_images/tab-toolbar.png" style="width: 600px;" /></a>
+<p class="centered">
+<strong>Tampilan <em>Toolbar</em> pada Aplikasi <em>Eclipse</em></strong></p><p><em>Package Explorer</em> merupakan <em>tab</em> yang menampilkan struktur <em>project</em>, termasuk folder (<em>package</em>) dan file yang ada di dalamnya. Selain itu, pembuat program juga dapat mengelola beberapa folder (<em>package</em>) dan file.</p>
+<a class="reference internal image-reference" href="../../_images/tab-package-explorer.png"><img alt="../../_images/tab-package-explorer.png" class="align-center" src="../../_images/tab-package-explorer.png" style="width: 600px;" /></a>
+<p class="centered">
+<strong>Tampilan <em>Package Explorer</em> pada Aplikasi <em>Eclipse</em></strong></p><p><em>Editor</em> merupakan <em>tab</em> yang menampilkan konten (kode) dari sebuah file. Pada <em>tab</em> ini, pembuat program dapat menambahkan atau memperbaiki kode yang mereka buat. Pastikan untuk selalu menyimpan file secara berkala, karena perubahan yang dibuat tidak secara otomatis disimpan. Selain itu, pembuat program juga dapat mengelola beberapa file secara bersamaan.</p>
+<a class="reference internal image-reference" href="../../_images/tab-editor.png"><img alt="../../_images/tab-editor.png" class="align-center" src="../../_images/tab-editor.png" style="width: 600px;" /></a>
+<p class="centered">
+<strong>Tampilan <em>Editor</em> pada Aplikasi <em>Eclipse</em></strong></p><p><em>Console</em> merupakan hasil dari program ketika dijalankan jika program yang dibuat adalah <em>console</em>. Selain itu, apabila program yang dibuat terdapat kesalahan (<em>error</em>), maka pesan kesalahan (<em>error</em>) juga akan ditampilkan.</p>
+<a class="reference internal image-reference" href="../../_images/tab-console.png"><img alt="../../_images/tab-console.png" class="align-center" src="../../_images/tab-console.png" style="width: 600px;" /></a>
+<p class="centered">
+<strong>Tampilan <em>Console</em> pada Aplikasi <em>Eclipse</em></strong></p></section>
+<section id="entry-point-pada-java">
+<h2><em>Entry Point</em> pada <em>Java</em><a class="headerlink" href="#entry-point-pada-java" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/run-result.png"><img alt="../../_images/run-result.png" class="align-center" src="../../_images/run-result.png" style="width: 500px;" /></a>
+<p class="centered">
+<strong><em>Entry Point</em> pada <em>Java</em></strong></p><p>Setiap program <em>Java</em> membutuhkan setidaknya satu buah <em>entry point</em>. <em>Entry point</em> merupakan <em>method</em> paling pertama yang akan dieksekusi apabila program dijalankan. <em>Method</em> yang pertama kali akan dijalankan adalah <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">static</span> <span class="pre">void</span> <span class="pre">main</span> <span class="pre">(String[]</span> <span class="pre">args)</span></code>. Di dalam <em>method</em> tersebut, terdapat sebuah kode untuk menghasilkan <em>output</em> “<em>Hello World</em>”. Oleh karena itu, hasil <em>output</em> tersebut dapat terlihat pada tab <em>Console</em>.</p>
+</section>
+<section id="scope-pada-java">
+<h2><em>Scope</em> pada <em>Java</em><a class="headerlink" href="#scope-pada-java" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/scope.png"><img alt="../../_images/scope.png" class="align-center" src="../../_images/scope.png" style="width: 500px;" /></a>
+<p class="centered">
+<strong><em>Scope</em> pada <em>Java</em></strong></p><p><em>Scope</em> merupakan cakupan dalam sebuah kode program yang terdapat diantara tanda kurung kurawal pembuka (<code class="docutils literal notranslate"><span class="pre">{</span></code>) dan tanda kurung kurawal penutup (<code class="docutils literal notranslate"><span class="pre">}</span></code>). Setiap <em>class</em> (contohnya <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">class</span> <span class="pre">Main</span></code>) memiliki <em>class scope</em> yang di dalamnya terdapat beberapa data ataupun <em>method</em>. Sedangkan, setiap <em>method</em> (contohnya <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">static</span> <span class="pre">void</span> <span class="pre">main</span></code>) memiliki <em>method scope</em> yang di dalamnya terdapat beberapa perintah. Scope tersebut dapat berlaku <em>nested</em>, artinya <em>scope</em> dapat berada di dalam <em>scope</em>.</p>
+</section>
+<section id="special-character-pada-java">
+<h2><em>Special Character</em> pada Java<a class="headerlink" href="#special-character-pada-java" title="Permalink to this heading"></a></h2>
+<p><em>Special character</em> merupakan karakter yang memiliki makna khusus. Berikut adalah beberapa karakter spesial yang ada pada bahasa pemrograman <em>Java</em>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><em>Special Character</em></p></th>
+<th class="head"><p>Penjelasan</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tanda Kurung <code class="docutils literal notranslate"><span class="pre">()</span></code></p></td>
+<td><p>Digunakan bersamaan dengan sebuah <em>method</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tanda Kurung Kurawal <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
+<td><p>Digunakan untuk memulai atau mengakhiri sebuah <em>scope</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Tanda Kurung Siku <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+<td><p>Digunakan untuk mendeklarasikan sebuah <em>array</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tanda Kutip Satu <code class="docutils literal notranslate"><span class="pre">''</span></code></p></td>
+<td><p>Digunakan untuk mendeklarasikan sebuah karakter (sebuah huruf).</p></td>
+</tr>
+<tr class="row-even"><td><p>Tanda Kutip Dua <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></td>
+<td><p>Digunakan untuk mendeklarasikan sebuah <em>string</em> (kumpulan dari beberapa huruf).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tanda Garis Miring Ganda <code class="docutils literal notranslate"><span class="pre">//</span></code></p></td>
+<td><p>Digunakan untuk membuat sebuah komentar.</p></td>
+</tr>
+<tr class="row-even"><td><p>Tanda Titik Koma <code class="docutils literal notranslate"><span class="pre">;</span></code></p></td>
+<td><p>Digunakan untuk mengakhiri suatu perintah.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../preface/instalation-guide.html" class="btn btn-neutral float-left" title="Panduan Instalasi" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="input-output.html" class="btn btn-neutral float-right" title="Output dan Input" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Software Laboratory Center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

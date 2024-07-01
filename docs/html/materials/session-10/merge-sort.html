@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merge Sort &mdash; HOL Introduction to Programming 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=e031e9a9"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Class dan Object" href="../session-11/class-object.html" />
+    <link rel="prev" title="Insertion Sort" href="insertion-sort.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Introduction to Programming
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Pendahuluan (Opsional)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/java-introduction.html">Pengenalan Dasar <em>Java</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/ide-introduction.html">Pengenalan Dasar IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/instalation-guide.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01 -  Introduction to Java Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/creating-project.html">Pembuatan <em>Java Project</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/input-output.html">Output dan Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/variable-datatype.html">Variabel &amp; Tipe Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/debugging.html">Debugging</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02 - Wrapper Class, Math, Random</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/wrapper.html"><em>Wrapper Class</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/typecasting.html"><em>Type Casting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/string.html"><em>String Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/math.html">Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/random.html">Random</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03 - Operator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/operator-operand.html">Operator dan Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/arithmetic-operator.html">Operator Aritmatika (<em>Arithmetic</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/assignment-operator.html">Operator Penugasan (<em>Assignment</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/relational-operator.html">Operator Perbandingan (<em>Relational</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/logical-operator.html">Operator Logika (<em>Logical</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/bitwise-operator.html">Operator Bit (<em>Bitwise</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/precendence-associative-operator.html">Operator <em>Precendence</em> &amp; <em>Associative</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04 - Selection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/if-else.html">Seleksi <em>If</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/nested-if.html">Seleksi <em>If</em> Bersarang (<em>Nested</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/switch-case.html">Seleksi <em>Switch-Case</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 05 - Repetition</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/for.html">Repetisi <em>For</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/while.html">Repetisi <em>While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/do-while.html">Repetisi <em>Do-While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/validation.html">Validation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06 - Jump Operation and Exception Handling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/break.html"><em>Break</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/continue.html"><em>Continue</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/label.html"><em>Label</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/exception-handling.html"><em>Exception Handling</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07 - Static Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/multidimentional-array.html"><em>Multidimensional Array</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08 - Dynamic Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/dynamic-array.html"><em>Dynamic Array</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/vector.html"><em>Vector</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/arraylist.html"><em>ArrayList</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09 - Methods</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/method-parameter.html"><em>Method</em> dan <em>Parameter</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/variable-scope.html"><em>Scope</em> Variabel</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10 - Sorting</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sorting.html"><em>Sorting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="bubble-sort.html"><em>Bubble Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="selection-sort.html"><em>Selection Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="insertion-sort.html"><em>Insertion Sort</em></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>Merge Sort</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#divide-and-conquer-merge-sort"><em>Divide and Conquer Merge Sort</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#algoritma-divide-merge-sort">Algoritma <em>Divide Merge Sort</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#algoritma-conquer-merge-sort">Algoritma <em>Conquer Merge Sort</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementasi-merge-sort">Implementasi <em>Merge Sort</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kompleksitas-waktu-merge-sort">Kompleksitas Waktu <em>Merge Sort</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kompleksitas-ruang-merge-sort">Kompleksitas Ruang <em>Merge Sort</em></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 11 - Object Oriented Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/class-object.html"><em>Class</em> dan <em>Object</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/encapsulation.html"><em>Encapsulation</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/inheritance.html"><em>Inheritance</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/polymorphism.html"><em>Polymorphism</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/abstract-class-method.html"><em>Abstract Class</em> dan <em>Method</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Exercise</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../exercise/exercise.html">Latihan Soal</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Introduction to Programming</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><em>Merge Sort</em></li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="merge-sort">
+<h1><em>Merge Sort</em><a class="headerlink" href="#merge-sort" title="Permalink to this heading"></a></h1>
+<p><em>Merge sort</em> merupakan algoritma sorting yang menggunakan pendekatan <em>divide and conquer</em>. Algoritma ini secara rekursif membagi <em>array</em> menjadi bagian-bagian yang lebih kecil, kemudian diurutkan dan digabungkan, sehingga didapatkan <em>array</em> yang sudah utuh dan terurut.</p>
+<section id="divide-and-conquer-merge-sort">
+<h2><em>Divide and Conquer Merge Sort</em><a class="headerlink" href="#divide-and-conquer-merge-sort" title="Permalink to this heading"></a></h2>
+<p>Dengan menggunakan pendekatan <em>divide and conquer</em>, sebuah masalah (dalam hal ini data) dibagi menjadi masalah yang lebih kecil (sub-masalah). Ketika solusi untuk setiap sub-masalah sudah siap, hasilnya akan digabungkan, sehingga masalah utama dapat dipecahkan.</p>
+<a class="reference internal image-reference" href="../../_images/simulation.png"><img alt="../../_images/simulation.png" class="align-center" src="../../_images/simulation.png" style="width: 350px;" /></a>
+<p class="centered">
+<strong>Simulasi Umum <em>Merge Sort</em></strong></p><p>Misalkan, terdapat sebuah <em>array</em> <code class="docutils literal notranslate"><span class="pre">A</span></code> yang memiliki <em>index</em> <code class="docutils literal notranslate"><span class="pre">0</span></code> sampai <em>index</em> <code class="docutils literal notranslate"><span class="pre">5</span></code>. Penjelasan tersebut disingkat menjadi <code class="docutils literal notranslate"><span class="pre">A[0..5]</span></code>. Dimulai pada tahap <em>divide</em>, <em>array</em> tersebut akan dipecah menjadi 2 bagian dengan ukuran yang sama besar, yaitu <code class="docutils literal notranslate"><span class="pre">A[0..2]</span></code> dan <code class="docutils literal notranslate"><span class="pre">A[3..5]</span></code>. Kemudian, <code class="docutils literal notranslate"><span class="pre">A[0..2]</span></code> akan dipecah lagi menjadi <code class="docutils literal notranslate"><span class="pre">A[0..0]</span></code> dan <code class="docutils literal notranslate"><span class="pre">A[1...2]</span></code>. Hal ini akan terus dilakukan sampai semua data terpecah. Setelah itu, masuk ke dalam tahap <em>conquer</em>, array akan diurutkan dan digabungkan secara bersamaan. Misalkan, <code class="docutils literal notranslate"><span class="pre">A[0..0]</span></code> dan <code class="docutils literal notranslate"><span class="pre">A[1..2]</span></code> akan digabungkan menjadi <code class="docutils literal notranslate"><span class="pre">A[0..2]</span></code> yang sudah terurut. Hal ini akan terus dilakukan sampai semua data menjadi utuh, sehingga menghasilkan <em>array</em> yang urut.</p>
+</section>
+<section id="algoritma-divide-merge-sort">
+<h2>Algoritma <em>Divide Merge Sort</em><a class="headerlink" href="#algoritma-divide-merge-sort" title="Permalink to this heading"></a></h2>
+<p>Berikut adalah kode untuk pemecahan algoritma <em>merge sort</em>.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">mergeSort</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">start</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">start</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">    </span><span class="n">mergeSort</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">);</span>
+<span class="w">    </span><span class="n">mergeSort</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">end</span><span class="p">);</span>
+<span class="w">    </span><span class="n">merge</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="w"> </span><span class="n">end</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Berdasarkan kode di atas, dibuat sebuah <em>method</em> rekursif bernama <code class="docutils literal notranslate"><span class="pre">mergeSort</span></code>. <em>Method</em> rekursif artinya <em>method</em> yang memanggil dirinya sendiri. Terlihat bahwa di dalam method <code class="docutils literal notranslate"><span class="pre">mergeSort</span></code> terdapat pemanggilan method <code class="docutils literal notranslate"><span class="pre">mergeSort</span></code>. Pemanggilan method <code class="docutils literal notranslate"><span class="pre">mergeSort</span></code> dilakukan sebanyak dua kali untuk memecah <em>array</em> menjadi dua bagian yang lebih kecil, yaitu antara awal (<code class="docutils literal notranslate"><span class="pre">start</span></code>) sampai tengah (<code class="docutils literal notranslate"><span class="pre">mid</span></code>) dan setelah tengah (<code class="docutils literal notranslate"><span class="pre">mid+1</span></code>) sampai akhir (<code class="docutils literal notranslate"><span class="pre">end</span></code>). Setelah itu, dipanggil method <code class="docutils literal notranslate"><span class="pre">merge</span></code> yang akan melakukan pengurutan dan penggabungan <em>array</em>.</p>
+</section>
+<section id="algoritma-conquer-merge-sort">
+<h2>Algoritma <em>Conquer Merge Sort</em><a class="headerlink" href="#algoritma-conquer-merge-sort" title="Permalink to this heading"></a></h2>
+<p>Berikut adalah <em>pseudocode</em> untuk pengurutan dan penggabungan algoritma <em>merge sort</em>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Apakah terdapat salah satu penunjuk array yang sudah mencapai akhir?</span>
+<span class="go">Tidak:</span>
+<span class="go">    Bandingkan data array pertama yang dipilih dengan data array kedua yang dipilih</span>
+<span class="go">    Masukan data yang lebih kecil dari kedua array tersebut ke array yang sudah diurutkan</span>
+<span class="go">    Pindahkan posisi penunjuk array pada data yang lebih kecil ke setelahnya</span>
+<span class="go">Ya:</span>
+<span class="go">    Masukan semua sisa data array yang belum mencapai akhir ke dalam array yang sudah diurutkan.</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/conquer.png"><img alt="../../_images/conquer.png" class="align-center" src="../../_images/conquer.png" style="width: 500px;" /></a>
+<p class="centered">
+<strong>Simulasi <em>Conquer Merge Sort</em></strong></p><p>Berdasarkan <em>pseudocode</em> dan simulasi di atas, dilakukan pengecekan antara dua buah <em>array</em> yang akan digabungkan. Masing-masing <em>array</em> dimulai dari posisi paling awal, yaitu 0. Program akan membandingkan antara <em>array</em> pertama dengan <em>array</em> kedua, mana yang memiliki nilai terkecil. <em>Array</em> yang memiliki nilai terkecil akan dimasukan ke dalam <em>array</em> yang sudah diurutkan dan posisinya digeser satu ke kanan. Hal itu terus dilakukan sampai salah satu <em>array</em> sudah mencapai akhir. Terakhir, <em>array</em> yang masih bersisa akan langsung dimasukan ke dalam <em>array</em> yang sudah diurutkan.</p>
+<p>Berdasarkan penjelasan di atas, dapat dibuatkan kode sebagai berikut.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">totalLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">totalRight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">mid</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">arrayLeft</span><span class="o">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">totalLeft</span><span class="o">]</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">arrayRight</span><span class="o">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">totalRight</span><span class="o">]</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalLeft</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">arrayLeft</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">array</span><span class="o">[</span><span class="n">start</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalRight</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">arrayRight</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">array</span><span class="o">[</span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">positionLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">positionRight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">positionSort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">positionLeft</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalLeft</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">positionRight</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">arrayLeft</span><span class="o">[</span><span class="n">positionLeft</span><span class="o">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">arrayRight</span><span class="o">[</span><span class="n">positionRight</span><span class="o">]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">array</span><span class="o">[</span><span class="n">positionSort</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayLeft</span><span class="o">[</span><span class="n">positionLeft</span><span class="o">]</span><span class="p">;</span>
+<span class="w">            </span><span class="n">positionLeft</span><span class="o">++</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">array</span><span class="o">[</span><span class="n">positionSort</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayRight</span><span class="o">[</span><span class="n">positionRight</span><span class="o">]</span><span class="p">;</span>
+<span class="w">            </span><span class="n">positionRight</span><span class="o">++</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">positionSort</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">positionLeft</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalLeft</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">array</span><span class="o">[</span><span class="n">positionSort</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayLeft</span><span class="o">[</span><span class="n">positionLeft</span><span class="o">]</span><span class="p">;</span>
+<span class="w">        </span><span class="n">positionLeft</span><span class="o">++</span><span class="p">;</span>
+<span class="w">        </span><span class="n">positionSort</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">positionRight</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">array</span><span class="o">[</span><span class="n">positionSort</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayRight</span><span class="o">[</span><span class="n">positionRight</span><span class="o">]</span><span class="p">;</span>
+<span class="w">        </span><span class="n">positionRight</span><span class="o">++</span><span class="p">;</span>
+<span class="w">        </span><span class="n">positionSort</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="implementasi-merge-sort">
+<h2>Implementasi <em>Merge Sort</em><a class="headerlink" href="#implementasi-merge-sort" title="Permalink to this heading"></a></h2>
+<p>Apabila kode yang sudah dijelaskan pada bagian atas digabungkan, akan tampak seperti berikut.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">totalLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">totalRight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">mid</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">arrayLeft</span><span class="o">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">totalLeft</span><span class="o">]</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">arrayRight</span><span class="o">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">totalRight</span><span class="o">]</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalLeft</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">arrayLeft</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">array</span><span class="o">[</span><span class="n">start</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalRight</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">arrayRight</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">array</span><span class="o">[</span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">positionLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">positionRight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">positionSort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">positionLeft</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalLeft</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">positionRight</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">arrayLeft</span><span class="o">[</span><span class="n">positionLeft</span><span class="o">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">arrayRight</span><span class="o">[</span><span class="n">positionRight</span><span class="o">]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">array</span><span class="o">[</span><span class="n">positionSort</span><span class="o">++]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayLeft</span><span class="o">[</span><span class="n">positionLeft</span><span class="o">++]</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">array</span><span class="o">[</span><span class="n">positionSort</span><span class="o">++]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayRight</span><span class="o">[</span><span class="n">positionRight</span><span class="o">++]</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">positionLeft</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalLeft</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">array</span><span class="o">[</span><span class="n">positionSort</span><span class="o">++]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayLeft</span><span class="o">[</span><span class="n">positionLeft</span><span class="o">++]</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">positionRight</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">array</span><span class="o">[</span><span class="n">positionSort</span><span class="o">++]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayRight</span><span class="o">[</span><span class="n">positionRight</span><span class="o">++]</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">mergeSort</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">start</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">start</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">        </span><span class="n">mergeSort</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">);</span>
+<span class="w">        </span><span class="n">mergeSort</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">end</span><span class="p">);</span>
+<span class="w">        </span><span class="n">merge</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="w"> </span><span class="n">end</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">};</span>
+<span class="w">        </span><span class="n">mergeSort</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Main</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">1 5 6 9 10 12</span>
+</pre></div>
+</div>
+</section>
+<section id="kompleksitas-waktu-merge-sort">
+<h2>Kompleksitas Waktu <em>Merge Sort</em><a class="headerlink" href="#kompleksitas-waktu-merge-sort" title="Permalink to this heading"></a></h2>
+<p>Pada algoritma <em>merge sort</em>, ketiga kasus memiliki kompleksitas waktu yang sama, yaitu <code class="docutils literal notranslate"><span class="pre">O(n</span> <span class="pre">log</span> <span class="pre">n)</span></code>. Pada saat melakukan pemecahan <em>array</em> menjadi dua bagian dihasilkan kompleksitas waktu <code class="docutils literal notranslate"><span class="pre">O(log</span> <span class="pre">n)</span></code>. Kemudian, pada saat melakukan penggabungan <em>array</em> dilakukan iterasi sejumlah data yang diurutkan, sehingga dihasilkan kompleksitas waktu <code class="docutils literal notranslate"><span class="pre">O(n)</span></code>.</p>
+</section>
+<section id="kompleksitas-ruang-merge-sort">
+<h2>Kompleksitas Ruang <em>Merge Sort</em><a class="headerlink" href="#kompleksitas-ruang-merge-sort" title="Permalink to this heading"></a></h2>
+<p>Pada algortima <em>merge sort</em>, ketiga kasus memiliki kompleksitas ruang yang sama, yaitu <code class="docutils literal notranslate"><span class="pre">O(n)</span></code>. Hal ini disebabkan karena algoritma <em>merge sort</em> membutuhkan <em>array</em> tambahan sejumlah dengan jumlah data.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="insertion-sort.html" class="btn btn-neutral float-left" title="Insertion Sort" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../session-11/class-object.html" class="btn btn-neutral float-right" title="Class dan Object" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Software Laboratory Center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debugging &mdash; HOL Introduction to Programming 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=e031e9a9"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Wrapper Class" href="../session-02/wrapper.html" />
+    <link rel="prev" title="Variabel &amp; Tipe Data" href="variable-datatype.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Introduction to Programming
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Pendahuluan (Opsional)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/java-introduction.html">Pengenalan Dasar <em>Java</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/ide-introduction.html">Pengenalan Dasar IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/instalation-guide.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01 -  Introduction to Java Programming</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="creating-project.html">Pembuatan <em>Java Project</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-output.html">Output dan Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable-datatype.html">Variabel &amp; Tipe Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Debugging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#syntax-error"><em>Syntax Error</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#runtime-error"><em>Runtime Error</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#logic-error"><em>Logic Error</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#common-error"><em>Common Error</em></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#common-error-1-missing-brace"><em>Common Error 1 : Missing Brace</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-error-2-missing-semicolon"><em>Common Error 2 : Missing Semicolon</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-error-3-missing-quotation-marks"><em>Common Error 3 : Missing Quotation Marks</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-error-4-misspelling-names"><em>Common Error 4 : Misspelling Names</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02 - Wrapper Class, Math, Random</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/wrapper.html"><em>Wrapper Class</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/typecasting.html"><em>Type Casting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/string.html"><em>String Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/math.html">Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/random.html">Random</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03 - Operator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/operator-operand.html">Operator dan Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/arithmetic-operator.html">Operator Aritmatika (<em>Arithmetic</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/assignment-operator.html">Operator Penugasan (<em>Assignment</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/relational-operator.html">Operator Perbandingan (<em>Relational</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/logical-operator.html">Operator Logika (<em>Logical</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/bitwise-operator.html">Operator Bit (<em>Bitwise</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/precendence-associative-operator.html">Operator <em>Precendence</em> &amp; <em>Associative</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04 - Selection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/if-else.html">Seleksi <em>If</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/nested-if.html">Seleksi <em>If</em> Bersarang (<em>Nested</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/switch-case.html">Seleksi <em>Switch-Case</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 05 - Repetition</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/for.html">Repetisi <em>For</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/while.html">Repetisi <em>While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/do-while.html">Repetisi <em>Do-While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/validation.html">Validation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06 - Jump Operation and Exception Handling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/break.html"><em>Break</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/continue.html"><em>Continue</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/label.html"><em>Label</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/exception-handling.html"><em>Exception Handling</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07 - Static Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/multidimentional-array.html"><em>Multidimensional Array</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08 - Dynamic Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/dynamic-array.html"><em>Dynamic Array</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/vector.html"><em>Vector</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/arraylist.html"><em>ArrayList</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09 - Methods</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/method-parameter.html"><em>Method</em> dan <em>Parameter</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/variable-scope.html"><em>Scope</em> Variabel</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10 - Sorting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/sorting.html"><em>Sorting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/bubble-sort.html"><em>Bubble Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/selection-sort.html"><em>Selection Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/insertion-sort.html"><em>Insertion Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/merge-sort.html"><em>Merge Sort</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 11 - Object Oriented Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/class-object.html"><em>Class</em> dan <em>Object</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/encapsulation.html"><em>Encapsulation</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/inheritance.html"><em>Inheritance</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/polymorphism.html"><em>Polymorphism</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/abstract-class-method.html"><em>Abstract Class</em> dan <em>Method</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Exercise</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../exercise/exercise.html">Latihan Soal</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Introduction to Programming</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Debugging</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="debugging">
+<h1>Debugging<a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h1>
+<p>Apabila program yang dibuat tidak berjalan dengan seharusnya, pembuat program dapat mencari tahu hal apa yang membuat hal tersebut terjadi dengan melakukan <em>debugging</em>. Dengan kata lain, <em>debug</em> adalah suatu proses untuk menganalisa dan memperbaiki kesalahan yang ada di dalam program, sehingga program dapat berjalan tanpa <em>bug</em>.</p>
+<p>Terdapat beberapa jenis <em>error</em> yang dapat terjadi ketika membuat program.</p>
+<section id="syntax-error">
+<h2><em>Syntax Error</em><a class="headerlink" href="#syntax-error" title="Permalink to this heading"></a></h2>
+<p><em>Syntax error</em> dapat disebabkan oleh kesalahan dalam pembuatan kode seperti salah mengetikan kata kunci, menghilangkan beberapa tanda yang diperlukan, menggunakan kurung kurawal pembuka (<code class="docutils literal notranslate"><span class="pre">{</span></code>) tanpa kurung kurawal penutup (<code class="docutils literal notranslate"><span class="pre">}</span></code>), dan sebagainya. Kesalahan ini biasanya mudah dideteksi karena <em>compiler</em> akan memberi
+tahu letak kesalahan tersebut.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//Syntax Error (kurang tanda ;)</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Exception in thread &quot;main&quot; java.lang.Error: Unresolved compilation problem:</span>
+<span class="go">    Syntax error, insert &quot;;&quot; to complete BlockStatements</span>
+
+<span class="go">    at Main.main(Main.java:4)</span>
+</pre></div>
+</div>
+<p>Kode di atas merupakan contoh dari <em>syntax error</em>. Berdasarkan informasi <em>error</em> yang tampil pada <em>console</em>, terlihat bahwa kode tersebut kurang tanda titik koma (<code class="docutils literal notranslate"><span class="pre">;</span></code>) pada file <em>Main.java</em> baris ke-4.</p>
+</section>
+<section id="runtime-error">
+<h2><em>Runtime Error</em><a class="headerlink" href="#runtime-error" title="Permalink to this heading"></a></h2>
+<p><em>Runtime error</em> merupakan kesalahan yang terjadi saat program berjalan sehingga program harus berhenti secara tiba-tiba. Biasanya hal ini terjadi saat <em>input</em> yang dimasukan tidak sesuai atau format data yang diproses kurang sesuai.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//Runtime Error (pembagian dengan angka 0)</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Exception in thread &quot;main&quot; java.lang.ArithmeticException: / by zero</span>
+<span class="go">    at Main.main(Main.java:4)</span>
+</pre></div>
+</div>
+<p>Kode di atas merupakan contoh dari <em>runtime error</em>. Berdasarkan informasi error yang tampil pada <em>console</em>, terlihat bahwa terjadi <em>ArithmeticException</em> yaitu angka yang dibagi dengan 0 pada file <em>Main.java</em> baris ke-4. Contoh <em>runtime error</em> lainnya adalah ketika program meminta <em>input</em> sebuah angka, namun pengguna program memasukan <em>input</em> sebuah <em>string</em>, sehingga terjadi ketidaksesuaian tipe data.</p>
+</section>
+<section id="logic-error">
+<h2><em>Logic Error</em><a class="headerlink" href="#logic-error" title="Permalink to this heading"></a></h2>
+<p><em>Logic error</em> terjadi ketika sebuah program tidak berjalan sesuai dengan yang diinginkan. Program akan tetap berjalan tanpa <em>error</em>, sehingga pembuat program harus mengecek secara manual informasi yang dihasilkan dari program tersebut.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">celsius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">35</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//Logic Error (kesalahan hasil pembagian)</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">fahrenheit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">35</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">32</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;%.1f Celsius = %.1f Fahrenheit&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">celsius</span><span class="p">,</span><span class="w"> </span><span class="n">fahrenheit</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">35.0 Celsius = 67.0 Fahrenheit</span>
+</pre></div>
+</div>
+<p>Kode di atas merupakan contoh dari <em>logic error</em>. Hasil perhitungan menunjukan bahwa 35 derajat celsius sama seperti 67 derajat fahrenheit. Jawaban perhitungan tersebut salah, seharusnya adalah 95 derajat fahrenheit. Kesalahan tersebut terjadi karena salah tipe data dalam perhitungan pembagian. Pembagian antara 9 dengan 5 menghasilkan angka 1, karena pembagian dilakukan dengan tipe data <em>integer</em> (tidak menyimpan nilai desimal). Oleh karena itu, rumus tersebut harus diubah menjadi 9.0 / 5, sehingga pembagian dilakukan dengan tipe data <em>double</em>, menghasilkan 1.8.</p>
+</section>
+<section id="common-error">
+<h2><em>Common Error</em><a class="headerlink" href="#common-error" title="Permalink to this heading"></a></h2>
+<p><em>Common error</em> dapat terjadi apabila pembuat program kurang teliti. Berikut adalah beberapa <em>common error</em> yang sering terjadi.</p>
+<section id="common-error-1-missing-brace">
+<h3><em>Common Error 1 : Missing Brace</em><a class="headerlink" href="#common-error-1-missing-brace" title="Permalink to this heading"></a></h3>
+<p>Kurung kurawal (<code class="docutils literal notranslate"><span class="pre">{}</span></code>) digunakan untuk menandai sebuah <em>scope</em> dalam program. Setiap tanda kurung pembuka (<code class="docutils literal notranslate"><span class="pre">{</span></code>) harus diikuti oleh tanda kurung penutup (<code class="docutils literal notranslate"><span class="pre">}</span></code>). Hal ini sering menjadi kesalahan umum karena kurangnya pasangan kurung kurawal. Untuk menghindari kesalahan tersebut, pembuat program dapat melengkapi pasangan kurung kurawal yang kurang. Apabila menggunakan aplikasi <em>Eclipse</em>, secara otomatis akan langsung dibuat pasangan tanda tersebut.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="p">}</span><span class="w"> </span><span class="c1">// &lt;- pastikan memiliki pasangan kurung kurawal</span>
+</pre></div>
+</div>
+</section>
+<section id="common-error-2-missing-semicolon">
+<h3><em>Common Error 2 : Missing Semicolon</em><a class="headerlink" href="#common-error-2-missing-semicolon" title="Permalink to this heading"></a></h3>
+<p>Setiap perintah yang dibuat harus diakhiri oleh tanda titik koma (<code class="docutils literal notranslate"><span class="pre">;</span></code>). Hal ini sering menjadi kesalahan umum karena kurangnya tanda titik koma pada akhir perintah. Untuk menghindari kesalahan tersebut, pembuat program dapat melengkapi akhir perintah dengan tanda titik koma.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// &lt;- pastikan memiliki tanda ;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="common-error-3-missing-quotation-marks">
+<h3><em>Common Error 3 : Missing Quotation Marks</em><a class="headerlink" href="#common-error-3-missing-quotation-marks" title="Permalink to this heading"></a></h3>
+<p>Setiap kalimat harus diapit dengan tanda kutip dua (<code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>). Hal ini sering menjadi kesalahan umum karena kurangnya pasangan kutip dua. Untuk menghindari kesalahan tersebut, pembuat program dapat melengkapi pasangan kutip dua yang kurang.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// &lt;- pastikan memiliki pasangan kutip dua</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="common-error-4-misspelling-names">
+<h3><em>Common Error 4 : Misspelling Names</em><a class="headerlink" href="#common-error-4-misspelling-names" title="Permalink to this heading"></a></h3>
+<p>Bahasa pemrograman Java bersifat <em>case sensitive</em>, artinya huruf kapital dianggap berbeda dengan huruf kecil. Hal ini sering menjadi kesalahan umum karena perbedaan nama <em>variabel</em>, <em>method</em>, atau <em>keyword</em>. Untuk menghindari kesalahan tersebut, pembuat program harus memperhatikan penamaan tersebut.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">variabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">variabel</span><span class="p">);</span><span class="w"> </span><span class="c1">// &lt;- pastikan penamaan variabel dan keyword sudah sesuai</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="variable-datatype.html" class="btn btn-neutral float-left" title="Variabel &amp; Tipe Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../session-02/wrapper.html" class="btn btn-neutral float-right" title="Wrapper Class" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Software Laboratory Center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

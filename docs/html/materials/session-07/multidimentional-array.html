@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multidimensional Array &mdash; HOL Introduction to Programming 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=e031e9a9"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Dynamic Array" href="../session-08/dynamic-array.html" />
+    <link rel="prev" title="Array" href="array.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Introduction to Programming
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Pendahuluan (Opsional)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/java-introduction.html">Pengenalan Dasar <em>Java</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/ide-introduction.html">Pengenalan Dasar IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/instalation-guide.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01 -  Introduction to Java Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/creating-project.html">Pembuatan <em>Java Project</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/input-output.html">Output dan Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/variable-datatype.html">Variabel &amp; Tipe Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/debugging.html">Debugging</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02 - Wrapper Class, Math, Random</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/wrapper.html"><em>Wrapper Class</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/typecasting.html"><em>Type Casting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/string.html"><em>String Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/math.html">Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/random.html">Random</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03 - Operator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/operator-operand.html">Operator dan Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/arithmetic-operator.html">Operator Aritmatika (<em>Arithmetic</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/assignment-operator.html">Operator Penugasan (<em>Assignment</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/relational-operator.html">Operator Perbandingan (<em>Relational</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/logical-operator.html">Operator Logika (<em>Logical</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/bitwise-operator.html">Operator Bit (<em>Bitwise</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/precendence-associative-operator.html">Operator <em>Precendence</em> &amp; <em>Associative</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04 - Selection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/if-else.html">Seleksi <em>If</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/nested-if.html">Seleksi <em>If</em> Bersarang (<em>Nested</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/switch-case.html">Seleksi <em>Switch-Case</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 05 - Repetition</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/for.html">Repetisi <em>For</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/while.html">Repetisi <em>While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/do-while.html">Repetisi <em>Do-While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/validation.html">Validation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06 - Jump Operation and Exception Handling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/break.html"><em>Break</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/continue.html"><em>Continue</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/label.html"><em>Label</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/exception-handling.html"><em>Exception Handling</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07 - Static Array</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="array.html">Array</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>Multidimensional Array</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#array-dua-dimensi"><em>Array</em> Dua Dimensi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deklarasi-array-dua-dimensi">Deklarasi <em>Array</em> Dua Dimensi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#menetapkan-dan-mengakses-array-dua-dimensi">Menetapkan dan Mengakses <em>Array</em> Dua Dimensi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contoh-implementasi-array-dua-dimensi">Contoh Implementasi <em>Array</em> Dua Dimensi</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08 - Dynamic Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/dynamic-array.html"><em>Dynamic Array</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/vector.html"><em>Vector</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/arraylist.html"><em>ArrayList</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09 - Methods</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/method-parameter.html"><em>Method</em> dan <em>Parameter</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/variable-scope.html"><em>Scope</em> Variabel</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10 - Sorting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/sorting.html"><em>Sorting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/bubble-sort.html"><em>Bubble Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/selection-sort.html"><em>Selection Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/insertion-sort.html"><em>Insertion Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/merge-sort.html"><em>Merge Sort</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 11 - Object Oriented Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/class-object.html"><em>Class</em> dan <em>Object</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/encapsulation.html"><em>Encapsulation</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/inheritance.html"><em>Inheritance</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/polymorphism.html"><em>Polymorphism</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/abstract-class-method.html"><em>Abstract Class</em> dan <em>Method</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Exercise</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../exercise/exercise.html">Latihan Soal</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Introduction to Programming</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><em>Multidimensional Array</em></li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="multidimensional-array">
+<h1><em>Multidimensional Array</em><a class="headerlink" href="#multidimensional-array" title="Permalink to this heading"></a></h1>
+<p>Multidimensional <em>array</em> merupakan <em>array</em> yang memiliki dua atau lebih dimensi. Dengan kata lain, <em>multidimensional array</em> merupakan kumpulan dari beberapa <em>array</em>. Pada bagian ini akan lebih banyak membahas mengenai <em>array</em> dua dimensi.</p>
+<section id="array-dua-dimensi">
+<h2><em>Array</em> Dua Dimensi<a class="headerlink" href="#array-dua-dimensi" title="Permalink to this heading"></a></h2>
+<p>Pada bagian sebelumnya, telah dipelajari mengenai <em>array</em> satu dimensi yang ditandai dengan menggunakan sepasang kurung siku (<code class="docutils literal notranslate"><span class="pre">[]</span></code>). Namun, apabila <em>array</em> tersebut memiliki dua dimensi, maka akan ditandai dengan dua pasang kurung siku (<code class="docutils literal notranslate"><span class="pre">[][]</span></code>).</p>
+<p>Pada <em>array</em> satu dimensi hanya memiliki satu buah baris dan beberapa kolom. Sedangkan, pada <em>array</em> dua dimensi dapat digambarkan seperti sebuah tabel, yakni memiliki beberapa baris dan beberapa kolom.</p>
+<a class="reference internal image-reference" href="../../_images/1d-array.png"><img alt="../../_images/1d-array.png" class="align-center" src="../../_images/1d-array.png" style="width: 300px;" /></a>
+<p class="centered">
+<strong><em>Array 1D</em></strong></p><a class="reference internal image-reference" href="../../_images/2d-array.png"><img alt="../../_images/2d-array.png" class="align-center" src="../../_images/2d-array.png" style="width: 300px;" /></a>
+<p class="centered">
+<strong><em>Array 2D</em></strong></p></section>
+<section id="deklarasi-array-dua-dimensi">
+<h2>Deklarasi <em>Array</em> Dua Dimensi<a class="headerlink" href="#deklarasi-array-dua-dimensi" title="Permalink to this heading"></a></h2>
+<p>Berikut adalah <em>syntax</em> dalam melakukan deklarasi <em>array</em> dua dimensi.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">tipe_data[][] nama_array = new tipe_data[jumlah_baris][jumlah_kolom];</span>
+<span class="go">atau</span>
+<span class="go">tipe_data[][] nama_array = {</span>
+<span class="go">    {data1, data2, ...},</span>
+<span class="go">    {data3, data4, ...},</span>
+<span class="go">    ...</span>
+<span class="go">};</span>
+</pre></div>
+</div>
+<p>Berikut adalah contoh implementasi kode untuk kedua cara deklarasi <em>array</em> dua dimensi.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="mi">3</span><span class="o">][</span><span class="mi">3</span><span class="o">]</span><span class="p">;</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Array numbers: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">numbers2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">},</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Array numbers2: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numbers2</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numbers2</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">numbers2</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Array numbers:</span>
+<span class="go">0 0 0</span>
+<span class="go">0 0 0</span>
+<span class="go">0 0 0</span>
+<span class="go">Array numbers2:</span>
+<span class="go">1 2 3</span>
+<span class="go">4 5 6</span>
+<span class="go">7 8 9</span>
+</pre></div>
+</div>
+<p>Berdasarkan kode di atas, bagian atas merupakan deklarasi <em>array</em> bernama <code class="docutils literal notranslate"><span class="pre">numbers</span></code> untuk tipe data <code class="docutils literal notranslate"><span class="pre">int</span></code> sebanyak 3 baris dan 3 kolom yang berisikan nilai <em>default</em>, yaitu nol (0). Pada bagian bawah merupakan deklarasi <em>array</em> bernama <code class="docutils literal notranslate"><span class="pre">numbers2</span></code> untuk tipe data <code class="docutils literal notranslate"><span class="pre">int</span></code> sebanyak 3 baris dan 3 kolom yang berisikan nilai sesuai yang diberikan.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Apabila ingin menampilkan data pada <em>array</em> satu dimensi hanya memperlukan satu iterasi saja, karena data hanya terdiri dari satu baris. Sedangkan, apabila ingin menampilkan data pada <em>array</em> dua dimensi diperlukan dua iterasi, karena iterasi pertama untuk setiap baris dan iterasi kedua untuk setiap kolom.</p>
+</div>
+</section>
+<section id="menetapkan-dan-mengakses-array-dua-dimensi">
+<h2>Menetapkan dan Mengakses <em>Array</em> Dua Dimensi<a class="headerlink" href="#menetapkan-dan-mengakses-array-dua-dimensi" title="Permalink to this heading"></a></h2>
+<p>Berikut adalah implementasi kode untuk menetapkan dan mengakses nilai dari sebuah <em>array</em> dua dimensi.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">3</span><span class="o">]</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">        </span><span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="w">        </span><span class="n">numbers</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">        </span><span class="n">numbers</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">        </span><span class="n">numbers</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Nilai dari numbers[0][0] adalah &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Nilai dari numbers[1][0] adalah &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Nilai dari numbers[1][2] adalah &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Nilai dari numbers[0][0] adalah 1</span>
+<span class="go">Nilai dari numbers[1][0] adalah 4</span>
+<span class="go">Nilai dari numbers[1][2] adalah 6</span>
+</pre></div>
+</div>
+<p>Beradasarkan kode di atas, dilakukan inisialisasi <em>array</em> bernama <code class="docutils literal notranslate"><span class="pre">numbers</span></code> dengan tipe data <code class="docutils literal notranslate"><span class="pre">int</span></code> sebanyak 2 baris dan 3 kolom. Nilai dari array tersebut adalah { <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code> } dan { <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code>}. Kemudian, dilakukan penetapan nilai pada masing-masing <em>index</em> dari <em>array</em> tersebut. Sehingga, nilai pada <em>array</em> berubah menjadi { <code class="docutils literal notranslate"><span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span></code>, <code class="docutils literal notranslate"><span class="pre">3</span></code> } dan { <code class="docutils literal notranslate"><span class="pre">4</span></code>, <code class="docutils literal notranslate"><span class="pre">5</span></code>, <code class="docutils literal notranslate"><span class="pre">6</span></code>}. Kemudian, dilakukan akses nilai dari <em>array</em> yang akan ditampilakan ke <em>console</em>. Hasil yang muncul pada <em>console</em> sesuai dengan yang ditetapkan sebelumnya, bahwa <em>index</em> baris ke-0 dan kolom ke-0 adalah 1, dan seterusnya.</p>
+</section>
+<section id="contoh-implementasi-array-dua-dimensi">
+<h2>Contoh Implementasi <em>Array</em> Dua Dimensi<a class="headerlink" href="#contoh-implementasi-array-dua-dimensi" title="Permalink to this heading"></a></h2>
+<p>Berikut adalah contoh program untuk menjumlahkan angka setiap baris dari <em>array</em> dua dimensi.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">},</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Jumlah baris ke-&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; adalah &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">sum</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Jumlah baris ke-0 adalah 6</span>
+<span class="go">Jumlah baris ke-1 adalah 15</span>
+</pre></div>
+</div>
+<p>Pertama, dilakukan deklarasi <em>array</em> dua dimensi bernama <code class="docutils literal notranslate"><span class="pre">numbers</span></code> dengan nilai { <code class="docutils literal notranslate"><span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span></code>, <code class="docutils literal notranslate"><span class="pre">3</span></code> } dan { <code class="docutils literal notranslate"><span class="pre">4</span></code>, <code class="docutils literal notranslate"><span class="pre">5</span></code>, <code class="docutils literal notranslate"><span class="pre">6</span></code>}. Kemudian, dilakukan iterasi untuk setiap baris (iterasi <code class="docutils literal notranslate"><span class="pre">for</span></code> paling luar). Pada awal iterasi tersebut, dibuat sebuah variabel bernama <code class="docutils literal notranslate"><span class="pre">sum</span></code> yang berguna untuk menyimpan nilai penjumlahan. Lalu, dilakukan iterasi untuk setiap kolom (iterasi <code class="docutils literal notranslate"><span class="pre">for</span></code> paling dalam). Di dalamnya terdapat operasi yang menjumlahkan nilai dari variabel <code class="docutils literal notranslate"><span class="pre">sum</span></code> sebelumnya dengan angka pada <em>array</em>. Setelah iterasi untuk setiap kolom selesai, dilanjutkan dengan <em>output</em> ke <em>console</em> untuk jumlah yang sudah dihitung. Pada baris ke-1, terdapat angka 1, 2, dan 3 yang apabila dijumlahkan menghasilkan 6. Sedangkan, pada baris ke-2, tedapat angka 4, 5, dan 6 yang apabila dijumlahkan menghasilkan 15.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Array</em> dua dimensi biasanya digunakan dalam permainan untuk merepresentasikan sebuah peta, papan permainan, dan sebagainya. Contohnya pada permainan papan catur yang menggunakan <em>array</em> dua dimensi untuk menyimpan posisi bidak pada baris dan kolom tertentu.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="array.html" class="btn btn-neutral float-left" title="Array" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../session-08/dynamic-array.html" class="btn btn-neutral float-right" title="Dynamic Array" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Software Laboratory Center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

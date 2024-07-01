@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bubble Sort &mdash; HOL Introduction to Programming 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=e031e9a9"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Selection Sort" href="selection-sort.html" />
+    <link rel="prev" title="Sorting" href="sorting.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Introduction to Programming
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Pendahuluan (Opsional)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/java-introduction.html">Pengenalan Dasar <em>Java</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/ide-introduction.html">Pengenalan Dasar IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/instalation-guide.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01 -  Introduction to Java Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/creating-project.html">Pembuatan <em>Java Project</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/input-output.html">Output dan Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/variable-datatype.html">Variabel &amp; Tipe Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/debugging.html">Debugging</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02 - Wrapper Class, Math, Random</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/wrapper.html"><em>Wrapper Class</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/typecasting.html"><em>Type Casting</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/string.html"><em>String Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/math.html">Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/random.html">Random</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03 - Operator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/operator-operand.html">Operator dan Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/arithmetic-operator.html">Operator Aritmatika (<em>Arithmetic</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/assignment-operator.html">Operator Penugasan (<em>Assignment</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/relational-operator.html">Operator Perbandingan (<em>Relational</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/logical-operator.html">Operator Logika (<em>Logical</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/bitwise-operator.html">Operator Bit (<em>Bitwise</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/precendence-associative-operator.html">Operator <em>Precendence</em> &amp; <em>Associative</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04 - Selection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/if-else.html">Seleksi <em>If</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/nested-if.html">Seleksi <em>If</em> Bersarang (<em>Nested</em>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/switch-case.html">Seleksi <em>Switch-Case</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 05 - Repetition</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/for.html">Repetisi <em>For</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/while.html">Repetisi <em>While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/do-while.html">Repetisi <em>Do-While</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/validation.html">Validation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06 - Jump Operation and Exception Handling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/break.html"><em>Break</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/continue.html"><em>Continue</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/label.html"><em>Label</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/exception-handling.html"><em>Exception Handling</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07 - Static Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/multidimentional-array.html"><em>Multidimensional Array</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08 - Dynamic Array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/dynamic-array.html"><em>Dynamic Array</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/vector.html"><em>Vector</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/arraylist.html"><em>ArrayList</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09 - Methods</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/method-parameter.html"><em>Method</em> dan <em>Parameter</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/variable-scope.html"><em>Scope</em> Variabel</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10 - Sorting</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sorting.html"><em>Sorting</em></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>Bubble Sort</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#implementasi-bubble-sort">Implementasi <em>Bubble Sort</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optimisasi-bubble-sort">Optimisasi <em>Bubble Sort</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kompleksitas-waktu-bubble-sort">Kompleksitas Waktu <em>Bubble Sort</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kompleksitas-ruang-bubble-sort">Kompleksitas Ruang <em>Bubble Sort</em></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="selection-sort.html"><em>Selection Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="insertion-sort.html"><em>Insertion Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="merge-sort.html"><em>Merge Sort</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 11 - Object Oriented Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/class-object.html"><em>Class</em> dan <em>Object</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/encapsulation.html"><em>Encapsulation</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/inheritance.html"><em>Inheritance</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/polymorphism.html"><em>Polymorphism</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/abstract-class-method.html"><em>Abstract Class</em> dan <em>Method</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Exercise</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../exercise/exercise.html">Latihan Soal</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Introduction to Programming</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><em>Bubble Sort</em></li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bubble-sort">
+<h1><em>Bubble Sort</em><a class="headerlink" href="#bubble-sort" title="Permalink to this heading"></a></h1>
+<p><em>Bubble sort</em> merupakan salah satu algoritma <em>sorting</em> yang paling mudah untuk dibuat, namun memiliki performa yang kurang efisien. Prinsip kerjanya cukup mudah, yaitu menukar data dengan data setelahnya apabila tidak berurutan secara terus menerus. Sehingga, nilai yang lebih kecil membubuh ke atas, sementara nilai yang lebih besar terbenam ke bawah, atau sebaliknya.</p>
+<p>Sebelum masuk ke dalam kode, kita perlu mempelajari simulasi kerja dari <em>bubble sort</em> terlebih dahulu. Berikut adalah simulasi kerja <em>sorting</em> data secara <em>ascending</em> (kecil ke besar) menggunakan <em>bubble sort</em> dengan data awal di bawah ini.</p>
+<a class="reference internal image-reference" href="../../_images/initial.png"><img alt="../../_images/initial.png" class="align-center" src="../../_images/initial.png" style="width: 350px;" /></a>
+<p class="centered">
+<strong>Data Awal</strong></p><p>Secara umum, program akan melakukan perbandingan antara nilai data posisi saat ini dengan nilai data posisi setelahnya. Apabila nilai data posisi setelahnya lebih kecil dibandingkan dengan nilai data posisi saat ini, maka akan dilakukan pertukaran data.</p>
+<p><strong>Tahap ke-1</strong></p>
+<p>Pada pengecekan pertama dibandingkan angka <code class="docutils literal notranslate"><span class="pre">2</span></code> dan <code class="docutils literal notranslate"><span class="pre">9</span></code>, karena <code class="docutils literal notranslate"><span class="pre">9</span></code> tidak lebih kecil dari <code class="docutils literal notranslate"><span class="pre">2</span></code> tidak dilakukan penukaran. Pada pengecekan kedua dibandingkan angka <code class="docutils literal notranslate"><span class="pre">9</span></code> dan <code class="docutils literal notranslate"><span class="pre">5</span></code>, karena <code class="docutils literal notranslate"><span class="pre">5</span></code> lebih kecil dari <code class="docutils literal notranslate"><span class="pre">9</span></code> dilakukan penukaran. Dan seterusnya sampai angka yang paling besar, yaitu <code class="docutils literal notranslate"><span class="pre">9</span></code>, akan berada di bagian belakang.</p>
+<a class="reference internal image-reference" href="../../_images/step-1.png"><img alt="../../_images/step-1.png" class="align-center" src="../../_images/step-1.png" style="width: 450px;" /></a>
+<p class="centered">
+<strong>Simulasi <em>Bubble Sort</em> Tahap ke-1</strong></p><p><strong>Tahap ke-2</strong></p>
+<p>Pada tahap ini akan melakukan hal yang sama seperti pada tahapan sebelumnya. Hanya saja tidak akan dilakukan pengecekan untuk data yang paling terakhir, karena secara otomatis data yang paling besar sudah berada di paling belakang.</p>
+<a class="reference internal image-reference" href="../../_images/step-2.png"><img alt="../../_images/step-2.png" class="align-center" src="../../_images/step-2.png" style="width: 450px;" /></a>
+<p class="centered">
+<strong>Simulasi <em>Bubble Sort</em> Tahap ke-2</strong></p><p><strong>Tahap ke-3</strong></p>
+<a class="reference internal image-reference" href="../../_images/step-3.png"><img alt="../../_images/step-3.png" class="align-center" src="../../_images/step-3.png" style="width: 450px;" /></a>
+<p class="centered">
+<strong>Simulasi <em>Bubble Sort</em> Tahap ke-3</strong></p><p><strong>Tahap ke-4</strong></p>
+<a class="reference internal image-reference" href="../../_images/step-4.png"><img alt="../../_images/step-4.png" class="align-center" src="../../_images/step-4.png" style="width: 450px;" /></a>
+<p class="centered">
+<strong>Simulasi <em>Bubble Sort</em> Tahap ke-4</strong></p><p><strong>Tahap ke-5</strong></p>
+<p>Pada tahap ini, data yang ada di dalam kumpulan data (<em>array</em>) sudah terurut dari kecil ke besar, sehingga simulasi <em>bubble sort</em> sudah selesai.</p>
+<a class="reference internal image-reference" href="../../_images/step-5.png"><img alt="../../_images/step-5.png" class="align-center" src="../../_images/step-5.png" style="width: 450px;" /></a>
+<p class="centered">
+<strong>Simulasi <em>Bubble Sort</em> Tahap ke-5</strong></p><section id="implementasi-bubble-sort">
+<h2>Implementasi <em>Bubble Sort</em><a class="headerlink" href="#implementasi-bubble-sort" title="Permalink to this heading"></a></h2>
+<p>Berdasarkan simulasi yang sudah dijabarkan sebelumnya, berikut adalah implementasinya dalam bentuk kode.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="c1">// Deklarasi method bubbleSort dengan parameter sebuah array tipe data int</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">bubbleSort</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="c1">// Deklarasi variabel x bernilai panjang dari sebuah array</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Iterasi untuk menandakan jumlah iterasi yang perlu dilakukan</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">            </span><span class="c1">// Iterasi untuk mengecek nilai data saat ini dengan nilai data sebelahnya</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">x</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">                </span><span class="c1">// Seleksi untuk mengecek nilai data setelahnya lebih besar dibandingkan dengan nilai data saat ini</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="o">]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">                    </span><span class="c1">// Menukar nilai antara data saat ini dengan data setelahnya</span>
+<span class="w">                    </span><span class="kt">int</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
+<span class="w">                    </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="o">]</span><span class="p">;</span>
+<span class="w">                    </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">temp</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Deklarasi method print dengan parameter sebuah array tipe data int</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="c1">// Iterasi untuk melakukan output pada setiap data di dalam array</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">};</span>
+<span class="w">        </span><span class="n">bubbleSort</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span>
+<span class="w">        </span><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Main</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">1 2 4 5 8 9</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Iterasi <code class="docutils literal notranslate"><span class="pre">for</span></code> yang kedua (berada di bagian dalam) memiliki kondisi <code class="docutils literal notranslate"><span class="pre">j</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">-</span> <span class="pre">i</span> <span class="pre">-</span> <span class="pre">1</span></code>. Nilai <code class="docutils literal notranslate"><span class="pre">x</span></code> harus dikurangi <code class="docutils literal notranslate"><span class="pre">1</span></code> karena pengecekan hanya dapat dilakukan sampai dua data dari terakhir saja. Apabila dilakukan pengecekan sampai data terakhir akan terjadi <em>error</em>, karena akan mengecek data setelahnya yang tidak ada. Sedangkan nilai <code class="docutils literal notranslate"><span class="pre">x</span></code> harus dikurangi <code class="docutils literal notranslate"><span class="pre">i</span></code> karena tidak perlu melakukan pengecekan untuk data yang terakhir.</p>
+</div>
+</section>
+<section id="optimisasi-bubble-sort">
+<h2>Optimisasi <em>Bubble Sort</em><a class="headerlink" href="#optimisasi-bubble-sort" title="Permalink to this heading"></a></h2>
+<p>Kode di atas masih dapat dilakukan optimisasi dengan menambahkan sebuah variabel dan validasi. Kedua hal tersebut bertujuan untuk mengurangi jumlah iterasi yang sudah tidak diperlukan. Apabila program tidak melakukan penukaran nilai, artinya nilai dalam sebuah <em>array</em> sudah terurut, sehingga proses <em>sorting</em> dapat dihentikan. Berikut adalah kode yang sudah dioptimalkan.</p>
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">bubbleSort</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Deklarasi variabel swapped tanpa inisialisasi</span>
+<span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">swapped</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">            </span><span class="c1">// Melakukan inisialisasi variabel swapped dengan nilai false</span>
+<span class="w">            </span><span class="n">swapped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">x</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="o">]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">                    </span><span class="c1">// Mengubah nilai variabel swapped menjadi true</span>
+<span class="w">                    </span><span class="n">swapped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+
+<span class="w">                    </span><span class="kt">int</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
+<span class="w">                    </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="o">]</span><span class="p">;</span>
+<span class="w">                    </span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">temp</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="c1">// Seleksi untuk mengecek variabel swapped bernilai false (negasi dari true)</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">swapped</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">                </span><span class="c1">// Apabila variabel bernilai false, iterasi akan dihentikan karena tidak ada perubahan data</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">};</span>
+<span class="w">        </span><span class="n">bubbleSort</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span>
+<span class="w">        </span><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="n">Main</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">1 2 4 5 8 9</span>
+</pre></div>
+</div>
+</section>
+<section id="kompleksitas-waktu-bubble-sort">
+<h2>Kompleksitas Waktu <em>Bubble Sort</em><a class="headerlink" href="#kompleksitas-waktu-bubble-sort" title="Permalink to this heading"></a></h2>
+<p>Kompleksitas waktu mengukur seberapa cepat atau lambat sebuah algoritma pada beberapa kasus tertentu. Terdapat tiga kasus yang dapat terjadi, yaitu kasus terbaik (<em>best case</em>), kasus terburuk (<em>worst case</em>), dan kasus rata-rata (<em>average case</em>).</p>
+<p>Pada kasus terbaik, algoritma <em>bubble sort</em> memiliki kompleksitas <code class="docutils literal notranslate"><span class="pre">O(n)</span></code>. Hal ini terjadi ketika sebuah <em>array</em> sudah terurut sesuai kriteria, sehingga algoritma hanya perlu melakukan satu kali iterasi saja.</p>
+<p>Pada kasus terburuk, algoritma <em>bubble sort</em> memiliki kompleksitas <code class="docutils literal notranslate"><span class="pre">O(n^2)</span></code>. Hal ini terjadi ketika sebuah <em>array</em> terurut secara terbalik, sehingga algoritma perlu melakukan perbandingan dan pertukaran untuk setiap data pada <em>array</em>.</p>
+<p>Pada kasus rata-rata, algoritma <em>bubble sort</em> memiliki kompleksitas yang sama seperti pada kasus terburuk, yaitu <code class="docutils literal notranslate"><span class="pre">O(n^2)</span></code>. Hal ini terjadi ketika sebuah array tidak terurut atau tanpa pola, sedikit lebih baik dibandingkan kasus terburuk.</p>
+</section>
+<section id="kompleksitas-ruang-bubble-sort">
+<h2>Kompleksitas Ruang <em>Bubble Sort</em><a class="headerlink" href="#kompleksitas-ruang-bubble-sort" title="Permalink to this heading"></a></h2>
+<p>Sama seperti kompleksitas waktu, pada kompleksitas ruang yang diukur adalah seberapa banyak ruang yang digunakan dalam sebuah algoritma. Jenis yang dimiliki oleh kompleksitas ruang juga sama seperti yang dimiliki oleh kompleksitas waktu, yaitu kasus terbaik (<em>best case</em>), kasus terburuk (<em>worst case</em>), dan kasus rata-rata (<em>average case</em>).</p>
+<p>Pada algortima <em>bubble sort</em>, ketiga kasus memiliki kompleksitas ruang yang sama, yaitu <code class="docutils literal notranslate"><span class="pre">O(1)</span></code>. Hal ini disebabkan karena algoritma <em>bubble sort</em> hanya menggunakan satu buah variabel pembantu untuk menyimpan nilai sementara saat pertukaran data.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sorting.html" class="btn btn-neutral float-left" title="Sorting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="selection-sort.html" class="btn btn-neutral float-right" title="Selection Sort" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Software Laboratory Center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
