@@ -11,4 +11,5 @@ Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 - Tampilkan output hasil sorting.
 
 .. code:: console
+    
     ID01 ID02 ID03 // hasil output dari operasi bubble sort

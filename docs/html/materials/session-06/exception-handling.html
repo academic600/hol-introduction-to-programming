@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exception Handling &mdash; HOL Introduction to Programming 0.1 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=4d0a2446" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -20,7 +22,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Array" href="../session-07/array.html" />
+    <link rel="next" title="Mini Practice" href="mini-practice-06.html" />
     <link rel="prev" title="Label" href="label.html" /> 
 </head>
 
@@ -58,6 +60,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../session-01/input-output.html">Output dan Input</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-01/variable-datatype.html">Variabel &amp; Tipe Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-01/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/mini-practice.html">Mini practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 02 - Wrapper Class, Math, Random</span></p>
 <ul>
@@ -66,6 +69,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../session-02/string.html"><em>String Method</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-02/math.html">Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-02/random.html">Random</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/mini-practice-02.html">Mini Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/character.html">Character</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/double.html"><em>Double Method</em></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 03 - Operator</span></p>
 <ul>
@@ -76,12 +82,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../session-03/logical-operator.html">Operator Logika (<em>Logical</em>)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-03/bitwise-operator.html">Operator Bit (<em>Bitwise</em>)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-03/precendence-associative-operator.html">Operator <em>Precendence</em> &amp; <em>Associative</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/mini-practice-03.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 04 - Selection</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../session-04/if-else.html">Seleksi <em>If</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-04/nested-if.html">Seleksi <em>If</em> Bersarang (<em>Nested</em>)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-04/switch-case.html">Seleksi <em>Switch-Case</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/mini-practice-04.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 05 - Repetition</span></p>
 <ul>
@@ -89,29 +97,38 @@
 <li class="toctree-l1"><a class="reference internal" href="../session-05/while.html">Repetisi <em>While</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-05/do-while.html">Repetisi <em>Do-While</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-05/validation.html">Validation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-05/mini-practice-05.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 06 - Jump Operation and Exception Handling</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="break.html"><em>Break</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="continue.html"><em>Continue</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="label.html"><em>Label</em></a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>Exception Handling</em></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>Exception Handling</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#macam-macam-exception-handling">Macam-macam exception handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#penggunaan-block-try-catch">Penggunaan block <code class="docutils literal notranslate"><span class="pre">try-catch</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mini-practice-06.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 07 - Static Array</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../session-07/array.html">Array</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-07/multidimentional-array.html"><em>Multidimensional Array</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/mini-practice-07.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 08 - Dynamic Array</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../session-08/dynamic-array.html"><em>Dynamic Array</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-08/vector.html"><em>Vector</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-08/arraylist.html"><em>ArrayList</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/mini-practice-08.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 09 - Methods</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../session-09/method-parameter.html"><em>Method</em> dan <em>Parameter</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-09/variable-scope.html"><em>Scope</em> Variabel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/mini-practice-09.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 10 - Sorting</span></p>
 <ul>
@@ -120,6 +137,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../session-10/selection-sort.html"><em>Selection Sort</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-10/insertion-sort.html"><em>Insertion Sort</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-10/merge-sort.html"><em>Merge Sort</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/mini-practice-10.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Session 11 - Object Oriented Programming</span></p>
 <ul>
@@ -128,6 +146,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../session-11/inheritance.html"><em>Inheritance</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-11/polymorphism.html"><em>Polymorphism</em></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../session-11/abstract-class-method.html"><em>Abstract Class</em> dan <em>Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-11/mini-practice-11.html">Mini Practice</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Exercise</span></p>
 <ul>
@@ -160,6 +179,176 @@
 <h1><em>Exception Handling</em><a class="headerlink" href="#exception-handling" title="Permalink to this heading"></a></h1>
 <p>Pada bahasa pemrograman <em>Java</em>, <em>exception handling</em> adalah proses untuk menangani kesalahan pada saat program dijalankan (<em>exception</em>). Ketika terjadi kesalahan tersebut, biasanya akan terjadi <em>crash</em> atau program yang berhenti secara tiba-tiba. Contoh kesalahan yang sering ditemui adalah pembagian oleh nol, akses ke data yang tidak tersedia, dan masalah koneksi jaringan. Oleh karena itu, kesalahan tersebut dapat dan perlu di validasikan agar program dapat berjalan dengan baik.</p>
 <p>Salah satu cara untuk melakukan <em>exception handling</em> adalah menggunakan <code class="docutils literal notranslate"><span class="pre">try-catch</span></code>. Berikut adalah <em>syntax</em> yang dapat digunakan dalam membuat <code class="docutils literal notranslate"><span class="pre">try-catch</span></code>.</p>
+<section id="macam-macam-exception-handling">
+<h2>Macam-macam exception handling<a class="headerlink" href="#macam-macam-exception-handling" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Checked Exceptions</p></li>
+<li><p>Unchecked Exceptions</p></li>
+<li><p>Custom exceptions</p></li>
+</ul>
+<p><strong>Penjelasan</strong></p>
+<ol class="arabic">
+<li><p><strong>Checked Exceptions</strong></p>
+<p>Checked exceptions adalah exception yang diperiksa saat proses kompilasi sedang berjalan. Program harus mendeklarasikan checked exceptions
+dengan menggunakan <code class="docutils literal notranslate"><span class="pre">try-catch</span></code> atau <code class="docutils literal notranslate"><span class="pre">throws</span></code>.</p>
+<p>Jenis-jenis dari <strong>checked exceptions</strong> adalah sebagai berikut:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>IOException</strong></p></li>
+</ul>
+<blockquote>
+<div><p>IOException digunakan untuk menangani kesalahan input dan output yang terjadi pada proses input output.
+Seperti kesalahan membaca pada file data dan socket.</p>
+<p>berikut adalah contoh dari <code class="docutils literal notranslate"><span class="pre">IOException</span></code>.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Contoh 1: Membaca dari file yang tidak ada</span>
+<span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">FileReader</span><span class="w"> </span><span class="n">fileReader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileReader</span><span class="p">(</span><span class="s">&quot;nonexistentfile.txt&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">BufferedReader</span><span class="w"> </span><span class="n">bufferedReader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedReader</span><span class="p">(</span><span class="n">fileReader</span><span class="p">);</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bufferedReader</span><span class="p">.</span><span class="na">readLine</span><span class="p">();</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+<span class="w">    </span><span class="n">bufferedReader</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">err</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Caught IOException: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul>
+<li><p><strong>SQLException</strong>
+<code class="docutils literal notranslate"><span class="pre">SQLException</span></code> adalah exception yang digunakan untuk menangani kesalahan yang terjadi saat program
+sedang berinteraksi dengan database JDBC (Java Database Connectivity). Kesalahan yang biasa terjadi seperti
+kesalahan koneksi dengan database dan kesalahan syntax SQL yang digunakan.</p>
+<p>berikut adalah contoh dari <code class="docutils literal notranslate"><span class="pre">SQLException</span></code>.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.Connection</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.DriverManager</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.SQLException</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.Statement</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SQLExceptionExample</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Connection</span><span class="w"> </span><span class="n">connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">        </span><span class="n">Statement</span><span class="w"> </span><span class="n">statement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// Koneksi ke database</span>
+<span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;jdbc:mysql://localhost:3306/testdb&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;root&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;password&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="n">connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DriverManager</span><span class="p">.</span><span class="na">getConnection</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="n">password</span><span class="p">);</span>
+
+<span class="w">            </span><span class="c1">// Membuat statement</span>
+<span class="w">            </span><span class="n">statement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connection</span><span class="p">.</span><span class="na">createStatement</span><span class="p">();</span>
+
+<span class="w">            </span><span class="c1">// Menjalankan pernyataan SQL yang salah</span>
+<span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;INSERT INTO users (id, name) VALUES (1, &#39;John Doe&#39;, 123)&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="n">statement</span><span class="p">.</span><span class="na">executeUpdate</span><span class="p">(</span><span class="n">sql</span><span class="p">);</span>
+
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">SQLException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// Menangani SQLException</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">err</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Caught SQLException: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">err</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;SQLState: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getSQLState</span><span class="p">());</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">err</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;ErrorCode: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getErrorCode</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// Menutup sumber daya</span>
+<span class="w">            </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">statement</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="n">statement</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">connection</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="n">connection</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">SQLException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Unchecked Exception</strong>
+Unchecked exception adalah exception yang digunakan untuk mengatasi kesalahan logika dalam program.</p>
+<dl>
+<dt>Jenis-jenis dari <strong>unchecked exceptions</strong> adalah sebagai berikut:</dt><dd><blockquote>
+<div><ul>
+<li><p><strong>NullPointerException</strong>
+<code class="docutils literal notranslate"><span class="pre">NullPointerException</span></code> adalah jenis exception yang bisa digunakan untuk membantu dalam memvalidasi apakah
+suatu data bernilai null atau tidak.</p>
+<p>berikut adalah contoh dari <code class="docutils literal notranslate"><span class="pre">NullPointerException</span></code>.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">method</span><span class="p">();</span>
+<span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">NullPointerException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Caught NullPointerException&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>ArithmeticException</strong></p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">ArithmeticException</span></code> adalah jenis exception yang terjadi ketika operasi aritmatika tidak sesuai.
+contoh dari <code class="docutils literal notranslate"><span class="pre">ArithmeticException</span></code> adalah ketika suatu bilangan bulat dibagi dengan angka nol.</p>
+<p>berikut adalah contoh dari <code class="docutils literal notranslate"><span class="pre">ArithmeticException</span></code>:</p>
+<blockquote>
+<div><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// ini merupakan arithmetic exception</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">ArithmeticException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Perhitungan aritmetika tidak sesuai&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+<ul>
+<li><p><strong>Custom Exceptions</strong>
+Custom exception adalah suatu exception yang dibuat secara manual yang dimana exception ini
+tidak ada di bahasa pemrograman java, sehingga kita harus membuat exception sendiri untuk suatu
+kondisi tertentu.</p>
+<p>Berikut adalah contoh dari <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">exception</span></code>:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Membuat class custom exception yang inherit dari class Exception</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">InvalidKarnivoraException</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">InvalidKarnivoraException</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">super</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<blockquote>
+<div><p>disini kita membuat suatu custom exception dengan nama <code class="docutils literal notranslate"><span class="pre">InvalidKarnivoraException</span></code> yang diperuntukkan untuk
+melakukan validasi hewan yang dikategorikan sebagai karnivora atau bukan.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Method yang memeriksa hewan karnivora atau tidak</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">checkIsKarnivora</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">animal</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">InvalidKarnivoraException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">animal</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;Lion&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">animal</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;Tiger&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">InvalidKarnivoraException</span><span class="p">(</span><span class="s">&quot;Hewan ini bukan karnivora&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">checkIsCarnivora</span><span class="p">(</span><span class="s">&quot;Dog&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// memanggil function checkIsCarnivora</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">InvalidAgeException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Maka hasil output dari exception diatas sebagai berikut.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Hewan ini bukan karnivora</span>
+</pre></div>
+</div>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="penggunaan-block-try-catch">
+<h2>Penggunaan block <code class="docutils literal notranslate"><span class="pre">try-catch</span></code><a class="headerlink" href="#penggunaan-block-try-catch" title="Permalink to this heading"></a></h2>
 <p><strong>Syntax</strong></p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">try {</span>
 <span class="go">    &lt;kode yang ingin di validasikan&gt;</span>
@@ -192,7 +381,46 @@
 </div>
 <p>Berdasarkan kode di atas, terdapat sebuah <em>array</em> dengan nama <code class="docutils literal notranslate"><span class="pre">myNumbers</span></code> yang hanya memiliki 3 buah data. Karena hanya ada 3 buah data saja, artinya <em>index</em> yang dapat diakses hanya sampai <em>index</em> ke-2 (karena <em>index</em> dimulai dari 0). Pada kode ingin dilakukan <em>output</em> untuk <em>index</em> ke-10 yang tidak didefinisikan, sehingga muncul <em>error</em>. Karena kode sudah di validasikan dengan <code class="docutils literal notranslate"><span class="pre">try-catch</span></code>, maka ketika kode yang berada di dalam <em>scope</em> <code class="docutils literal notranslate"><span class="pre">try</span></code> <em>error</em>, yang dijalankan adalah kode yang ada di dalam <em>scope</em> <code class="docutils literal notranslate"><span class="pre">catch</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">try-catch</span></code> bisa ditambahkan keyword <code class="docutils literal notranslate"><span class="pre">finally</span></code>. keyword <code class="docutils literal notranslate"><span class="pre">finally</span></code> berfungsi untuk menampilkan output setelah proses <code class="docutils literal notranslate"><span class="pre">try-catch</span></code> telah selesai dijalankan. Cara menggunakan <code class="docutils literal notranslate"><span class="pre">finally</span></code> akan dijelaskan dibawah berikut.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">myNumbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">};</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myNumbers</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Data tidak ditemukan&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&#39;try catch&#39; finished !&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">2</span>
+<span class="go">&#39;try catch&#39; finished !</span>
+</pre></div>
+</div>
 <p>Selanjutnya pada <code class="docutils literal notranslate"><span class="pre">try-catch</span></code> kita dapat melakukan custom error handling. Custom error handling bisa dilakukan dengan keyword <code class="docutils literal notranslate"><span class="pre">throw()</span></code>. ketika menggunakan <code class="docutils literal notranslate"><span class="pre">throw()</span></code> harus diikutsertakan dengan <em>exception type</em>.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">checkAge</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArithmeticException</span><span class="p">(</span><span class="s">&quot;Access denied - You must be at least 18 years old.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Access granted - You are old enough!&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">checkAge</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Exception in thread &quot;main&quot; java.lang.ArithmeticException: Access denied - You must be at least 18 years old.</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -200,7 +428,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="label.html" class="btn btn-neutral float-left" title="Label" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../session-07/array.html" class="btn btn-neutral float-right" title="Array" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="mini-practice-06.html" class="btn btn-neutral float-right" title="Mini Practice" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

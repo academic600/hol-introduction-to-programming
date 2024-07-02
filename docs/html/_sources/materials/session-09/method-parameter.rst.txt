@@ -182,3 +182,85 @@ Berikut adalah contoh implementasi *array* pada sebuah *method*.
 .. code:: console
 
     5 3 4 8 6 4 
+
+
+*Overload* dan *Override* Method
+------------------------------------
+
+Overloading dan overriding method sering ditemukan pada Pemrograman berorientasi objek 
+pada java. Berikut adalah penjelasan dari dari ``overloading`` dan ``overriding``:
+
+- **Overloading** 
+  *Overloading* adalah metode dalam kelas yang memiliki penamaan method yang sama tetapi 
+  memiliki parameter yang berbeda. Parameter yang berbeda bisa berupa jumlah parameter yang berbeda
+  atau tipe parameter yang berbeda. Dengan overloading kita bisa mendefinisikan suatu method atau function dengan nama yang sama 
+  akan tetapi memiliki action yang berbeda. 
+
+  berikut adalah contoh dari *overloading* sebagai berikut. 
+
+  .. code-block:: java 
+
+    public class OverloadingExample {
+
+        // Method dengan satu parameter 
+        public void display(int a) {
+            System.out.println("ini adalah angka " + a);
+        }
+
+        // Overloading method dengan 2 parameter 
+        public void display(int a, int b) {
+            System.out.println("ini adalah angka " + a + " dan " + b);
+        }
+
+        // Overloading method dengan tipe yang berbeda 
+        public void display(String a) {
+            System.out.println("ini adalah string: " + a);
+        }
+
+        public static void main(String[] args) {
+            OverloadingExample obj = new OverloadingExample();
+
+            // memanggil method 1
+            obj.display(5);
+
+            // memanggil method 2 
+            obj.display(5, 10);
+
+            // memanggil method 3
+            obj.display("Hello");
+        }
+    }
+
+- **Overriding** 
+  Overriding adalah sebuah kondisi dimana suatu method pada child class memiliki nama, parameter dan return data yang sama dengan 
+  parent class yang di *inherit*. 
+
+  Berikut adalah contoh dari *overriding* dibawah ini. 
+
+  .. code-block:: java 
+
+        class Superclass {
+        // Superclass method
+            public void display() {
+                System.out.println("Ini method dari superclass");
+            }
+        }
+
+    class Subclass extends Superclass {
+        // Overriding method di dalam subclass 
+        @Override
+        public void display() {
+            System.out.println("Ini adalah method dari subclass");
+        }
+
+        public static void main(String[] args) {
+            Superclass obj1 = new Superclass();
+            obj1.display();  // memanggil method dari superclass 
+
+            Subclass obj2 = new Subclass();
+            obj2.display();  // memanggil method override dari child class 
+        }
+    }
+
+
+

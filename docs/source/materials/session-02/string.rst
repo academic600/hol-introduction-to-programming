@@ -260,6 +260,7 @@ Parameter tersebut berfungsi untuk memisahkan string menjadi beberapa bagian dal
 *Method* ``substring()`` digunakan untuk menambilkan suatu data *String* berdasarkan index dari *String* tersebut.
 
 .. code:: java 
+
     public class Main {
         public static void main(String[] args) {
             String text = "Budiman";
@@ -274,6 +275,7 @@ Parameter tersebut berfungsi untuk memisahkan string menjadi beberapa bagian dal
 *Method* ``replace()`` digunakan untuk mengganti character dari *String* menjadi sebuah character yang baru.
 
 .. code:: java 
+    
     public class Main {
         public static void main(String[] args) {
             String text = "Budiman";

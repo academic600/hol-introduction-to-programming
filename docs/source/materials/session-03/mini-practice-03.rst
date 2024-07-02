@@ -14,6 +14,7 @@ Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 Input: 
 
 .. code:: console 
+
     Operasi penjumlahan
     ====================
     Masukkan angka ke-1? 1 // masukkan data input pertama 
@@ -22,4 +23,5 @@ Input:
 Output: 
 
 .. code:: console 
+    
     Hasil penjumlahan adalah: 2 // Output hasil penjumlahan

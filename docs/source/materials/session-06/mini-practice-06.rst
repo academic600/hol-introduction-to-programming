@@ -18,6 +18,7 @@ Input dan output ketika data yang dimasukkan tidak sesuai.
 Input 
 
 .. code:: console
+
     Selamat datang di ZYResto
     ==========================
     1. Beli Barang
@@ -29,6 +30,8 @@ Input
 Output 
 
 .. code:: console 
+
+    // ketika salah memasukkan input maka program akan meminta input kembali
     Tolong masukkan angka! // Output error dari hasil catch error pada input
 
 
@@ -37,6 +40,7 @@ Input dan Output ketika data yang dimasukkan sesuai.
 Input 
 
 .. code:: console 
+
     Selamat datang di ZYResto
     ==========================
     1. Beli Barang
@@ -47,5 +51,7 @@ Input
 Output 
 
 .. code:: console 
-    // tidak ada output karena data yang diinput benar
+    
+    // Output yang ditampilkan ketika memilih menu 1
+    Anda memilih menu Beli barang
 

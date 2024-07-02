@@ -28,6 +28,7 @@ Daftar Isi
    materials/session-01/input-output
    materials/session-01/variable-datatype
    materials/session-01/debugging
+   materials/session-01/mini-practice
 
 .. toctree::
    :maxdepth: 1
@@ -38,6 +39,9 @@ Daftar Isi
    materials/session-02/string
    materials/session-02/math
    materials/session-02/random
+   materials/session-02/mini-practice-02
+   materials/session-02/character
+   materials/session-02/double
 
 .. toctree:: 
    :maxdepth: 1
@@ -50,6 +54,7 @@ Daftar Isi
    materials/session-03/logical-operator
    materials/session-03/bitwise-operator
    materials/session-03/precendence-associative-operator
+   materials/session-03/mini-practice-03
 
 .. toctree:: 
    :maxdepth: 1
@@ -58,6 +63,7 @@ Daftar Isi
    materials/session-04/if-else
    materials/session-04/nested-if
    materials/session-04/switch-case
+   materials/session-04/mini-practice-04
 
 .. toctree:: 
    :maxdepth: 1
@@ -67,6 +73,7 @@ Daftar Isi
    materials/session-05/while
    materials/session-05/do-while
    materials/session-05/validation
+   materials/session-05/mini-practice-05
 
 .. toctree:: 
    :maxdepth: 1
@@ -76,6 +83,7 @@ Daftar Isi
    materials/session-06/continue
    materials/session-06/label
    materials/session-06/exception-handling
+   materials/session-06/mini-practice-06
 
 .. toctree:: 
    :maxdepth: 1
@@ -83,6 +91,7 @@ Daftar Isi
    
    materials/session-07/array
    materials/session-07/multidimentional-array
+   materials/session-07/mini-practice-07
 
 .. toctree:: 
    :maxdepth: 1
@@ -91,6 +100,7 @@ Daftar Isi
    materials/session-08/dynamic-array
    materials/session-08/vector
    materials/session-08/arraylist
+   materials/session-08/mini-practice-08
 
 .. toctree:: 
    :maxdepth: 1
@@ -98,6 +108,7 @@ Daftar Isi
 
    materials/session-09/method-parameter
    materials/session-09/variable-scope
+   materials/session-09/mini-practice-09
 
 .. toctree:: 
    :maxdepth: 1
@@ -108,6 +119,7 @@ Daftar Isi
    materials/session-10/selection-sort
    materials/session-10/insertion-sort
    materials/session-10/merge-sort
+   materials/session-10/mini-practice-10
 
 .. toctree:: 
    :maxdepth: 1
@@ -118,6 +130,7 @@ Daftar Isi
    materials/session-11/inheritance
    materials/session-11/polymorphism
    materials/session-11/abstract-class-method
+   materials/session-11/mini-practice-11
 
 .. toctree:: 
    :maxdepth: 1

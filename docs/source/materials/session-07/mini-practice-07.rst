@@ -13,8 +13,8 @@ Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 .. code-block:: bash
 
    $ javac myJava.java
-   Masukkan index yang ingin diubah: 1
-   Masukkan angka yang baru: 1
+   Masukkan index array yang ingin diubah: 1
+   Masukkan angka yang baru: 11
 
 
 Output 

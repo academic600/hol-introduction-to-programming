@@ -13,11 +13,15 @@ Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 Input 
 
 .. code:: console
+
     Masukkan nama anda? Budi
     Masukkan gender anda? Male
 
+Output
+
 .. code:: console
-    Mr.Budi
+
+    Mr.Budi // karena gender yang dimasukkan adalah Male, maka program akan concate Mr. dengan nama yang dimasukkan
 
 
 

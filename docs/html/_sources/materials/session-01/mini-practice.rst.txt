@@ -9,5 +9,13 @@ Lakukan proses input dan output menggunakan bahasa pemrograman *Java*.
 - Lakukanlah proses input data ``Berapa umur anda ?``
 
 .. code:: console
-    Siapa nama anda? Budi
-    Berapa umur anda? 12
+
+    Siapa nama anda? Budi # input nama
+    Berapa umur anda? 12 # input 
+
+Tampilkan hasil output sebagai berikut. 
+
+.. code:: console 
+
+    Nama: Budi # ouput nama  
+    Umur: 12 # output umur 

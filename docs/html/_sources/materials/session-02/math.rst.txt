@@ -81,6 +81,7 @@ floor(double a)
 *Method* ``floor()`` digunakan untuk membulatkan bilangan ke angka yang lebih kecil terdekat.
 
 .. code:: java 
+    
     public class Main {
         public static void main(String[] args) {
             double a = 4.7; 

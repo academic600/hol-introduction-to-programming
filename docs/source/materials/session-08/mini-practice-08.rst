@@ -16,9 +16,12 @@ Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 Input 
 
 .. code:: console
+
     Masukkan nama kendaraan yang tersimpan? Mobil
+    // program akan mencari data yang terdapat di dalam array list
 
 Output
 
 .. code:: console 
+    
     Data berhasil ditemukan // keyword data mobil terdapat di dalam 'ArrayList'. 

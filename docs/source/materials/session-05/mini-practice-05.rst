@@ -13,11 +13,13 @@ Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 Input
 
 .. code:: console 
-    Masukkan data email? budi
+
+    Masukkan data email? budi # jika email tidak diakhiri '@gmail.com' akan meminta input ulang
     Masukkan data email? budi@gmail.com
 
 Output
 
 .. code:: console 
-    Email anda sudah berhasil disimpan.
+
+    Email anda sudah berhasil disimpan. # jika email yang dimasukkan sudah sesuai tampilkan success text
 

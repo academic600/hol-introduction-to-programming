@@ -9,4 +9,5 @@ Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*;
 - Lakukanlah *concatinating* sebuah String dengan data ``ID-`` dengan 3 angka yang di random.
 
 .. code:: console
-    ID-981 // Hasil bisa saja berbeda karena angka dilakukan proses random
+
+    Hasil random: ID-981 // Hasil bisa saja berbeda karena angka dilakukan proses random
