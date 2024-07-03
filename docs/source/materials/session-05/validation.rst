@@ -39,6 +39,7 @@ Method yang akan digunakan adalah ``startWidth()``
 
 
 .. code:: java 
+
     import java.util.*;
     public class Main
     {
@@ -59,5 +60,6 @@ Method yang akan digunakan adalah ``startWidth()``
     }
 
 .. code:: console
+    
     mInput full name must started with [Mr./Ms.]?mbudi
     Input full name must started with [Mr./Ms.]?Ms.Budi
