@@ -9,7 +9,7 @@ Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 - Buatlah input untuk memasukkan nama vehicle yang dipilih.
 - Buatlah input untuk memasukkan data nama pabrik pembuat kendaraan.
 - Buatlah input untuk memasukakn harga vehicle yang berhasil dibuat. 
-- Implementasilah perintah program diatas dengan menggunakan Object Oriented Programming 
+- Implementasilah perintah program diatas dengan menggunakan *Object Oriented Programming*.
 
 Input 
 

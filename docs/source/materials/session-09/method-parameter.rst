@@ -194,7 +194,7 @@ pada java. Berikut adalah penjelasan dari dari ``overloading`` dan ``overriding`
   *Overloading* adalah metode dalam kelas yang memiliki penamaan method yang sama tetapi 
   memiliki parameter yang berbeda. Parameter yang berbeda bisa berupa jumlah parameter yang berbeda
   atau tipe parameter yang berbeda. Dengan overloading kita bisa mendefinisikan suatu method atau function dengan nama yang sama 
-  akan tetapi memiliki action yang berbeda. 
+  akan tetapi memiliki action yang berbeda. Untuk membaca overloading lebih lanjut pada **Object Oriented Programming** anda bisa klik tautan berikut :ref:`overloading`.
 
   berikut adalah contoh dari *overloading* sebagai berikut. 
 
@@ -233,7 +233,7 @@ pada java. Berikut adalah penjelasan dari dari ``overloading`` dan ``overriding`
 
 - **Overriding** 
   Overriding adalah sebuah kondisi dimana suatu method pada child class memiliki nama, parameter dan return data yang sama dengan 
-  parent class yang di *inherit*. 
+  parent class yang di *inherit*. Untuk membaca lebih lanjut mengenai **overriding**, anda bisa mengunjungi link berikut :ref:`overriding`.
 
   Berikut adalah contoh dari *overriding* dibawah ini. 
 

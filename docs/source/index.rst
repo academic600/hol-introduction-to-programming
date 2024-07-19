@@ -35,13 +35,13 @@ Daftar Isi
    :caption: Session 02 - Wrapper Class, Math, Random
 
    materials/session-02/wrapper
-   materials/session-02/typecasting
-   materials/session-02/string
-   materials/session-02/math
-   materials/session-02/random
-   materials/session-02/mini-practice-02
    materials/session-02/character
    materials/session-02/double
+   materials/session-02/math
+   materials/session-02/random
+   materials/session-02/string
+   materials/session-02/typecasting
+   materials/session-02/mini-practice-02
 
 .. toctree:: 
    :maxdepth: 1
@@ -137,3 +137,9 @@ Daftar Isi
    :caption: Exercise
 
    materials/exercise/exercise
+
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Answer mini practice 
+
+   materials/answer-mini-practice/answer-session

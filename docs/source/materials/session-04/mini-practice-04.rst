@@ -6,8 +6,8 @@ Lakukanlah instruksi pembuatan program dibawah ini dan sesuaikan dengan hasil ou
 Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 
 - Masukkanlah data umur anda
-- Lakukan validasi untuk umur yang dibawah dari 18 tahun adalah anak - anak, dan jika umur diatas sama 18 tahun adalah dewasa.
-- Lakukan output hasil dari input data tersebut. 
+- Lakukan validasi untuk umur yang **dibawah dari 18 tahun** adalah **anak - anak**, dan jika **umur diatas sama dengan 18 tahun** adalah **dewasa**.
+- Lakukan **output** hasil dari input data tersebut. 
 
 
 Input

@@ -5,9 +5,9 @@ Lakukanlah instruksi pembuatan program dibawah ini dan sesuaikan dengan hasil ou
 
 Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 
-- Masukkan data ``int`` sebagai input pertama
-- Masukkan data ``int`` sebagai input kedua 
-- Lakukanlah operasi penjumlahan dengan menggunakan data input pertama dan input kedua.
+- Masukkan data ``int`` sebagai **input pertama**.
+- Masukkan data ``int`` sebagai **input kedua**. 
+- Lakukanlah operasi penjumlahan dengan menggunakan data **input pertama** dan **input kedua**.
 - Output-kan hasil operasi penjumlahan.
 
 

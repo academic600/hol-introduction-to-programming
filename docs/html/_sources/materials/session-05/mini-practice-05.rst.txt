@@ -5,9 +5,9 @@ Lakukanlah instruksi pembuatan program dibawah ini dan sesuaikan dengan hasil ou
 
 Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.
 
-- Masukkan email anda pada prompt yang disediakan.
-- Lakukanlah validasi apakah email diakhiri dengan ``@gmail.com``
-- Ketika validasi sesuai tapilkan output berhasil seperti berikut, ``email anda sudah berhasil disimpan``
+- Masukkan **email** anda pada prompt yang disediakan.
+- Lakukanlah validasi apakah **email** diakhiri dengan ``@gmail.com``
+- Ketika validasi sesuai tapilkan *output* berhasil seperti berikut, ``email anda sudah berhasil disimpan``
 
 
 Input

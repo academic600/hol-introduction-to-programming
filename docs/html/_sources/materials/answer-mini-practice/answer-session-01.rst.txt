@@ -1,0 +1,22 @@
+Answer Mini Practice Session 01
+-------------------------------------
+
+Berikut adalah jawaban dari mini practice untuk **session 1**. 
+
+.. code-block:: java 
+
+    Scanner scan = new Scanner(System.in);
+
+    public class Main {
+        public Main(){
+            System.out.println("Siapa nama anda?");
+
+        }
+
+        public static void main(String[] args){
+            Main();
+        }
+    }
+
+
+

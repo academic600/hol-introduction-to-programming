@@ -3,6 +3,8 @@
 
 *Polymorphism* berasal dari bahasa Yunani, yaitu *poly*, yang berarti banyak, dan *morph*, yang berarti bentuk. Sehingga, *polymorphism* berarti sebuah *object* dapat memiliki banyak bentuk. Terdapat dua konsep *polymorphism* yang dapat diterapkan, yaitu *overloading* dan *overriding*. 
 
+.. _overloading:
+
 *Overloading*
 -------------
 
@@ -52,6 +54,7 @@ Konsep ini memungkinkan pembuat program dapat mendeklarasikan *method* dengan na
     add(3.5, 2.7) = 6.2
     add(10, 5, 9) = 24
 
+.. _overriding:
 
 *Overriding*
 ------------
