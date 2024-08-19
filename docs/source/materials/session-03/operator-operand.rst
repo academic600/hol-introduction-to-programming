@@ -1,6 +1,11 @@
 Operator dan Operand
 ====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Operator adalah tanda khusus yang digunakan untuk melakukan operasi pada satu atau lebih operand sehingga dapat menghasilkan nilai yang baru. Sedangkan, operand adalah nilai atau variabel yang digunakan dalam operasi dari operator.
 
 .. code:: console

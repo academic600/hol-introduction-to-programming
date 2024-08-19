@@ -1,6 +1,11 @@
 Random
 ======
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Random* merupakan sebuah *class* yang sudah disediakan oleh bahasa pemrograman *Java* untuk mendapatkan bilangan acak. Hal ini sama seperti yang dilakukan oleh *class* ``Math`` dengan *method* ``random()``, namun bisa menambahkan konfigurasi dan bisa mendapatkan bilangan acak berdasarkan tipe data yang diinginkan. Untuk melakukannya dapat digunakan *class* ``Random`` yang berasal dari *package* ``java.utils``. Langkah yang harus dilakukan adalah sebagai berikut.
 
 Pertama, membuat *object* ``Random`` dengan kode di bawah ini.

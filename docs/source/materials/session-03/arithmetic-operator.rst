@@ -1,6 +1,11 @@
 Operator Aritmatika (*Arithmetic*)
 ==================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Operator aritmatika merupakan operator yang digunakan untuk melakukan operasi dasar matematika pada operand bilangan bulat ataupun desimal. Berikut adalah contoh operator aritmatika yang dapat digunakan.
 
 .. list-table::

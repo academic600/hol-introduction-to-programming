@@ -1,6 +1,11 @@
 Validation
 ==========
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Dengan mempelajari seleksi dan repetisi, pembuat program akan melakukan sebuah validasi. Validasi merupakan proses memeriksa apakah suatu data atau *input* memenuhi suatu kriteria tertentu. Hal ini bertujuan agar data atau *input* yang diberikan sesuai dengan kriteria sehingga dapat digunakan pada proses selanjutnya. Biasanya validasi *input* dibuat dengan menggunakan repetisi *do-while*, agar program dimulai dengan meminta *input* terlebih dahulu yang kemudian di validasikan.
 
 Berikut adalah contoh validasi panjang sebuah kata dari *input* yang dimasukan pengguna program.

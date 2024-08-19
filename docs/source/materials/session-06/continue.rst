@@ -1,6 +1,11 @@
 *Continue*
 ==========
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Kata kunci ``continue`` digunakan untuk mengabaikan kode yang ada di bawahnya dalam suatu iterasi, sehingga langsung dilanjutkan ke iterasi selanjutnya.
 
 Berikut adalah contoh implementasi operasi lompat (*jump operation*) untuk ``continue``.

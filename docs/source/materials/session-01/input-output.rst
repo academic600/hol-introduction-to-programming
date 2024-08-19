@@ -1,6 +1,11 @@
 Output dan Input
 ================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Output
 ------
 

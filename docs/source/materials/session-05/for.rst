@@ -1,6 +1,11 @@
 Repetisi *For*
 ==============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Repetisi (*repetition*) merupakan proses melakukan sebuah perintah secara berulang sesuai dengan kondisi tertentu. Terdapat tiga cara dalam melakukan repetisi, yaitu *for*, *while*, dan *do-while*. Pada bagian ini akan dibahas mengenai seleksi *for*.
 
 Repetisi *for* digunakan untuk mengulang suatu perintah secara terhitung. Disebut terhitung karena biasanya jumlah perulangan sudah diketahui atau dapat dihitung.

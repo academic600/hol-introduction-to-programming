@@ -1,6 +1,11 @@
 Seleksi *If* Bersarang (*Nested*)
 =================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Ketika membuat sebuah program yang kompleks, terkadang dibutuhkan penggunaan *if* yang bersarang (*nested if*), artinya seleksi *if* di dalam seleksi *if*. Tidak ada batasan dalam menggunakan *nested if*.
 
 Berikut adalah contoh implementasi seleksi *if* yang bersarang (*nested if*).

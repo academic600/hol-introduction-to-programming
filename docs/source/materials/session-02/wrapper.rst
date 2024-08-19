@@ -1,6 +1,11 @@
 *Wrapper Class*
 ===============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Setiap tipe data primitif yang ada pada bahasa pemrograman *Java* memiliki *wrapper class*. Dengan kata lain, *wrapper class* merupakan merupakan tipe data primitif yang dibuat atau dibungkus dalam bentuk *class* sehingga dapat digunakan sebagai *object*. Umumnya tipe data primitif ditulis dalam format huruf kecil, sedangkan *wrapper class* ditulis dalam format huruf kapital. Berikut adalah beberapa contohnya.
 
 .. list-table::

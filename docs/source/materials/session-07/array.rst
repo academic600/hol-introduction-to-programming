@@ -1,6 +1,11 @@
 Array 
 =====
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Array* merupakan salah satu jenis struktur data yang digunakan untuk menyimpan beberapa data dengan tipe data yang sama. Pada saat membuat variabel, pembuat program dapat langsung menggunakan nama variabel untuk mengakses dan memberikan nilai. Namun, pada *array* perlu menggunakan *index* dalam mengakses dan memberikan nilai. *Index* sendiri merupakan sebuah angka numerik yang dimulai dari nol (0) untuk menunjukan urutan data pada *array*.
 
 Deklarasi *Array*

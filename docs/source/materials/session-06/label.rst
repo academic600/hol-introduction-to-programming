@@ -1,6 +1,11 @@
 *Label* 
 =======
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Penggunaan ``break`` dan ``continue`` hanya berdampak pada repetisi di level tersebut. Sehingga apabila terdapat repetisi *for* yang bersarang (*nested-for*), hal tersebut tidak dapat dilakukan secara langsung. Oleh karena itu, bahasa pemrograman Java telah menyediakan penggunaan ``label`` untuk mengidentifikasikan sebuah kode tertentu. Tujuannya adalah agar program dapat langsung menjalankan operasi lompat (*jump operation*) setelah bagian ``label`` yang dituju. 
 
 Untuk dapat menggunakan ``label`` diperlukan dua buah hal, yaitu membuat ``label`` dan memanggil ``label`` tersebut.

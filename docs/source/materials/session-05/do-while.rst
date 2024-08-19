@@ -1,6 +1,11 @@
 Repetisi *Do-While*
 ===================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Pada repetisi *do-while*, perintah akan dijalankan setidaknya satu kali tanpa memerika kondisi, dan setelahnya baru akan diulang selama kondisi masih sesuai secara tak terhitung.
 
 .. note:: 

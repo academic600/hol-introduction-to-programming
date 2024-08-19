@@ -1,6 +1,11 @@
 Operator Bit (*Bitwise*)
 ========================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Operator bit adalah operator yang digunakan untuk mengubah nilai dari sebuah bit. Berikut adalah contoh operator bit yang dapat digunakan.
 
 .. list-table::

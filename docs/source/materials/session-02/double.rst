@@ -1,6 +1,11 @@
 *Double Method*
 ====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Double* merupakan tipe data untuk menyimpan bilangan decimal. Karena *Double* merupakan wrapper class yang sudah disediakan oleh *Java*, oleh sebab itu, terdapat berbagai build-in function yang bisa digunakan.
 
 Berikut adalah beberapa *string method* umum yang sering digunakan.

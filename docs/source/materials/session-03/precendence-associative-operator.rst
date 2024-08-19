@@ -1,6 +1,11 @@
 Operator *Precendence* & *Associative*
 ======================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Terdapat urutan prioritas dalam menyelesaikan sebuah operasi. Berikut adalah urutan tersebut dari yang paling prioritas (akan dikerjakan atau diselesaikan lebih dahulu).
 
 .. list-table::

@@ -1,6 +1,11 @@
 Operator Logika (*Logical*)
 ===========================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Operator logika merupakan operator yang digunakan untuk menggabungkan atau mengubah nilai kebenaran (*boolean*). Biasanya operator logika digunakan pada kondisi atau variabel dengan tipe data *boolean*. Berikut adalah contoh operator logika yang dapat digunakan.
 
 .. list-table::

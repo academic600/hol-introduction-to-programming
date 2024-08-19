@@ -1,6 +1,11 @@
 *Break*
 =======
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Pada bahasa pemrograman *Java*, pembuat program dapat menggabungkan repetisi dengan operasi lompat (*jump operation*). Tujuannya adalah untuk mengontrol perulangan dalam sebuah program. Terdapat tiga operasi lompat (*jump operation*) yang dapat digunakan yaitu *break*, *continue*, dan *label*.
 
 Kata kunci ``break`` sudah pernah digunakan pada seleksi *switch-case*. Pada seleksi *switch-case*, kata kunci ini digunakan untuk mengakhiri perintah setiap kasus. Namun, pada repetisi, kata kunci ini digunakan untuk mengakhiri sebuah repetisi, walaupun kondisi repetisi masih terpenuhi.

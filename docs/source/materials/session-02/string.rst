@@ -1,6 +1,11 @@
 *String Method*
 ===============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *String* merupakan tipe data untuk menyimpan sebuah kalimat. Kalimat tersebut diapit dengan menggunakan tanda petik dua (``""``). Karena *string* merupakan sebuah *class* yang sudah dibuat oleh bahasa pemrograman *Java*, maka sudah tersedia beberapa *method* yang pembuat program dapat langsung gunakan.
 
 Berikut adalah beberapa *string method* umum yang sering digunakan.

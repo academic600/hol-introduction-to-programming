@@ -1,6 +1,11 @@
 Seleksi *If* 
 ============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Seleksi (*selection*) merupakan proses pengambilan keputusan berdasarkan kondisi atau nilai tertentu. Terdapat dua cara dalam melakukan seleksi, yaitu *if* dan *switch-case*. Pada bagian ini akan dibahas mengenai seleksi *if* dan jenisnya.
 
 *If*

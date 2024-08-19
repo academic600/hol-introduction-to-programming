@@ -1,6 +1,11 @@
 Operator Penugasan (*Assignment*)
 =================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Operator penugasan merupakan operator yang digunakan untuk memberikan nilai ke sebuah variabel. Operator ini juga dapat digabungkan dengan operator aritmatika. Berikut adalah contoh operator penugasan yang dapat digunakan.
 
 .. list-table::

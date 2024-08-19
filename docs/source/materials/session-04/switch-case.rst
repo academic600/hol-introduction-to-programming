@@ -1,6 +1,11 @@
 Seleksi *Switch-Case*
 =====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Selain dapat menggunakan seleksi *if*, pembuat program juga dapat menggunakan seleksi *switch-case* untuk membuat percabangan. Seleksi *switch-case* digunakan untuk memilih salah satu kasus atau kondisi yang sesuai berdasarkan nilai dari sebuah variabel. 
 
 Berikut adalah *syntax* dari seleksi *switch-case*.

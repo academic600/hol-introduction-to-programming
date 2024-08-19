@@ -1,6 +1,11 @@
 Mini practice 
 ====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Lakukanlah program dibawah ini sesuai dengan hasil output yang diberikan. 
 
 Lakukan proses input dan output menggunakan bahasa pemrograman *Java*. 

@@ -1,6 +1,11 @@
 Repetisi *While*
 ================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Pada repetisi *while*, perintah akan dilakukan secara berulang selama kondisi yang diberikan bernilai benar (*true*) secara tak terhitung. Disebut tak terhitung kanena biasanya jumlah perulangan tidak diketahui atau tidak dapat dihitung.
 
 Berikut adalah *flowchart* dan *syntax* dari repetisi *while*.

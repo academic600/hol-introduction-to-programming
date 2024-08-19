@@ -2,10 +2,9 @@
 
 # -- Project information
 
-
 project = 'HOL Introduction to Programming'
 copyright = '2023, Software Laboratory Center'
-author = 'Elizabeth Erika Felia Oroh ER22-2, Renaldy RX19-2'
+author = 'Elizabeth Erika Felia Oroh ER22-2, Renaldy RX19-2, Muhammad Zaky Yusuf Pahlevi ZY22-2, Jordy WiraArta JD22-1'
 
 release = '0.1'
 version = '0.1.0'

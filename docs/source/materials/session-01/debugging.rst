@@ -1,6 +1,11 @@
 Debugging
 =========
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Apabila program yang dibuat tidak berjalan dengan seharusnya, pembuat program dapat mencari tahu hal apa yang membuat hal tersebut terjadi dengan melakukan *debugging*. Dengan kata lain, *debug* adalah suatu proses untuk menganalisa dan memperbaiki kesalahan yang ada di dalam program, sehingga program dapat berjalan tanpa *bug*.
 
 Terdapat beberapa jenis *error* yang dapat terjadi ketika membuat program.

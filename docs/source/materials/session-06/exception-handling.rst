@@ -1,6 +1,11 @@
 *Exception Handling*
 ====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Pada bahasa pemrograman *Java*, *exception handling* adalah proses untuk menangani kesalahan pada saat program dijalankan (*exception*). Ketika terjadi kesalahan tersebut, biasanya akan terjadi *crash* atau program yang berhenti secara tiba-tiba. Contoh kesalahan yang sering ditemui adalah pembagian oleh nol, akses ke data yang tidak tersedia, dan masalah koneksi jaringan. Oleh karena itu, kesalahan tersebut dapat dan perlu di validasikan agar program dapat berjalan dengan baik.
 
 Salah satu cara untuk melakukan *exception handling* adalah menggunakan ``try-catch``. Berikut adalah *syntax* yang dapat digunakan dalam membuat ``try-catch``.

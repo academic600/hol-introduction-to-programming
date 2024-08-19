@@ -1,6 +1,11 @@
 Math
 ====
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Math* merupakan sebuah *class* yang sudah disediakan oleh bahasa pemrograman *Java* untuk melakukan perhitungan matematika. *Class* ini sudah menyediakan beberapa *method* yang dapat dipanggil secara langsung, tanpa menginstansiasi object *Math*.
 
 Berikut adalah beberapa *math method* umum yang sering digunakan.

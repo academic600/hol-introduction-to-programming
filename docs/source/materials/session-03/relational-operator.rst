@@ -1,6 +1,11 @@
 Operator Perbandingan (*Relational*)
 ====================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Operator perbandingan merupakan operator yang digunakan untuk membandingkan dua buah operand. Berikut adalah contoh operator perbandingan yang dapat digunakan.
 
 .. list-table::

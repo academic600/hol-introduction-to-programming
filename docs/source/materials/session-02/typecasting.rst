@@ -1,6 +1,11 @@
 *Type Casting*
 ==============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Dalam membuat sebuah program, terkadang dibutuhkan untuk mengubah sebuah tipe data ke tipe data yang lainnya. Proses ini disebut juga sebagai *type casting*. 
 
 Terdapat dua macam tipe *type casting*, yaitu *implicit casting* dan *explicit casting*.

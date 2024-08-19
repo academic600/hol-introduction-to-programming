@@ -1,6 +1,11 @@
 Character 
 ===========
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Character* merupakan sebuah class yang telah disediakan oleh bahasa pemrograman *Java* untuk melakukan manipulasi pada tipe data *Character*. 
  
   - Character 
