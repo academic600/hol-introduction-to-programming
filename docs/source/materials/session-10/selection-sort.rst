@@ -1,6 +1,11 @@
 *Selection Sort*
 ================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Selection sort* merupakan salah satu algoritma *sorting* sederhana selain *bubble sort*. Cara kerja algoritma ini adalah mencari data terkecil pada bagian yang belum diurutkan dan menukarnya dengan data pertama dari bagian yang belum diurutkan. Proses ini akan dijalankan secara berulang sampai seluruh data sudah terurut.
 
 Berikut adalah simulasi kerja *sorting* data secara *ascending* (kecil ke besar) menggunakan *selection sort* dengan data awal di bawah ini.

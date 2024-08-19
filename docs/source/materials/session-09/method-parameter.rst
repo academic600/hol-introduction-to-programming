@@ -1,6 +1,11 @@
 *Method* dan *Parameter*
 ========================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Sebenarnya pada materi sebelumnya, kita sudah membuat dan menggunakan *method*, yaitu ``public static void main(String[] args)``. Semua perintah yang ingin dilakukan, semuanya dimasukan ke dalam *mehtod* tersebut. Apabila sebuah program semakin besar dan kompleks, maka kode yang ada di dalam *method* tersebut juga akan semakin banyak. Selain itu, terdapat juga kemungkinan adanya kode yang duplikat dalam menjalankan tugas tertentu.
 
 Oleh karena masalah tersebut, bahasa pemrograman *Java* memungkinkan pembuat program dapat membuat dan menggunakan *method* buatan sendiri. Secara singkat, *method* merupakan kumpulan perintah yang digunakan untuk menjalankan suatu tugas tertentu. Sebuah *method* dapat mengembalikan atau tidak mengembalikan sebuah nilai dari tugas tersebut. Tujuan dibuatnya sebuah *method* adalah untuk memecahkan sebuah kode menjadi bagian-bagian yang lebih kecil. Selain itu, *method* juga dapat digunakan untuk menghilangkan bagian kode yang duplikat.

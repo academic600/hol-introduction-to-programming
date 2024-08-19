@@ -1,6 +1,11 @@
 *Scope* Variabel
 ================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Kita juga sudah mempelajari mengenai *scope* pada sebuah kode di materi sebelumnya. Namun, pada materi ini akan dibahas lebih detail mengenai *scope*. Hal ini penting dipelajari untuk mengentahui pada bagian mana variabel atau *method* dapat diakses atau digunakan.
 
 *Block Scope*

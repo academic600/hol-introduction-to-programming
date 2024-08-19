@@ -1,6 +1,11 @@
 *Class* dan *Object*
 ====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Pada materi sebelumnya, sudah dipelajari bagaimana cara menggunakan *class* dan membuat *object* yang sudah disediakan oleh bahasa pemrograman *Java*. Pada materi ini akan dibahas lebih dalam mengenai *class* dan *object*.
 
 *Class*

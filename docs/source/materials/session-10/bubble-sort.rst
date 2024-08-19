@@ -1,6 +1,11 @@
 *Bubble Sort*
 =============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Bubble sort* merupakan salah satu algoritma *sorting* yang paling mudah untuk dibuat, namun memiliki performa yang kurang efisien. Prinsip kerjanya cukup mudah, yaitu menukar data dengan data setelahnya apabila tidak berurutan secara terus menerus. Sehingga, nilai yang lebih kecil membubuh ke atas, sementara nilai yang lebih besar terbenam ke bawah, atau sebaliknya.
 
 Sebelum masuk ke dalam kode, kita perlu mempelajari simulasi kerja dari *bubble sort* terlebih dahulu. Berikut adalah simulasi kerja *sorting* data secara *ascending* (kecil ke besar) menggunakan *bubble sort* dengan data awal di bawah ini.

@@ -1,6 +1,11 @@
 *Polymorphism*
 ==============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Polymorphism* berasal dari bahasa Yunani, yaitu *poly*, yang berarti banyak, dan *morph*, yang berarti bentuk. Sehingga, *polymorphism* berarti sebuah *object* dapat memiliki banyak bentuk. Terdapat dua konsep *polymorphism* yang dapat diterapkan, yaitu *overloading* dan *overriding*. 
 
 .. _overloading:

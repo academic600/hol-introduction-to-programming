@@ -1,6 +1,11 @@
 *Inheritance*
 =============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Konsep *object oriented programming* (OOP) lainnya adalah *inheritance* (pewarisan). Hal ini memungkinkan sebuah *class* dapat mewarisi atribut dan *method* dari *class* lainnya. Terdapat dua buah istilah yang berkaitan dengan *inheritance* (pewarisan), yaitu *sub-class* dan *super-class*. *Sub-class* adalah *class* yang diwarisi atribut dan *method* dari *super-class*. Sedangkan, *super-class* adalah *class* yang mewarasi atribut dan *method* ke *sub-class*
 
 Untuk dapat mewarisi atribut atau *method*, dapat digunakan *access modifier* ``protected``. *Access modifier* ini memungkinkan *sub-class* memiliki atribut atau *method* dari *super-class*. Selain itu, untuk menunjukan bahwa sebuah class menjadi *sub-class* dapat menggunakan kata kunci ``extends``.

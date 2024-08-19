@@ -1,6 +1,11 @@
 *Insertion Sort*
 ================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Insertion sort* merupakan algoritma *sorting* yang menempatkan sebuah data yang belum diurutkan pada tempat yang sesuai di setiap iterasi. Proses tersebut sama ketika mengurutkan kartu di tangan pada permainan kartu.
 
 Berikut adalah simulasi kerja *sorting* data secara *ascending* (kecil ke besar) menggunakan *insertion sort* dengan data awal di bawah ini.

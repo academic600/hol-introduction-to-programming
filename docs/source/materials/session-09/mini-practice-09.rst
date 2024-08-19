@@ -1,6 +1,11 @@
 Mini Practice 
 ==================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Lakukanlah instruksi pembuatan program dibawah ini dan sesuaikan dengan hasil **output** yang diberikan.
 
 Lakukanlah instruksi pembuatan program dengan menggunakan bahasa *Java*.

@@ -1,6 +1,11 @@
 *Encapsulation*
 ===============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Setelah mempelajari tentang *class* dan *object*, selanjutnya akan dibahas mengenai *Object Oriented Programming* (OOP). Terdapat tiga prinsip dasar yang perlu dipelajari mengenai OOP sehingga program yang dibuat dapat lebih efektif. Ketiga prinsip dasar tersebut adalah *encapsulation* (enkapsulasi), *inheritance* (pewarisan), dan *polymorphism* (polimorfisme). Pada bagian ini akan dibahas mengenai *encapsulation* (enkapsulasi).
 
 Sesuai dengan namanya, *encapsulation* (enkapsulasi) artinya membungkus sebuah *class* dengan tujuan membatasi *class* lain untuk mengakses atribut secara langsung. Caranya adalah dengan menggunakan *access modifier* yang sudah dipelajari pada materi sebelumnya. Umumnya *access modifierlain* yang akan digunakan adalah ``private``. *Access modifier* ini memungkinkan atribut hanya dapat diakses oleh *class* bersangkutan saja. Nantinya, *class* lain dapat mengakses atribut tersebut dengan menggunakan *method getter* atau *accessor*. Sedangkan, untuk mengubah atribut dari *class* lain dapat menggunakan method *setter* atau *mutator*.

@@ -1,6 +1,11 @@
 *Merge Sort*
 ============
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Merge sort* merupakan algoritma sorting yang menggunakan pendekatan *divide and conquer*. Algoritma ini secara rekursif membagi *array* menjadi bagian-bagian yang lebih kecil, kemudian diurutkan dan digabungkan, sehingga didapatkan *array* yang sudah utuh dan terurut.
 
 *Divide and Conquer Merge Sort* 

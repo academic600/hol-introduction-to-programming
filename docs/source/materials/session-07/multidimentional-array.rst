@@ -1,6 +1,11 @@
 *Multidimensional Array*
 ========================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Multidimensional *array* merupakan *array* yang memiliki dua atau lebih dimensi. Dengan kata lain, *multidimensional array* merupakan kumpulan dari beberapa *array*. Pada bagian ini akan lebih banyak membahas mengenai *array* dua dimensi.
 
 *Array* Dua Dimensi

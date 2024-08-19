@@ -1,6 +1,11 @@
 Interface
 ================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Interface adalah penghubung antara function abstrak dengan suatu objek ketika melakukan suatu proses implementasi pada interface.
 
 Interface akan berjalan jika suatu objek memanggil atau mengimplementasi suatu class *Interface*.

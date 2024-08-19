@@ -1,6 +1,11 @@
 *Vector* 
 ========
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 ``Vector`` dalam bahasa pemrograman *Java* merupakan salah satu class dari ``java.util``. Berikut adalah *syntax* yang dapat digunakan untuk mendeklarasikan sebuah ``Vector``.
 
 .. code:: console

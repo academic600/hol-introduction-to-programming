@@ -1,6 +1,11 @@
 *Dynamic Array*
 ================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Sebelumnya, telah dibahas mengenai *array* dan *multidimentional array*. Kedua hal tersebut tergolong sebagai *static array*, karena ukurannya tidak dapat berubah-ubah sewaktu program berjalan. Oleh karena itu, bahasa pemrograman *Java* membuat *dynamic array*, yakni *array* yang ukurannya dapat berubah-ubah sesuai dengan kebutuhan saat program berjalan. 
 
 Pada bagian ini hanya akan dibahas dua buah *dynamic array* yang sering digunakan, yaitu ``Vector`` dan ``ArrayList``. Perbedaan antara kedua dynamic array tersebut adalah sebagai berikut.

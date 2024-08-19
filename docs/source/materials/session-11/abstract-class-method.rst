@@ -1,6 +1,11 @@
 *Abstract Class* dan *Method*
 =============================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *Abstract class* merupakan *class* yang tidak dapat dibuat sebagai *object* dari *class* tersebut. *Class* ini digunakan sebagai kerangka dasar untuk *sub-class* yang akan diwarisi. Untuk membuat *class* menjadi *abstract class* dapat menggunakan kata kunci ``abstract``.
 
 Selain *abstract class*, bahasa pemrograman Java juga menyediakan *abstract method*, yaitu sebuah *method* yang dideklarasikan tanpa implementasi pada *abtract class*. Sehingga, implementasi dari method akan dibuat pada *sub-class*. Untuk membuat *method* menjadi *abstract method* dapat menggunakan kata kunci ``abstract``.
